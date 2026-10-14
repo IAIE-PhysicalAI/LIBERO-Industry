@@ -1,0 +1,402 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language endurance test: route all 30 bottles to the inlay)
+    (:regions
+      (ghost_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (0.099 -0.001 0.101 0.001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_0
+          (:target industry_workbench)
+          (:ranges (
+              (-0.401 -0.201 -0.399 -0.199)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_1
+          (:target industry_workbench)
+          (:ranges (
+              (-0.321 -0.201 -0.319 -0.199)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_2
+          (:target industry_workbench)
+          (:ranges (
+              (-0.24100000000000002 -0.201 -0.23900000000000002 -0.199)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_3
+          (:target industry_workbench)
+          (:ranges (
+              (-0.16100000000000003 -0.201 -0.15900000000000003 -0.199)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_4
+          (:target industry_workbench)
+          (:ranges (
+              (-0.08100000000000002 -0.201 -0.07900000000000001 -0.199)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_5
+          (:target industry_workbench)
+          (:ranges (
+              (-0.001 -0.201 0.001 -0.199)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_6
+          (:target industry_workbench)
+          (:ranges (
+              (-0.401 -0.12100000000000001 -0.399 -0.11900000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_7
+          (:target industry_workbench)
+          (:ranges (
+              (-0.321 -0.12100000000000001 -0.319 -0.11900000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_8
+          (:target industry_workbench)
+          (:ranges (
+              (-0.24100000000000002 -0.12100000000000001 -0.23900000000000002 -0.11900000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_9
+          (:target industry_workbench)
+          (:ranges (
+              (-0.16100000000000003 -0.12100000000000001 -0.15900000000000003 -0.11900000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_10
+          (:target industry_workbench)
+          (:ranges (
+              (-0.08100000000000002 -0.12100000000000001 -0.07900000000000001 -0.11900000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_11
+          (:target industry_workbench)
+          (:ranges (
+              (-0.001 -0.12100000000000001 0.001 -0.11900000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_12
+          (:target industry_workbench)
+          (:ranges (
+              (-0.401 -0.04100000000000001 -0.399 -0.03900000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_13
+          (:target industry_workbench)
+          (:ranges (
+              (-0.321 -0.04100000000000001 -0.319 -0.03900000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_14
+          (:target industry_workbench)
+          (:ranges (
+              (-0.24100000000000002 -0.04100000000000001 -0.23900000000000002 -0.03900000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_15
+          (:target industry_workbench)
+          (:ranges (
+              (-0.16100000000000003 -0.04100000000000001 -0.15900000000000003 -0.03900000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_16
+          (:target industry_workbench)
+          (:ranges (
+              (-0.08100000000000002 -0.04100000000000001 -0.07900000000000001 -0.03900000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_17
+          (:target industry_workbench)
+          (:ranges (
+              (-0.001 -0.04100000000000001 0.001 -0.03900000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_18
+          (:target industry_workbench)
+          (:ranges (
+              (-0.401 0.03899999999999998 -0.399 0.04099999999999998)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_19
+          (:target industry_workbench)
+          (:ranges (
+              (-0.321 0.03899999999999998 -0.319 0.04099999999999998)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_20
+          (:target industry_workbench)
+          (:ranges (
+              (-0.24100000000000002 0.03899999999999998 -0.23900000000000002 0.04099999999999998)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_21
+          (:target industry_workbench)
+          (:ranges (
+              (-0.16100000000000003 0.03899999999999998 -0.15900000000000003 0.04099999999999998)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_22
+          (:target industry_workbench)
+          (:ranges (
+              (-0.08100000000000002 0.03899999999999998 -0.07900000000000001 0.04099999999999998)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_23
+          (:target industry_workbench)
+          (:ranges (
+              (-0.001 0.03899999999999998 0.001 0.04099999999999998)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_24
+          (:target industry_workbench)
+          (:ranges (
+              (-0.401 0.119 -0.399 0.121)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_25
+          (:target industry_workbench)
+          (:ranges (
+              (-0.321 0.119 -0.319 0.121)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_26
+          (:target industry_workbench)
+          (:ranges (
+              (-0.24100000000000002 0.119 -0.23900000000000002 0.121)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_27
+          (:target industry_workbench)
+          (:ranges (
+              (-0.16100000000000003 0.119 -0.15900000000000003 0.121)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_28
+          (:target industry_workbench)
+          (:ranges (
+              (-0.08100000000000002 0.119 -0.07900000000000001 0.121)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (grid_region_29
+          (:target industry_workbench)
+          (:ranges (
+              (-0.001 0.119 0.001 0.121)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (ghost_active_region
+          (:target conveyor_ghost_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_ghost_1 - conveyor_ghost
+  )
+
+  (:objects
+    pump_bottle_upright_1 pump_bottle_upright_2 pump_bottle_upright_3 pump_bottle_upright_4 pump_bottle_upright_5 pump_bottle_upright_6 pump_bottle_upright_7 pump_bottle_upright_8 pump_bottle_upright_9 pump_bottle_upright_10 pump_bottle_upright_11 pump_bottle_upright_12 pump_bottle_upright_13 pump_bottle_upright_14 pump_bottle_upright_15 pump_bottle_upright_16 pump_bottle_upright_17 pump_bottle_upright_18 pump_bottle_upright_19 pump_bottle_upright_20 pump_bottle_upright_21 pump_bottle_upright_22 pump_bottle_upright_23 pump_bottle_upright_24 pump_bottle_upright_25 pump_bottle_upright_26 pump_bottle_upright_27 pump_bottle_upright_28 pump_bottle_upright_29 pump_bottle_upright_30 - pump_bottle_upright
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_ghost_1 industry_workbench_ghost_init_region)
+    (LoadSlot conveyor_ghost_1 pump_bottle_flat_groove y pulse 0.05)
+    (On pump_bottle_upright_1 industry_workbench_grid_region_0)
+    (On pump_bottle_upright_2 industry_workbench_grid_region_1)
+    (On pump_bottle_upright_3 industry_workbench_grid_region_2)
+    (On pump_bottle_upright_4 industry_workbench_grid_region_3)
+    (On pump_bottle_upright_5 industry_workbench_grid_region_4)
+    (On pump_bottle_upright_6 industry_workbench_grid_region_5)
+    (On pump_bottle_upright_7 industry_workbench_grid_region_6)
+    (On pump_bottle_upright_8 industry_workbench_grid_region_7)
+    (On pump_bottle_upright_9 industry_workbench_grid_region_8)
+    (On pump_bottle_upright_10 industry_workbench_grid_region_9)
+    (On pump_bottle_upright_11 industry_workbench_grid_region_10)
+    (On pump_bottle_upright_12 industry_workbench_grid_region_11)
+    (On pump_bottle_upright_13 industry_workbench_grid_region_12)
+    (On pump_bottle_upright_14 industry_workbench_grid_region_13)
+    (On pump_bottle_upright_15 industry_workbench_grid_region_14)
+    (On pump_bottle_upright_16 industry_workbench_grid_region_15)
+    (On pump_bottle_upright_17 industry_workbench_grid_region_16)
+    (On pump_bottle_upright_18 industry_workbench_grid_region_17)
+    (On pump_bottle_upright_19 industry_workbench_grid_region_18)
+    (On pump_bottle_upright_20 industry_workbench_grid_region_19)
+    (On pump_bottle_upright_21 industry_workbench_grid_region_20)
+    (On pump_bottle_upright_22 industry_workbench_grid_region_21)
+    (On pump_bottle_upright_23 industry_workbench_grid_region_22)
+    (On pump_bottle_upright_24 industry_workbench_grid_region_23)
+    (On pump_bottle_upright_25 industry_workbench_grid_region_24)
+    (On pump_bottle_upright_26 industry_workbench_grid_region_25)
+    (On pump_bottle_upright_27 industry_workbench_grid_region_26)
+    (On pump_bottle_upright_28 industry_workbench_grid_region_27)
+    (On pump_bottle_upright_29 industry_workbench_grid_region_28)
+    (On pump_bottle_upright_30 industry_workbench_grid_region_29)
+  )
+
+  (:goal
+    (And (Routed pump_bottle_upright_1 conveyor_ghost_1) (Routed pump_bottle_upright_2 conveyor_ghost_1) (Routed pump_bottle_upright_3 conveyor_ghost_1) (Routed pump_bottle_upright_4 conveyor_ghost_1) (Routed pump_bottle_upright_5 conveyor_ghost_1) (Routed pump_bottle_upright_6 conveyor_ghost_1) (Routed pump_bottle_upright_7 conveyor_ghost_1) (Routed pump_bottle_upright_8 conveyor_ghost_1) (Routed pump_bottle_upright_9 conveyor_ghost_1) (Routed pump_bottle_upright_10 conveyor_ghost_1) (Routed pump_bottle_upright_11 conveyor_ghost_1) (Routed pump_bottle_upright_12 conveyor_ghost_1) (Routed pump_bottle_upright_13 conveyor_ghost_1) (Routed pump_bottle_upright_14 conveyor_ghost_1) (Routed pump_bottle_upright_15 conveyor_ghost_1) (Routed pump_bottle_upright_16 conveyor_ghost_1) (Routed pump_bottle_upright_17 conveyor_ghost_1) (Routed pump_bottle_upright_18 conveyor_ghost_1) (Routed pump_bottle_upright_19 conveyor_ghost_1) (Routed pump_bottle_upright_20 conveyor_ghost_1) (Routed pump_bottle_upright_21 conveyor_ghost_1) (Routed pump_bottle_upright_22 conveyor_ghost_1) (Routed pump_bottle_upright_23 conveyor_ghost_1) (Routed pump_bottle_upright_24 conveyor_ghost_1) (Routed pump_bottle_upright_25 conveyor_ghost_1) (Routed pump_bottle_upright_26 conveyor_ghost_1) (Routed pump_bottle_upright_27 conveyor_ghost_1) (Routed pump_bottle_upright_28 conveyor_ghost_1) (Routed pump_bottle_upright_29 conveyor_ghost_1) (Routed pump_bottle_upright_30 conveyor_ghost_1))
+  )
+
+)

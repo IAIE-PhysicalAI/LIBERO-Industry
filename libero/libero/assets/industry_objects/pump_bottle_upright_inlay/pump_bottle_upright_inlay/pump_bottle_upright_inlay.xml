@@ -1,0 +1,154 @@
+<mujoco model="pump_bottle_upright_inlay">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <mesh file="pump_bottle_upright_inlay.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_0.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_1.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_2.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_3.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_4.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_5.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_6.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_7.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_8.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_9.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_10.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_11.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_12.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_13.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_14.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_15.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_16.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_17.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_18.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_19.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_20.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_21.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_22.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_23.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_24.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_25.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_26.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_27.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_28.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_29.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_30.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_31.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_32.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_33.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_34.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_35.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_36.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_37.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_38.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_39.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_40.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_41.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_42.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_43.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_44.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_45.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_46.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_47.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_48.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_49.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_50.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_51.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_52.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_53.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_54.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_55.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_56.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_57.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_58.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_59.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_60.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_61.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_62.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_63.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_64.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_65.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_66.obj"/>
+    <mesh file="pump_bottle_upright_inlay_collision_67.obj"/>
+  </asset>
+  <worldbody>
+    <body name="pump_bottle_upright_inlay">
+      <geom mesh="pump_bottle_upright_inlay" class="visual"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_0" rgba="0.189370603080807 0.4984614219161092 0.01409346699595282 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_1" rgba="0.2315627238189637 0.896738662380339 0.004628011218084871 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_2" rgba="0.21742316009446216 0.30449949907184837 0.7218116882248873 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_3" rgba="0.36419935106687396 0.7670973195587792 0.3721217194376123 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_4" rgba="0.2582506216274423 0.4728083889108302 0.007571199828939279 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_5" rgba="0.4997904487980701 0.9695249749475683 0.34218138275834253 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_6" rgba="0.5604801123663644 0.9053097768739815 0.25523425610535055 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_7" rgba="0.7689819504170119 0.24808552328327893 0.27811900474671625 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_8" rgba="0.5703464815821383 0.2940646423595954 0.07084261119384128 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_9" rgba="0.017085168944271145 0.6456923809344035 0.8086504469362893 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_10" rgba="0.2890129238469489 0.19726565611269686 0.48132158056708974 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_11" rgba="0.9659131433498097 0.11424300973348145 0.35634181587469305 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_12" rgba="0.6639076539524503 0.15663042818876216 0.3715357606412858 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_13" rgba="0.9595524872647141 0.3505310007859844 0.7315956253303102 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_14" rgba="0.6352984613510141 0.5852772959245242 0.2777861400908903 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_15" rgba="0.8753703616739748 0.24570365977649777 0.28857700334130354 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_16" rgba="0.22130397882503272 0.8954974988227508 0.48426111260595006 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_17" rgba="0.20067004760553186 0.7069092474634762 0.7516772058679625 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_18" rgba="0.9291923027159268 0.029171440868106524 0.8195315242964119 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_19" rgba="0.6465140303239976 0.11821677857318824 0.5851977297769544 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_20" rgba="0.09421930287467739 0.16909775198762 0.3691654322354251 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_21" rgba="0.9419407478034719 0.4944009911716195 0.14415507800639393 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_22" rgba="0.32926220192237365 0.48789349521551395 0.7654176468038015 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_23" rgba="0.8249643593423794 0.9127813221016795 0.9959102641974681 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_24" rgba="0.6290589118279489 0.24776006522856464 0.13836869303776622 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_25" rgba="0.04726212697522847 0.9153074478329131 0.22638225006263946 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_26" rgba="0.975510067070156 0.001716379344324226 0.1852374366363746 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_27" rgba="0.3577502201629128 0.8102304737257203 0.10166344261303539 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_28" rgba="0.1892815572368708 0.38735395064369327 0.7470001449948768 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_29" rgba="0.19800408083917587 0.8204290867645208 0.4746040482579832 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_30" rgba="0.0431684357269857 0.996427310922598 0.6457021206654783 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_31" rgba="0.3394397380148043 0.5219197220957847 0.4700535599705571 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_32" rgba="0.18811140244236457 0.3288135918154933 0.5477464314835653 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_33" rgba="0.9029259890374696 0.738532732337599 0.05271594977366001 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_34" rgba="0.40578795415455127 0.5027754468931108 0.4840923340373975 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_35" rgba="0.03583988942861094 0.5873594862272021 0.29517639734305723 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_36" rgba="0.9300997991269128 0.07909693470435963 0.9792224172894677 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_37" rgba="0.5998565832391951 0.4794802903175567 0.44692154335158885 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_38" rgba="0.500561885434641 0.8683153906532619 0.5806788530436203 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_39" rgba="0.952154601545881 0.46505591751683784 0.1026051484182714 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_40" rgba="0.2431974476722797 0.7437133448161929 0.47659989622489674 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_41" rgba="0.6827941657758606 0.5621928999414089 0.3122365585072189 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_42" rgba="0.5448479168061424 0.058549272165916544 0.272737688174975 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_43" rgba="0.4379685738485065 0.11429268646513913 0.20744711943026506 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_44" rgba="0.9304964270220026 0.12599808643784682 0.45509862849762295 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_45" rgba="0.685741475455289 0.20584106269689706 0.0006530172770345954 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_46" rgba="0.37953927435572543 0.8797002320093793 0.42865086582608836 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_47" rgba="0.49748468143015956 0.9014571415601679 0.05268212906278524 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_48" rgba="0.9831570615766639 0.5529564208720225 0.5565390933586395 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_49" rgba="0.6129042391154123 0.48373028878358926 0.5994628679222818 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_50" rgba="0.29505128724503327 0.7622186559961002 0.7353446041753634 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_51" rgba="0.858156777539183 0.1640615393709447 0.5605465372913325 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_52" rgba="0.6532736096013249 0.5993482482361349 0.0006543657358114574 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_53" rgba="0.7587581823149926 0.04549970207314147 0.028205436116330085 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_54" rgba="0.3813510800460326 0.4811368812763487 0.5090622868941399 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_55" rgba="0.7132648293182497 0.14587972688584816 0.1956255100238975 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_56" rgba="0.47698296491048975 0.6693011342434121 0.5550715425416893 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_57" rgba="0.19387637067838703 0.8957365092291921 0.8544044041382768 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_58" rgba="0.9747172142360848 0.23138534375732323 0.23211562560367527 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_59" rgba="0.9742352347641281 0.6539238108302043 0.358673822272072 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_60" rgba="0.502769356422214 0.10911526899993829 0.4707769658046074 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_61" rgba="0.1773564574193125 0.20484401527849116 0.27370814455941095 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_62" rgba="0.24120271420690287 0.15989045821463543 0.1841183081806247 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_63" rgba="0.418734592113722 0.6652219158159067 0.38265737007434253 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_64" rgba="0.7749995163986217 0.14741756135201944 0.4530516758806653 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_65" rgba="0.836802891291606 0.4225692922568254 0.5252643364681039 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_66" rgba="0.8856408442365764 0.059929746930210914 0.5494451867755776 1" class="collision"/>
+      <geom mesh="pump_bottle_upright_inlay_collision_67" rgba="0.5703223849217985 0.4327831809078585 0.4257381929422165 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

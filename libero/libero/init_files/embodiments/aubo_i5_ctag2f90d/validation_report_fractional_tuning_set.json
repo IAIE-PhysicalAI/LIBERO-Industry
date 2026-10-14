@@ -1,0 +1,33 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "embodiment": "aubo_i5_ctag2f90d",
+  "init_root": "libero/libero/init_files/embodiments/aubo_i5_ctag2f90d",
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "reset_smoke": true,
+  "schema_version": 1,
+  "suite": "fractional_tuning_set",
+  "summary": {
+    "failed_tasks": 0,
+    "passed_tasks": 1,
+    "selected_tasks": 1
+  },
+  "tasks": [
+    {
+      "problem_folder": "fractional_tuning_set",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 222,
+      "status": "passed",
+      "task": "D2D_LV3_007_MOUSE_WHITE_TAIPAN_V3_M3_route_the_mouse_white_taipan_from_the_conveyor_into_the_moving_groove_v3_t5"
+    }
+  ],
+  "validated_at": "2026-09-06T19:45:24.413864+00:00"
+}

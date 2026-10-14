@@ -1,0 +1,82 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language put the pump bottle to the moving tray)
+    (:regions
+      (ghost_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (0.0950 -0.0165 0.1150 0.0035000000000000005)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (bottle_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.2050 -0.0165 -0.1850 0.0035000000000000005)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (ghost_active_region
+          (:target conveyor_ghost_1)
+      )
+      (goal_region
+          (:target grey_plate_1)
+      )
+      (place_region_1
+          (:target grey_plate_1)
+      )
+      (place_region_2
+          (:target grey_plate_1)
+      )
+      (place_region_3
+          (:target grey_plate_1)
+      )
+      (place_region_4
+          (:target grey_plate_1)
+      )
+      (place_region_5
+          (:target grey_plate_1)
+      )
+      (place_region_6
+          (:target grey_plate_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_ghost_1 - conveyor_ghost
+    grey_plate_1 - grey_plate
+  )
+
+  (:objects
+    pump_bottle_flat_1 pump_bottle_flat_2 pump_bottle_flat_3 - pump_bottle_flat
+  )
+
+  (:obj_of_interest
+    pump_bottle_flat_1
+    pump_bottle_flat_2
+    pump_bottle_flat_3
+  )
+
+  (:init
+    (On conveyor_ghost_1 industry_workbench_ghost_init_region)
+    (On grey_plate_1 industry_workbench_bottle_init_region)
+    (LoadSlot conveyor_ghost_1 cosmetics_tray y pulse 0.0476)
+    (On pump_bottle_flat_1 grey_plate_1_place_region_1)
+    (On pump_bottle_flat_2 grey_plate_1_place_region_6)
+    (On pump_bottle_flat_3 grey_plate_1_place_region_5)
+  )
+
+  (:goal
+    (And (DynamicOn pump_bottle_flat_1 conveyor_ghost_1) (DynamicOn pump_bottle_flat_2 conveyor_ghost_1) (DynamicOn pump_bottle_flat_3 conveyor_ghost_1))
+  )
+
+)

@@ -1,0 +1,22 @@
+<mujoco model="mario_v_groove">
+    <worldbody>
+        <body>
+          <body name="object" pos="0 0 0" quat="1 0 0 0"> 
+            <body name="mario_v_groove" pos="0 0 0" quat="1 0 0 0"> 
+                <inertial pos="0 0 0" mass="0.5" diaginertia="1e-3 1e-3 1e-3" />
+                  <geom name="v_bottom" type="box" size="0.05382537648724764 0.06050910839438438 0.0025" pos="0.008554041022248562 0 0.0025" rgba="0.4 0.4 0.4 1" friction="0.8 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="v_outer_left" type="box" size="0.002 0.06050910839438438 0.029189708754748103" pos="-0.04327133546499908 0 0.034189708754748104" rgba="0.4 0.4 0.4 1" friction="0.8 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="v_outer_right" type="box" size="0.002 0.06050910839438438 0.029189708754748103" pos="0.06037941750949621 0 0.034189708754748104" rgba="0.4 0.4 0.4 1" friction="0.8 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="v_cap_front" type="box" size="0.04982537648724764 0.002 0.029189708754748103" pos="0.008554041022248562 -0.05850910839438438 0.034189708754748104" rgba="0.4 0.4 0.4 1" friction="0.8 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="v_cap_back" type="box" size="0.04982537648724764 0.002 0.029189708754748103" pos="0.008554041022248562 0.05850910839438438 0.034189708754748104" rgba="0.4 0.4 0.4 1" friction="0.8 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="v_slant_left" type="box" size="0.002 0.05650910839438438 0.029183521047234536" pos="-0.02204986773249954 0 0.02422146773249954" euler="0 -45 0" rgba="0.45 0.45 0.45 1" friction="2.0 0.1 0.001" solref="0.01 1" group="1" contype="1" conaffinity="1" />
+              <geom name="v_slant_right" type="box" size="0.002 0.05650910839438438 0.041280877888202665" pos="0.030603908754748103 0 0.032775508754748106" euler="0 45 0" rgba="0.45 0.45 0.45 1" friction="2.0 0.1 0.001" solref="0.01 1" group="1" contype="1" conaffinity="1" />
+              <site name="goal_region" type="box" size="0.005 0.05650910839438438 0.001" pos="0 0 0.01" quat="1 0 0 0" rgba="0 1 0 0.4" group="0" />
+            </body>
+        </body>
+        <site rgba="0 0 0 0" size="0.01" pos="0 0 0" quat="1 0 0 0" name="bottom_site" />        
+        <site rgba="0 0 0 0" size="0.01" pos="0 0 0.0654" quat="1 0 0 0" name="top_site" />   
+        <site rgba="0 0 0 0" size="0.01" pos="0.0538 0.0605 0" quat="1 0 0 0" name="horizontal_radius_site" />
+        </body>
+    </worldbody>
+    </mujoco>

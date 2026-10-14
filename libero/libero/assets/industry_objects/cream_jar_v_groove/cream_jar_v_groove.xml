@@ -1,0 +1,22 @@
+<mujoco model="cream_jar_v_groove">
+  <worldbody>
+    <body>
+      <body name="object" pos="0 0 0" quat="1 0 0 0">
+        <body name="cream_jar_v_groove" pos="0 0 0" quat="1 0 0 0">
+          <inertial pos="0 0 0" mass="0.5" diaginertia="1e-3 1e-3 1e-3" />
+              <geom name="v_bottom" type="box" size="0.058284 0.042385 0.002500" pos="0.000000 0 0.002500" rgba="0.4 0.4 0.4 1" friction="0.8 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="v_outer_left" type="box" size="0.002000 0.042385 0.027142" pos="-0.056284 0 0.032142" rgba="0.4 0.4 0.4 1" friction="0.8 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="v_outer_right" type="box" size="0.002000 0.042385 0.027142" pos="0.056284 0 0.032142" rgba="0.4 0.4 0.4 1" friction="0.8 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="v_cap_front" type="box" size="0.054284 0.002000 0.027142" pos="0.000000 -0.040385 0.032142" rgba="0.4 0.4 0.4 1" friction="0.8 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="v_cap_back" type="box" size="0.054284 0.002000 0.027142" pos="0.000000 0.040385 0.032142" rgba="0.4 0.4 0.4 1" friction="0.8 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="v_slant_left" type="box" size="0.002000 0.038385 0.038385" pos="-0.028556 0 0.030728" euler="0 -45 0" rgba="0.45 0.45 0.45 1" friction="0.6 0.01 0.0001" solref="0.04 1" group="1" contype="1" conaffinity="1" />
+              <geom name="v_slant_right" type="box" size="0.002000 0.038385 0.038385" pos="0.028556 0 0.030728" euler="0 45 0" rgba="0.45 0.45 0.45 1" friction="0.6 0.01 0.0001" solref="0.04 1" group="1" contype="1" conaffinity="1" />
+              <site name="goal_region" type="box" size="0.010000 0.038385 0.016000" pos="0 0 0.010000" quat="1 0 0 0" rgba="0 1 0 0.4" group="0" />
+        </body>
+      </body>
+      <site rgba="0 0 0 0" size="0.01" pos="0 0 0.000000" quat="1 0 0 0" name="bottom_site" />
+      <site rgba="0 0 0 0" size="0.01" pos="0 0 0.061284" quat="1 0 0 0" name="top_site" />
+      <site rgba="0 0 0 0" size="0.01" pos="0.058284 0.042385 0" quat="1 0 0 0" name="horizontal_radius_site" />
+    </body>
+  </worldbody>
+</mujoco>

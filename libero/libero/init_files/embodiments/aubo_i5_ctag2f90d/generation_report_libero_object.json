@@ -1,0 +1,148 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "dry_run": false,
+  "embodiment": "aubo_i5_ctag2f90d",
+  "finished_at": "2026-08-27T12:26:30.800670+00:00",
+  "init_policy": "standard",
+  "init_root": "libero/libero/init_files/embodiments/aubo_i5_ctag2f90d",
+  "overwrite": false,
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "schema_version": 1,
+  "seed": 42,
+  "selectors": {
+    "families": null,
+    "levels": null,
+    "tasks": null
+  },
+  "source_commit": "9de5207f17e3d73df7de987a3750fb6fa8994ed9",
+  "started_at": "2026-08-27T12:23:43.719689+00:00",
+  "suite": "libero_object",
+  "summary": {
+    "failed_tasks": 0,
+    "selected_tasks": 10,
+    "successful_tasks": 10
+  },
+  "takt_horizon_applied": false,
+  "target_states": 50,
+  "task_map_synchronized": false,
+  "tasks": [
+    {
+      "bddl_sha256": "df088984da13131f8332ee0f13a7896c6a97afd02ee5007a42e8fc5e0893571e",
+      "init_file": "pick_up_the_alphabet_soup_and_place_it_in_the_basket.init",
+      "problem_folder": "libero_object",
+      "pruned_init_file": "pick_up_the_alphabet_soup_and_place_it_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "078cfbf306f2352810643faa728cea93d413182cc3b0fc7e5a16f3178be1191b",
+      "state_width": 116,
+      "status": "generated",
+      "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+    },
+    {
+      "bddl_sha256": "7019f37ee158d67a21338a6df0c441dd8f84979b946b5e20bb49463ef0508ea2",
+      "init_file": "pick_up_the_cream_cheese_and_place_it_in_the_basket.init",
+      "problem_folder": "libero_object",
+      "pruned_init_file": "pick_up_the_cream_cheese_and_place_it_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "c48b76169da3728f4e289d9bf6d9bf63f32b407005a1601e5ecb9617a8bb2725",
+      "state_width": 116,
+      "status": "generated",
+      "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket"
+    },
+    {
+      "bddl_sha256": "024978e9e8f43a49b49d0965f4f426d364ce056307f0fcf5733dc4682fac437a",
+      "init_file": "pick_up_the_salad_dressing_and_place_it_in_the_basket.init",
+      "problem_folder": "libero_object",
+      "pruned_init_file": "pick_up_the_salad_dressing_and_place_it_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "37ee77d56bf99f89495f4f352fee358d1f5dbca6c273c1c9b5b9ebc19bd2aec0",
+      "state_width": 116,
+      "status": "generated",
+      "task": "pick_up_the_salad_dressing_and_place_it_in_the_basket"
+    },
+    {
+      "bddl_sha256": "8a7e37b76fce5621e649e260dbcfcec7ce2f9a055ca09a4f1ebaf5ca74a739c2",
+      "init_file": "pick_up_the_bbq_sauce_and_place_it_in_the_basket.init",
+      "problem_folder": "libero_object",
+      "pruned_init_file": "pick_up_the_bbq_sauce_and_place_it_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "f8def39dc84bca1f126a9b4907edbc8306827ce7be113f82275ca709877fb129",
+      "state_width": 116,
+      "status": "generated",
+      "task": "pick_up_the_bbq_sauce_and_place_it_in_the_basket"
+    },
+    {
+      "bddl_sha256": "4a4e545483a3fe30cf0ef3dc05bfe5e6ad5e37c94b4376dfa73fe1b60e75b319",
+      "init_file": "pick_up_the_ketchup_and_place_it_in_the_basket.init",
+      "problem_folder": "libero_object",
+      "pruned_init_file": "pick_up_the_ketchup_and_place_it_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "6b607d4a3a25cff185d5cc7ed66eb9103ec489e8a6b44a300b260d66e83e6570",
+      "state_width": 116,
+      "status": "generated",
+      "task": "pick_up_the_ketchup_and_place_it_in_the_basket"
+    },
+    {
+      "bddl_sha256": "b1f4bb69d256a05f693838de46182bb0d3de0de68eec350df1b5b1e76f6c136d",
+      "init_file": "pick_up_the_tomato_sauce_and_place_it_in_the_basket.init",
+      "problem_folder": "libero_object",
+      "pruned_init_file": "pick_up_the_tomato_sauce_and_place_it_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "887c643b609771fcdd6ecb8cb08f3e631b25bf37b2eadc58c5092c4bdfc0e12e",
+      "state_width": 116,
+      "status": "generated",
+      "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket"
+    },
+    {
+      "bddl_sha256": "5d8053b40ff33246fdbcc38548db84032c6bb647b4b88b6646d9cf6b73a5006c",
+      "init_file": "pick_up_the_butter_and_place_it_in_the_basket.init",
+      "problem_folder": "libero_object",
+      "pruned_init_file": "pick_up_the_butter_and_place_it_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "e208ae9918c80d65408d0fe80989b04f7b0f4ac858d93bb57bc3bb9bef7f8976",
+      "state_width": 116,
+      "status": "generated",
+      "task": "pick_up_the_butter_and_place_it_in_the_basket"
+    },
+    {
+      "bddl_sha256": "9910aabf6717e8ba3e24a3f8500d9bce9ee075346ea6961e8fd766f1257d2996",
+      "init_file": "pick_up_the_milk_and_place_it_in_the_basket.init",
+      "problem_folder": "libero_object",
+      "pruned_init_file": "pick_up_the_milk_and_place_it_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "3f5be4218d15d08765d33d6d8cfcdb8e82e09ed97e5636f69256cc89d6573f0c",
+      "state_width": 116,
+      "status": "generated",
+      "task": "pick_up_the_milk_and_place_it_in_the_basket"
+    },
+    {
+      "bddl_sha256": "674ceabc400b7b16d46e8eaf678709d4a633235c7e0a80233775044fe38b19b0",
+      "init_file": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket.init",
+      "problem_folder": "libero_object",
+      "pruned_init_file": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "cdefbb14b78d41d794b8d21dbe45b8c98e13c42efe95cdf194309c7ee0eeab8a",
+      "state_width": 116,
+      "status": "generated",
+      "task": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket"
+    },
+    {
+      "bddl_sha256": "6298533e7bcfb83e40779a77fda39216e8cd53f22bf1af6388585dad0abb0b50",
+      "init_file": "pick_up_the_orange_juice_and_place_it_in_the_basket.init",
+      "problem_folder": "libero_object",
+      "pruned_init_file": "pick_up_the_orange_juice_and_place_it_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "e4d80fc6876f88cb36457b751d08a82fa5c52716fa0786289ae090c35157d57d",
+      "state_width": 116,
+      "status": "generated",
+      "task": "pick_up_the_orange_juice_and_place_it_in_the_basket"
+    }
+  ]
+}

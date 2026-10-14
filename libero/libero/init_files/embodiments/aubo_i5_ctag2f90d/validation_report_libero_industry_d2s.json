@@ -1,0 +1,137 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "embodiment": "aubo_i5_ctag2f90d",
+  "init_root": "libero/libero/init_files/embodiments/aubo_i5_ctag2f90d",
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "reset_smoke": true,
+  "schema_version": 1,
+  "suite": "libero_industry_d2s",
+  "summary": {
+    "failed_tasks": 0,
+    "passed_tasks": 14,
+    "selected_tasks": 14
+  },
+  "tasks": [
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_003_SCHOOL_BUS_MARIO_PORTER_V3_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_007_MARIO_THOMAS_MINI_ROLLER_V5_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_009_SCHOOL_BUS_MARIO_PORTER_V8_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_010_MARIO_THOMAS_MINI_ROLLER_V8_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_011_PORTER_MINI_ROLLER_SCHOOL_BUS_V8_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_012_THOMAS_MINI_ROLLER_MARIO_V8_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_013_SCHOOL_BUS_THOMAS_MINI_ROLLER_M3_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_015_THOMAS_PORTER_MARIO_M3_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_016_PORTER_MINI_ROLLER_THOMAS_M3_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_017_THOMAS_MINI_ROLLER_SCHOOL_BUS_M5_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_018_SCHOOL_BUS_PORTER_MARIO_M5_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_020_SCHOOL_BUS_THOMAS_PORTER_M5_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_021_SCHOOL_BUS_MINI_ROLLER_THOMAS_M8_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_023_MARIO_THOMAS_MINI_ROLLER_M8_sort_toys_to_inlays"
+    }
+  ],
+  "validated_at": "2026-09-12T13:08:13.920193+00:00"
+}

@@ -1,0 +1,101 @@
+(define (problem LIBERO_Industry_Workbench_Ablation)
+  (:domain robosuite)
+  (:language put the akita black bowls to the moving tray)
+    (:regions
+      (ghost_init
+          (:target industry_workbench)
+          (:ranges (
+              (0.1034 0.0149 0.1234 0.0349)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (tray_init
+          (:target industry_workbench)
+          (:ranges (
+              (-0.1966 0.0149 -0.1766 0.0349)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (ghost_active_region
+          (:target conveyor_ghost_1)
+      )
+      (goal_region
+          (:target grey_plate_1)
+      )
+      (place_region_1
+          (:target grey_plate_1)
+      )
+      (place_region_2
+          (:target grey_plate_1)
+      )
+      (place_region_3
+          (:target grey_plate_1)
+      )
+      (place_region_4
+          (:target grey_plate_1)
+      )
+      (place_region_5
+          (:target grey_plate_1)
+      )
+      (place_region_6
+          (:target grey_plate_1)
+      )
+      (offset_bowl_1
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_2
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_3
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_1
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_2
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_3
+          (:target conveyor_belt_1)
+      )
+    )
+
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_ghost_1 - conveyor_ghost
+    grey_plate_1 - grey_plate
+  )
+
+  (:objects
+    ablation_akita_black_bowl_1 ablation_akita_black_bowl_2 - ablation_akita_black_bowl
+  )
+
+
+  (:obj_of_interest
+    ablation_akita_black_bowl_1
+    ablation_akita_black_bowl_2
+  )
+
+
+  (:init
+    (On conveyor_ghost_1 industry_workbench_ghost_init)
+    (On grey_plate_1 industry_workbench_tray_init)
+    (LoadSlot conveyor_ghost_1 cosmetics_tray y pulse -0.0298 service_1.5)
+    (On ablation_akita_black_bowl_1 grey_plate_1_place_region_4)
+    (On ablation_akita_black_bowl_2 grey_plate_1_place_region_6)
+  )
+
+
+  (:goal
+    (And (DynamicOn ablation_akita_black_bowl_1 conveyor_ghost_1) (DynamicOn ablation_akita_black_bowl_2 conveyor_ghost_1))
+  )
+)

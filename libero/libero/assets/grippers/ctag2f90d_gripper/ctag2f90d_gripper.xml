@@ -1,0 +1,123 @@
+<mujoco model="ctag2f90d_gripper">
+  <compiler angle="radian" meshdir="meshes"/>
+
+  <asset>
+    <mesh name="base_link" file="meshes/base_link.STL"/>
+    <mesh name="Left_1_Link" file="meshes/Left_1_Link.STL"/>
+    <mesh name="Left_Support_Link" file="meshes/Left_Support_Link.STL"/>
+    <mesh name="Left_2_Link" file="meshes/Left_2_Link.STL"/>
+    <mesh name="Right_2_Link" file="meshes/Right_2_Link.STL"/>
+    <mesh name="Right_1_Link" file="meshes/Right_1_Link.STL"/>
+    <mesh name="Right_Support_Link" file="meshes/Right_Support_Link.STL"/>
+  </asset>
+
+  <actuator>
+    <!--
+      Robosuite's JOINT_POSITION part controller supplies generalized torque
+      commands, not joint-position setpoints.  Routing that signal through a
+      <position> actuator with a microscopic gear and 20,000,000 gain
+      caused it to be clipped to the open stop.  This affine servo maps the
+      observed command interval to the factory -0.91 .. 0 rad stroke while
+      retaining a conventional 45 N m/rad stiffness, 7 N m s/rad damping, and
+      the 10 N m driver-effort limit specified by the factory URDF / CSV.
+
+      The five follower entries are zero-force placeholders required by
+      Robosuite's six-dimensional gripper-controller interface. Only the
+      factory driver is physical; follower position forces would fight the
+      factory equality constraints.
+    -->
+    <general name="Left_1_Actuator" joint="Left_1_Joint" ctrllimited="true" ctrlrange="-1 1" biastype="affine" gainprm="787.5" biasprm="-47.25 -45 -7" forcelimited="true" forcerange="-10 10"/>
+    <position name="Left_Support_Dummy" joint="Left_Support_Joint" ctrllimited="true" ctrlrange="0 0.91" kp="0" forcelimited="true" forcerange="-1 1"/>
+    <position name="Left_2_Dummy" joint="Left_2_Joint" ctrllimited="true" ctrlrange="-0.91 0" kp="0" forcelimited="true" forcerange="-1 1"/>
+    <position name="Right_2_Dummy" joint="Right_2_Joint" ctrllimited="true" ctrlrange="0 0.91" kp="0" forcelimited="true" forcerange="-1 1"/>
+    <position name="Right_1_Dummy" joint="Right_1_Joint" ctrllimited="true" ctrlrange="0 0.91" kp="0" forcelimited="true" forcerange="-1 1"/>
+    <position name="Right_Support_Dummy" joint="Right_Support_Joint" ctrllimited="true" ctrlrange="0 0.91" kp="0" forcelimited="true" forcerange="-1 1"/>
+  </actuator>
+
+  <worldbody>
+    <!-- URDF Hierarchy Restoration: Dummy Root Wrap to isolate arm attachment -->
+    <body name="base" pos="0 0 0">
+      
+      <!--
+        The factory pad meshes span Z = 0.136518 .. 0.205015 m in the open
+        CAD pose.  Place the TCP at their physical mid-plane, rather than
+        50.8 mm below the contact envelope.
+      -->
+      <body name="eef" pos="0 0 0.1707664" quat="1 0 0 0">
+        <site name="grip_site" pos="0 0 0" size="0.005" group="1"/>
+        <site name="grip_site_cylinder" pos="0 0 0" size="0.005 10" group="1"/>
+        <site name="ft_frame" pos="0 0 0" size="0.01" type="sphere" rgba="1 0 0 0" group="1"/>
+      </body>
+
+      <!-- URDF Nested Physical Base -->
+      <body name="base_link" pos="0 0 0">
+        <camera mode="fixed" name="eye_in_hand"
+                pos="0.000 0.066 0.042" quat="0 0 1 0" fovy="43"/>
+        <!--
+          SolidWorks / URDF principal ordering is Ixx, Iyy, Izz.  The prior
+          XML transposed Ixx and Iyy; preserve the CAD ordering here.
+        -->
+        <inertial pos="3.84872e-06 -4.41448e-05 0.0553868" mass="0.953456" diaginertia="0.00177628843801648 0.00187418176115802 0.000875448946929789"/>
+        <geom type="mesh" rgba="0.250980 0.250980 0.250980 1.0" mesh="base_link" group="1" conaffinity="0" contype="0"/>
+        <geom type="mesh" mesh="base_link" group="0" contype="0" conaffinity="0"/>
+
+        <!-- Left Driver Link -->
+        <body name="Left_1_Link" pos="0.030141 0 0.10415" quat="0.707105 0.707108 0 0">
+          <inertial pos="0.0202604 0.0187578 0" quat="-0.257975 0.658368 0.257975 0.658368" mass="0.0309053" diaginertia="9.19223e-06 8.92299e-06 3.59913e-07"/>
+          <joint name="Left_1_Joint" pos="0 0 0" axis="0 0 -1" range="-0.91 0" damping="0.1" armature="0.01"/>
+          <geom type="mesh" rgba="0.250980 0.250980 0.250980 1.0" mesh="Left_1_Link" group="1" conaffinity="0" contype="0"/>
+          
+          <body name="Left_Support_Link" pos="0.040359 0.037365 0">
+            <inertial pos="-0.0177926 0.0354309 -3.45319e-05" quat="0.699435 0.699435 0.10388 0.10388" mass="0.0828693" diaginertia="2.95349e-05 2.83129e-05 4.20884e-06"/>
+            <joint name="Left_Support_Joint" pos="0 0 0" axis="0 0 -1" damping="0.1" armature="0.01"/>
+            <geom type="mesh" rgba="0.250980 0.250980 0.250980 1.0" mesh="Left_Support_Link" group="1" conaffinity="0" contype="0"/>
+            <!-- High-friction, stiff collision mesh for the physical finger pad. -->
+            <geom name="left_finger_pad_collision" type="mesh" mesh="Left_Support_Link" group="0" contype="1" conaffinity="1" priority="1" condim="4" friction="3 0.1 0.001" solimp="0.98 0.99 0.001" solref="0.002 1"/>
+          </body>
+        </body>
+
+        <!-- Left Parallel Guide -->
+        <body name="Left_2_Link" pos="0.016 0 0.121" quat="0.707105 0.707108 0 0">
+          <inertial pos="0.0202604 0.0187578 0" quat="-0.257975 0.658368 0.257975 0.658368" mass="0.0309053" diaginertia="9.19223e-06 8.92299e-06 3.59913e-07"/>
+          <joint name="Left_2_Joint" pos="0 0 0" axis="0 0 -1" damping="0.1" armature="0.01"/>
+          <geom type="mesh" rgba="0.250980 0.250980 0.250980 1.0" mesh="Left_2_Link" group="1" conaffinity="0" contype="0"/>
+        </body>
+
+        <!-- Right Parallel Guide -->
+        <body name="Right_2_Link" pos="-0.016 0 0.121" quat="-2.59734e-06 -2.59735e-06 0.707108 0.707105">
+          <inertial pos="0.0202604 0.0187578 0" quat="-0.257975 0.658368 0.257975 0.658368" mass="0.0309053" diaginertia="9.19223e-06 8.92299e-06 3.59913e-07"/>
+          <joint name="Right_2_Joint" pos="0 0 0" axis="0 0 1" damping="0.1" armature="0.01"/>
+          <geom type="mesh" rgba="0.250980 0.250980 0.250980 1.0" mesh="Right_2_Link" group="1" conaffinity="0" contype="0"/>
+        </body>
+
+        <!-- Right Driver Link -->
+        <body name="Right_1_Link" pos="-0.030141 0 0.10415" quat="-2.59734e-06 -2.59735e-06 0.707108 0.707105">
+          <inertial pos="0.0202604 0.0187578 0" quat="-0.257975 0.658368 0.257975 0.658368" mass="0.0309053" diaginertia="9.19223e-06 8.92299e-06 3.59913e-07"/>
+          <joint name="Right_1_Joint" pos="0 0 0" axis="0 0 1" damping="0.1" armature="0.01"/>
+          <geom type="mesh" rgba="0.250980 0.250980 0.250980 1.0" mesh="Right_1_Link" group="1" conaffinity="0" contype="0"/>
+          
+          <body name="Right_Support_Link" pos="0.040359 0.037365 0">
+            <inertial pos="-0.0177926 0.0354309 -2.81888e-08" quat="0.699435 0.699435 0.10388 0.10388" mass="0.0828694" diaginertia="2.95349e-05 2.83129e-05 4.20884e-06"/>
+            <joint name="Right_Support_Joint" pos="0 0 0" axis="0 0 -1" damping="0.1" armature="0.01"/>
+            <geom type="mesh" rgba="0.250980 0.250980 0.250980 1.0" mesh="Right_Support_Link" group="1" conaffinity="0" contype="0"/>
+            <!-- High-friction, stiff collision mesh for the physical finger pad. -->
+            <geom name="right_finger_pad_collision" type="mesh" mesh="Right_Support_Link" group="0" contype="1" conaffinity="1" priority="1" condim="4" friction="3 0.1 0.001" solimp="0.98 0.99 0.001" solref="0.002 1"/>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <equality>
+    <joint joint1="Left_1_Joint" joint2="Left_Support_Joint" polycoef="0 -1 0 0 0"/>
+    <joint joint1="Left_1_Joint" joint2="Left_2_Joint" polycoef="0 1 0 0 0"/>
+    <joint joint1="Left_1_Joint" joint2="Right_1_Joint" polycoef="0 -1 0 0 0"/>
+    <joint joint1="Left_1_Joint" joint2="Right_2_Joint" polycoef="0 -1 0 0 0"/>
+    <joint joint1="Left_1_Joint" joint2="Right_Support_Joint" polycoef="0 -1 0 0 0"/>
+  </equality>
+
+  <sensor>
+    <force name="force_ee" site="ft_frame"/>
+    <torque name="torque_ee" site="ft_frame"/>
+  </sensor>
+</mujoco>

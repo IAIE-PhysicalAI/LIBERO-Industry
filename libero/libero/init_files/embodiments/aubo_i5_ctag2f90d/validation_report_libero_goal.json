@@ -1,0 +1,105 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "embodiment": "aubo_i5_ctag2f90d",
+  "init_root": "libero/libero/init_files/embodiments/aubo_i5_ctag2f90d",
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "reset_smoke": true,
+  "schema_version": 1,
+  "suite": "libero_goal",
+  "summary": {
+    "failed_tasks": 0,
+    "passed_tasks": 10,
+    "selected_tasks": 10
+  },
+  "tasks": [
+    {
+      "problem_folder": "libero_goal",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 85,
+      "status": "passed",
+      "task": "open_the_middle_drawer_of_the_cabinet"
+    },
+    {
+      "problem_folder": "libero_goal",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 85,
+      "status": "passed",
+      "task": "put_the_bowl_on_the_stove"
+    },
+    {
+      "problem_folder": "libero_goal",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 85,
+      "status": "passed",
+      "task": "put_the_wine_bottle_on_top_of_the_cabinet"
+    },
+    {
+      "problem_folder": "libero_goal",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 85,
+      "status": "passed",
+      "task": "open_the_top_drawer_and_put_the_bowl_inside"
+    },
+    {
+      "problem_folder": "libero_goal",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 85,
+      "status": "passed",
+      "task": "put_the_bowl_on_top_of_the_cabinet"
+    },
+    {
+      "problem_folder": "libero_goal",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 85,
+      "status": "passed",
+      "task": "push_the_plate_to_the_front_of_the_stove"
+    },
+    {
+      "problem_folder": "libero_goal",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 85,
+      "status": "passed",
+      "task": "put_the_cream_cheese_in_the_bowl"
+    },
+    {
+      "problem_folder": "libero_goal",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 85,
+      "status": "passed",
+      "task": "turn_on_the_stove"
+    },
+    {
+      "problem_folder": "libero_goal",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 85,
+      "status": "passed",
+      "task": "put_the_bowl_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_goal",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 85,
+      "status": "passed",
+      "task": "put_the_wine_bottle_on_the_rack"
+    }
+  ],
+  "validated_at": "2026-08-27T12:33:14.949658+00:00"
+}

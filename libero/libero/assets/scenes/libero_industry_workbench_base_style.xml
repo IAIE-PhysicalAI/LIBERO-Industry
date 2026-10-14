@@ -1,0 +1,87 @@
+<mujoco model="workbench_arena">
+  <asset>
+    <texture builtin="gradient" height="256" rgb1=".9 .9 1." rgb2=".2 .3 .4" type="skybox" width="256"/>
+    <texture file="../textures/dark_gray_plaster.png" type="2d" name="texplane"/>
+    <material name="floorplane" reflectance="0.0" shininess="0.0" specular="0.0" texrepeat="3 3" texture="texplane" texuniform="true"/>
+    
+    <texture file="../textures/smooth_light_gray_plaster.png" type="2d" name="tex-wall"/>
+    <material name="walls_mat" reflectance="0.0" shininess="0.3" specular="0.8" texrepeat="3 3" texture="tex-wall" texuniform="true" />
+    
+    <texture name="textable" builtin="flat" height="512" width="512" rgb1="0.8 0.8 0.8" rgb2="0.8 0.8 0.8"/>
+    <material name="table_mat" texture="textable" />
+    <material name="table_legs" reflectance="0.8" shininess="0.8" rgba="0.2 0.2 0.2 1" />
+
+
+    <texture file="industry_background/ReloadingBench_BaseColor.png" name="tex_bench" type="2d" />
+    <texture file="industry_background/ReloadingPressBoxes_BaseColor.png" name="tex_boxes" type="2d" />
+    <texture file="industry_background/ReloadingTools_BaseColor.png" name="tex_tools" type="2d" />
+
+    <material name="mat_bench" texture="tex_bench" reflectance="0.05" shininess="0.1" specular="0.1" />
+    <material name="mat_boxes" texture="tex_boxes" reflectance="0.2" shininess="0.3" specular="0.3" />
+    <material name="mat_tools" texture="tex_tools" reflectance="0.8" shininess="0.9" specular="0.9" />
+    <material name="mat_wire" rgba="0.018 0.018 0.018 1" reflectance="0.5" shininess="0.2" />
+
+    <mesh file="industry_background/bench.obj" name="industry_background_bench" />
+    <mesh file="industry_background/boxes.obj" name="industry_background_boxes" />
+    <mesh file="industry_background/tools.obj" name="industry_background_tools" />
+    <mesh file="industry_background/wire.obj" name="industry_background_wire" />
+
+    <texture file="industry_shelf/cart_BaseColor.png" name="tex_cart" type="2d" />
+    <texture file="industry_shelf/desk.png" name="tex_desk" type="2d" />
+    <texture file="industry_shelf/extenguisher_BaseColor.png" name="tex_extinguisher" type="2d" />
+    <texture file="industry_shelf/shelf_BaseColor.png" name="tex_shelf" type="2d" />
+
+    <material name="mat_cart" texture="tex_cart" reflectance="0.3" shininess="0.5" specular="0.5" />
+    <material name="mat_desk" texture="tex_desk" reflectance="0.05" shininess="0.1" specular="0.1" />
+    <material name="mat_extinguisher" texture="tex_extinguisher" reflectance="0.6" shininess="0.8" specular="0.8" />
+    <material name="mat_shelf" texture="tex_shelf" reflectance="0.2" shininess="0.3" specular="0.3" />
+
+    <mesh file="industry_shelf/cart-base.obj" name="mesh_cart_base" />
+    <mesh file="industry_shelf/cart-frame.obj" name="mesh_cart_frame" />
+    <mesh file="industry_shelf/desk.obj" name="mesh_desk" />
+    <mesh file="industry_shelf/extinguisher.obj" name="mesh_extinguisher" />
+    <mesh file="industry_shelf/shelf-board.obj" name="mesh_shelf_board" />
+    <mesh file="industry_shelf/shelf-leg.obj" name="mesh_shelf_leg" />
+  </asset>
+
+  <worldbody>
+    <geom condim="3" group="1" material="floorplane" name="floor" pos="0 0 0" size="3 3 .125" type="plane"/>
+    <geom pos="0.5 3 1.5" quat="0.7071 0.7071 0 0" size="2.5 1.5 0.01" type="box" conaffinity="0" contype="0" group="1" name="wall_left_visual" material="walls_mat"/>
+    <geom pos="0.5 -3 1.5" quat="0.7071 -0.7071 0 0" size="2.5 1.5 0.01" type="box" conaffinity="0" contype="0" group="1" name="wall_right_visual" material="walls_mat"/>
+    <geom pos="-2 0 1.5" quat="0.5 0.5 0.5 0.5" size="3 1.5 0.01" type="box" conaffinity="0" contype="0" group="1" name="wall_rear_visual" material="walls_mat"/>
+    <geom pos="3 0 1.5" quat="0.5 0.5 -0.5 -0.5" size="3 1.5 0.01" type="box" conaffinity="0" contype="0" group="1" name="wall_front_visual" material="walls_mat"/>
+
+    <body name="table" pos="0 0 0.4">
+      <geom pos="0 0 0" size="0.4 0.4 0.4" type="box" group="0" name="table_collision" friction="1 0.005 0.0001"/>
+      <geom pos="0 0 0" size="0.4 0.4 0.4" type="box" conaffinity="0" contype="0" group="1" name="table_visual" material="table_mat"/>
+      <site pos="0 0 0.4" name="table_top" size="0.001 0.001 0.001" rgba="0 0 0 0"/>
+      
+      <geom pos="0 0 0" size="0.05 0.1" type="cylinder" conaffinity="0" contype="0" group="1" name="table_leg1_visual" material="table_legs"/>
+      <geom pos="0 0 0" size="0.05 0.1" type="cylinder" conaffinity="0" contype="0" group="1" name="table_leg2_visual" material="table_legs"/>
+      <geom pos="0 0 0" size="0.05 0.1" type="cylinder" conaffinity="0" contype="0" group="1" name="table_leg3_visual" material="table_legs"/>
+      <geom pos="0 0 0" size="0.05 0.1" type="cylinder" conaffinity="0" contype="0" group="1" name="table_leg4_visual" material="table_legs"/>
+    </body>
+
+    <body name="furniture_bench" pos="-1.65 0 0" quat="0.7071 0 0 0.7071">
+      <geom type="mesh" mesh="industry_background_bench" conaffinity="0" contype="0" group="1" material="mat_bench"/>
+      <geom type="mesh" mesh="industry_background_boxes" conaffinity="0" contype="0" group="1" material="mat_boxes"/>
+      <geom type="mesh" mesh="industry_background_tools" conaffinity="0" contype="0" group="1" material="mat_tools"/>
+      <geom type="mesh" mesh="industry_background_wire" conaffinity="0" contype="0" group="1" material="mat_wire"/>
+      <geom type="box" size="2.25 0.4525 0.525" pos="0 0 0.525" group="0" rgba="0.8 0.8 0.8 0.0" contype="0" conaffinity="0" />
+    </body>
+
+    <body name="furniture_shelf" pos="3 0 0" quat="0 0 0 1">
+      <geom type="mesh" mesh="mesh_cart_base" material="mat_cart" group="1" conaffinity="0" contype="0" />
+      <geom type="mesh" mesh="mesh_cart_frame" material="mat_cart" group="1" conaffinity="0" contype="0" />
+      <geom type="mesh" mesh="mesh_shelf_board" material="mat_shelf" group="1" conaffinity="0" contype="0" />
+      <geom type="mesh" mesh="mesh_shelf_leg" material="mat_shelf" group="1" conaffinity="0" contype="0" /> 
+      <geom type="mesh" mesh="mesh_desk" material="mat_desk" group="1" conaffinity="0" contype="0" />
+      <geom type="mesh" mesh="mesh_extinguisher" material="mat_extinguisher" group="1" conaffinity="0" contype="0" />
+      <geom type="box" size="1.0 0.3 0.9" pos="0 0 0.9" group="0" rgba="0.8 0.8 0.8 0.0" />
+    </body>
+    <light name="light_industry" diffuse=".8 .8 .8" dir="0 0 -1" directional="true" pos="-1.75 0 1.6" specular="0.8 0.8 0.8" castshadow="false"/>
+    <light name="light1" diffuse=".8 .8 .8" dir="0 -.15 -1" directional="false" pos="1 1 4.0" specular="0.3 0.3 0.3" castshadow="false"/>
+    <light name="light2" diffuse=".8 .8 .8" dir="0 -.15 -1" directional="false" pos="-3. -3. 4.0" specular="0.3 0.3 0.3" castshadow="false"/>
+
+  </worldbody>
+</mujoco>

@@ -1,0 +1,20 @@
+<mujoco model="thomas_upright_groove">
+    <worldbody>
+        <body>
+        <body name="object" pos="0 0 0" quat="1 0 0 0"> 
+            <body name="thomas_upright_groove" pos="0 0 0" quat="1 0 0 0"> 
+                <inertial pos="0 0 0" mass="0.5" diaginertia="1e-3 1e-3 1e-3" />
+                  <geom name="groove_bottom" type="box" size="0.03702070043981075 0.05284883493185043 0.0025" pos="0 0 0.0025" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="groove_wall_left" type="box" size="0.002 0.05284883493185043 0.01" pos="-0.03502070043981075 0 0.015" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="groove_wall_right" type="box" size="0.002 0.05284883493185043 0.01" pos="0.03502070043981075 0 0.015" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="groove_wall_front" type="box" size="0.03302070043981075 0.002 0.01" pos="0 -0.05084883493185043 0.015" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="groove_wall_back" type="box" size="0.03302070043981075 0.002 0.01" pos="0 0.05084883493185043 0.015" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <site name="goal_region" type="box" size="0.02802070043981075 0.04884883493185043 0.001" pos="0 0 0.01" quat="1 0 0 0" rgba="0 1 0 0.4" group="0" />
+            </body>
+        </body>
+        <site rgba="0 0 0 0" size="0.01" pos="0 0 0" quat="1 0 0 0" name="bottom_site" />        
+        <site rgba="0 0 0 0" size="0.01" pos="0 0 0.0250" quat="1 0 0 0" name="top_site" />   
+        <site rgba="0 0 0 0" size="0.01" pos="0.0370 0.0528 0" quat="1 0 0 0" name="horizontal_radius_site" />
+        </body>
+    </worldbody>
+    </mujoco>

@@ -1,0 +1,116 @@
+<mujoco model="school_bus_flat_inlay">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <mesh file="school_bus_flat_inlay.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_0.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_1.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_2.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_3.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_4.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_5.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_6.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_7.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_8.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_9.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_10.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_11.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_12.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_13.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_14.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_15.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_16.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_17.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_18.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_19.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_20.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_21.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_22.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_23.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_24.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_25.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_26.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_27.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_28.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_29.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_30.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_31.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_32.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_33.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_34.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_35.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_36.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_37.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_38.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_39.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_40.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_41.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_42.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_43.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_44.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_45.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_46.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_47.obj"/>
+    <mesh file="school_bus_flat_inlay_collision_48.obj"/>
+  </asset>
+  <worldbody>
+    <body name="school_bus_flat_inlay">
+      <geom mesh="school_bus_flat_inlay" class="visual"/>
+      <geom mesh="school_bus_flat_inlay_collision_0" rgba="0.6843717544367238 0.2952971678894707 0.023290033020476386 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_1" rgba="0.26073813055638706 0.05530193064776456 0.24656267467409243 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_2" rgba="0.533899693926348 0.302411209238969 0.2690273695982448 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_3" rgba="0.9833562689595235 0.23820695088648902 0.09999738663096869 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_4" rgba="0.3005938585865453 0.08190214590734657 0.12723434780967868 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_5" rgba="0.812353878590281 0.641702675822435 0.6910918733628127 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_6" rgba="0.7410715928379894 0.5970034328722484 0.4105679355110766 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_7" rgba="0.7679811452703064 0.14516641376764428 0.02520824370949326 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_8" rgba="0.13927876391486793 0.3848358381774749 0.8229944796905883 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_9" rgba="0.5171038472637932 0.037005271741116896 0.0047815148438522526 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_10" rgba="0.6848798948610197 0.83543130997967 0.8094851467365487 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_11" rgba="0.16923031331477345 0.39004266966544343 0.8417738550041785 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_12" rgba="0.9109857119632957 0.41079781273631244 0.4044011830636213 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_13" rgba="0.9452974772109773 0.8279674314272816 0.12163609940258391 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_14" rgba="0.9359528541759746 0.16943331454934896 0.5306634722546402 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_15" rgba="0.3944758108637221 0.7369792539406212 0.792680097331057 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_16" rgba="0.5234580749018782 0.873396328471746 0.5332430782675968 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_17" rgba="0.5135649794951493 0.9065687096631319 0.3283671147314977 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_18" rgba="0.468575336747044 0.5826195476349952 0.23952650039780266 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_19" rgba="0.6804023449681889 0.4677986686587937 0.3874872115410921 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_20" rgba="0.21745702384482812 0.8797500935875097 0.14144543426091216 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_21" rgba="0.5882077784042835 0.8589133089721762 0.5384961510921278 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_22" rgba="0.9409008814726594 0.6353474492899117 0.7881370034667325 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_23" rgba="0.9107722646084433 0.14413469175438365 0.19978013319378973 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_24" rgba="0.019209297974872364 0.28218316692700507 0.5030861485692962 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_25" rgba="0.3558483932248797 0.7400650774706893 0.5036251670723432 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_26" rgba="0.5545942841667766 0.03521181956187047 0.17871133203436973 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_27" rgba="0.9545734065141199 0.42421688367390686 0.8627201190356107 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_28" rgba="0.5309894931820148 0.8551087501624889 0.5901800383130743 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_29" rgba="0.9193876882884813 0.6244256506982023 0.5772801386492291 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_30" rgba="0.22621909021417086 0.770792530604094 0.9383648626107132 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_31" rgba="0.8549190242289368 0.8713623523222773 0.5245556023646007 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_32" rgba="0.017663188923330853 0.6134479296290659 0.24804626054789325 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_33" rgba="0.2983737910713665 0.6442281819991057 0.5653999084287513 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_34" rgba="0.15425492998628332 0.22058538660039662 0.7272444282678957 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_35" rgba="0.7972290018702572 0.5935976663447858 0.38169438980041415 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_36" rgba="0.6508960362589729 0.1402936042097821 0.25931123873303363 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_37" rgba="0.46303530864774667 0.04788128902904709 0.33969777986116056 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_38" rgba="0.5873011814925617 0.4789048920254835 0.6457617080476172 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_39" rgba="0.6731234671886477 0.4660922701090583 0.7300104336860587 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_40" rgba="0.06574966456331577 0.21935984026433053 0.7087797914587272 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_41" rgba="0.6182880458469937 0.09302150669913134 0.5522270692083795 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_42" rgba="0.13103723391024236 0.18337316011247295 0.9628400720096514 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_43" rgba="0.9669651006060334 0.869909002535705 0.0958702202627909 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_44" rgba="0.01882191963399127 0.017910143018009417 0.33267585714163317 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_45" rgba="0.22061850428970076 0.05050076486009458 0.08868146272936661 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_46" rgba="0.4899656593101178 0.509816074604659 0.6660018179525852 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_47" rgba="0.37544767562639414 0.2048009270089507 0.9537720632375629 1" class="collision"/>
+      <geom mesh="school_bus_flat_inlay_collision_48" rgba="0.22408252016288466 0.5801012585275135 0.803859069290687 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

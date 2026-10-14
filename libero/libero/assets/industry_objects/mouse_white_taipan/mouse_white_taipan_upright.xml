@@ -1,0 +1,79 @@
+<mujoco model="mouse_white_taipan">
+  <default>
+    <default class="visual">
+      <geom group="1" type="mesh" contype="0" conaffinity="0" />
+    </default>
+    <default class="collision">
+      <geom group="0" type="mesh" friction="1.0 0.05 0.0001" solimp="0.9 0.95 0.001" solref="0.02 1" />
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="texture" file="texture.png" />
+    <material name="material_0" texture="texture" specular="0.5" shininess="0.5" />
+    <mesh name="model" file="model.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_0" file="model_collision_0.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_1" file="model_collision_1.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_2" file="model_collision_2.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_3" file="model_collision_3.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_4" file="model_collision_4.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_5" file="model_collision_5.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_6" file="model_collision_6.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_7" file="model_collision_7.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_8" file="model_collision_8.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_9" file="model_collision_9.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_10" file="model_collision_10.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_11" file="model_collision_11.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_12" file="model_collision_12.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_13" file="model_collision_13.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_14" file="model_collision_14.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_15" file="model_collision_15.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_16" file="model_collision_16.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_17" file="model_collision_17.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_18" file="model_collision_18.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_19" file="model_collision_19.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_20" file="model_collision_20.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_21" file="model_collision_21.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_22" file="model_collision_22.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_23" file="model_collision_23.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_24" file="model_collision_24.obj" scale="0.80000 0.80000 0.80000" />
+    <mesh name="model_collision_25" file="model_collision_25.obj" scale="0.80000 0.80000 0.80000" />
+  </asset>
+  
+  <worldbody>
+    <body>
+      <body name="object" pos="0 0 0" quat="1 0 0 0">
+        <inertial pos="0.00000 0.00000 0.00000" mass="0.05243" diaginertia="0.000107 0.000107 0.000107" />
+        <geom material="material_0" mesh="model" class="visual" />
+        <geom mesh="model_collision_0" class="collision" />
+        <geom mesh="model_collision_1" class="collision" />
+        <geom mesh="model_collision_2" class="collision" />
+        <geom mesh="model_collision_3" class="collision" />
+        <geom mesh="model_collision_4" class="collision" />
+        <geom mesh="model_collision_5" class="collision" />
+        <geom mesh="model_collision_6" class="collision" />
+        <geom mesh="model_collision_7" class="collision" />
+        <geom mesh="model_collision_8" class="collision" />
+        <geom mesh="model_collision_9" class="collision" />
+        <geom mesh="model_collision_10" class="collision" />
+        <geom mesh="model_collision_11" class="collision" />
+        <geom mesh="model_collision_12" class="collision" />
+        <geom mesh="model_collision_13" class="collision" />
+        <geom mesh="model_collision_14" class="collision" />
+        <geom mesh="model_collision_15" class="collision" />
+        <geom mesh="model_collision_16" class="collision" />
+        <geom mesh="model_collision_17" class="collision" />
+        <geom mesh="model_collision_18" class="collision" />
+        <geom mesh="model_collision_19" class="collision" />
+        <geom mesh="model_collision_20" class="collision" />
+        <geom mesh="model_collision_21" class="collision" />
+        <geom mesh="model_collision_22" class="collision" />
+        <geom mesh="model_collision_23" class="collision" />
+        <geom mesh="model_collision_24" class="collision" />
+        <geom mesh="model_collision_25" class="collision" />
+      </body>
+      <site rgba="0 0 0 0" size="0.00640" pos="0.00000 0.00000 -0.01542" quat="1 0 0 0" name="bottom_site" />        
+      <site rgba="0 0 0 0" size="0.00640" pos="0.00000 0.00000 0.01654" quat="1 0 0 0" name="top_site" />   
+      <site rgba="0 0 0 0" size="0.00640" pos="-0.00436 -0.05637 0.00000" quat="1 0 0 0" name="horizontal_radius_site" />
+    </body>
+  </worldbody>
+</mujoco>

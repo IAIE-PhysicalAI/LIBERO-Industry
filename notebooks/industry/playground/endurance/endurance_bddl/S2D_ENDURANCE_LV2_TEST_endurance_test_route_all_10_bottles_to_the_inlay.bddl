@@ -1,0 +1,63 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language endurance test: route all 10 bottles to the inlay)
+    (:regions
+      (ghost_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (0.099 -0.001 0.101 0.001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (massive_spawn_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.5 -0.25 0.0 0.25)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (ghost_active_region
+          (:target conveyor_ghost_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_ghost_1 - conveyor_ghost
+  )
+
+  (:objects
+    pump_bottle_flat_1 pump_bottle_flat_2 pump_bottle_flat_3 pump_bottle_flat_4 pump_bottle_flat_5 pump_bottle_flat_6 pump_bottle_flat_7 pump_bottle_flat_8 pump_bottle_flat_9 pump_bottle_flat_10 - pump_bottle_flat
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_ghost_1 industry_workbench_ghost_init_region)
+    (LoadSlot conveyor_ghost_1 pump_bottle_flat_groove y pulse 0.05)
+    (On pump_bottle_flat_1 industry_workbench_massive_spawn_region)
+    (On pump_bottle_flat_2 industry_workbench_massive_spawn_region)
+    (On pump_bottle_flat_3 industry_workbench_massive_spawn_region)
+    (On pump_bottle_flat_4 industry_workbench_massive_spawn_region)
+    (On pump_bottle_flat_5 industry_workbench_massive_spawn_region)
+    (On pump_bottle_flat_6 industry_workbench_massive_spawn_region)
+    (On pump_bottle_flat_7 industry_workbench_massive_spawn_region)
+    (On pump_bottle_flat_8 industry_workbench_massive_spawn_region)
+    (On pump_bottle_flat_9 industry_workbench_massive_spawn_region)
+    (On pump_bottle_flat_10 industry_workbench_massive_spawn_region)
+  )
+
+  (:goal
+    (And (Routed pump_bottle_flat_1 conveyor_ghost_1) (Routed pump_bottle_flat_2 conveyor_ghost_1) (Routed pump_bottle_flat_3 conveyor_ghost_1) (Routed pump_bottle_flat_4 conveyor_ghost_1) (Routed pump_bottle_flat_5 conveyor_ghost_1) (Routed pump_bottle_flat_6 conveyor_ghost_1) (Routed pump_bottle_flat_7 conveyor_ghost_1) (Routed pump_bottle_flat_8 conveyor_ghost_1) (Routed pump_bottle_flat_9 conveyor_ghost_1) (Routed pump_bottle_flat_10 conveyor_ghost_1))
+  )
+
+)

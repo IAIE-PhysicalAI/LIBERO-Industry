@@ -1,0 +1,96 @@
+(define (problem LIBERO_Industry_Workbench_Ablation)
+  (:domain robosuite)
+  (:language put the akita black bowls from the conveyor into the moving tray)
+    (:regions
+      (belt_init
+          (:target industry_workbench)
+          (:ranges (
+              (-0.11832885214709007 0.3042810686184246 -0.09832885214709008 0.3242810686184246)
+            )
+          )
+          (:yaw_rotation (
+              (1.5707963267948966 1.5707963267948966)
+            )
+          )
+      )
+      (ghost_init
+          (:target industry_workbench)
+          (:ranges (
+              (0.03667114785290992 -0.1457189313815754 0.05667114785290992 -0.1257189313815754)
+            )
+          )
+          (:yaw_rotation (
+              (1.5707963267948966 1.5707963267948966)
+            )
+          )
+      )
+      (contact_region
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_1
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_2
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_3
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_1
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_2
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_3
+          (:target conveyor_belt_1)
+      )
+      (ablation_region_d2s
+          (:target conveyor_belt_1)
+      )
+      (ablation_region_d2d
+          (:target conveyor_belt_1)
+      )
+      (centre_region
+          (:target conveyor_belt_1)
+      )
+      (centre_region_d2d
+          (:target conveyor_belt_1)
+      )
+      (ghost_active_region
+          (:target conveyor_ghost_1)
+      )
+    )
+
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_belt_1 - conveyor_belt
+    conveyor_ghost_1 - conveyor_ghost
+  )
+
+  (:objects
+    ablation_akita_black_bowl_1 ablation_akita_black_bowl_2 - ablation_akita_black_bowl
+  )
+
+
+  (:obj_of_interest
+    ablation_akita_black_bowl_1
+    ablation_akita_black_bowl_2
+  )
+
+
+  (:init
+    (On conveyor_belt_1 industry_workbench_belt_init)
+    (AtSpeed conveyor_belt_1 -0.0297 steady takt_4.0 offset_1.5)
+    (On conveyor_ghost_1 industry_workbench_ghost_init)
+    (LoadSlot conveyor_ghost_1 electronics_tray y pulse -0.0297 service_1.5)
+    (On ablation_akita_black_bowl_1 conveyor_belt_1_tail_bowl_2)
+    (On ablation_akita_black_bowl_2 conveyor_belt_1_tail_bowl_3)
+  )
+
+
+  (:goal
+    (And (DynamicOn ablation_akita_black_bowl_1 conveyor_ghost_1) (DynamicOn ablation_akita_black_bowl_2 conveyor_ghost_1))
+  )
+)

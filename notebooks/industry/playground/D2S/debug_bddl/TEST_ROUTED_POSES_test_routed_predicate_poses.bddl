@@ -1,0 +1,57 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language test routed predicate poses)
+    (:regions
+      (ghost_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.01 -0.01 0.01 0.01)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (dummy_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.5 -0.2 -0.09999999999999998 0.2)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (ghost_active_region
+          (:target conveyor_ghost_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_ghost_1 - conveyor_ghost
+  )
+
+  (:objects
+    pump_bottle_flat_1 pump_bottle_flat_2 pump_bottle_flat_3 pump_bottle_flat_4 - pump_bottle_flat
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_ghost_1 industry_workbench_ghost_init_region)
+    (LoadSlot conveyor_ghost_1 pump_bottle_flat_groove x pulse 0.05)
+    (On pump_bottle_flat_1 industry_workbench_dummy_region)
+    (On pump_bottle_flat_2 industry_workbench_dummy_region)
+    (On pump_bottle_flat_3 industry_workbench_dummy_region)
+    (On pump_bottle_flat_4 industry_workbench_dummy_region)
+  )
+
+  (:goal
+    (And (Routed pump_bottle_flat_1 conveyor_ghost_1) (Routed pump_bottle_flat_2 conveyor_ghost_1) (Routed pump_bottle_flat_3 conveyor_ghost_1) (Routed pump_bottle_flat_4 conveyor_ghost_1))
+  )
+
+)

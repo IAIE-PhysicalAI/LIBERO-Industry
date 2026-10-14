@@ -1,0 +1,28 @@
+<mujoco model="body">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <mesh file="body.obj"/>
+    <mesh file="body_collision_0.obj"/>
+    <mesh file="body_collision_1.obj"/>
+    <mesh file="body_collision_2.obj"/>
+    <mesh file="body_collision_3.obj"/>
+    <mesh file="body_collision_4.obj"/>
+  </asset>
+  <worldbody>
+    <body name="body">
+      <geom mesh="body" class="visual"/>
+      <geom mesh="body_collision_0" rgba="0.680360732862357 0.9012466046415846 0.3779591046728319 1" class="collision"/>
+      <geom mesh="body_collision_1" rgba="0.6735127168753922 0.5241165358513051 0.9800112218217533 1" class="collision"/>
+      <geom mesh="body_collision_2" rgba="0.6911903482456899 0.5580405286854001 0.9870244076711141 1" class="collision"/>
+      <geom mesh="body_collision_3" rgba="0.8635358008175332 0.4707049766172421 0.33057629342348493 1" class="collision"/>
+      <geom mesh="body_collision_4" rgba="0.8471249871191799 0.754004727121561 0.5313001707002427 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

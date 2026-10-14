@@ -1,0 +1,138 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language pick the objects from the conveyor and place them on the plate)
+    (:regions
+      (belt_init
+          (:target industry_workbench)
+          (:ranges (
+              (0.005361712101362958 0.01835230658763229 0.007361712101362958 0.02035230658763229)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (target_init_0
+          (:target industry_workbench)
+          (:ranges (
+              (-0.23463828789863703 0.01835230658763229 -0.23263828789863703 0.02035230658763229)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (contact_region
+          (:target conveyor_belt_1)
+      )
+      (offset_region_1
+          (:target conveyor_belt_1)
+      )
+      (offset_region_2
+          (:target conveyor_belt_1)
+      )
+      (offset_region_3
+          (:target conveyor_belt_1)
+      )
+      (offset_region_4
+          (:target conveyor_belt_1)
+      )
+      (tail_region_1
+          (:target conveyor_belt_1)
+      )
+      (tail_region_2
+          (:target conveyor_belt_1)
+      )
+      (tail_region_3
+          (:target conveyor_belt_1)
+      )
+      (tail_region_4
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_1
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_2
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_3
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_1
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_2
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_3
+          (:target conveyor_belt_1)
+      )
+      (ablation_region_d2s
+          (:target conveyor_belt_1)
+      )
+      (ablation_region_d2d
+          (:target conveyor_belt_1)
+      )
+      (centre_region
+          (:target conveyor_belt_1)
+      )
+      (centre_region_d2d
+          (:target conveyor_belt_1)
+      )
+      (goal_region
+          (:target toy_tray_1)
+      )
+      (place_region_1
+          (:target toy_tray_1)
+      )
+      (place_region_2
+          (:target toy_tray_1)
+      )
+      (place_region_3
+          (:target toy_tray_1)
+      )
+      (place_region_4
+          (:target toy_tray_1)
+      )
+      (place_region_5
+          (:target toy_tray_1)
+      )
+      (place_region_6
+          (:target toy_tray_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_belt_1 - conveyor_belt
+    toy_tray_1 - toy_tray
+  )
+
+  (:objects
+    mario_flat_1 - mario_flat
+    school_bus_upright_1 - school_bus_upright
+    thomas_upright_1 - thomas_upright
+  )
+
+  (:obj_of_interest
+    mario_flat_1
+    school_bus_upright_1
+    thomas_upright_1
+  )
+
+  (:init
+    (On conveyor_belt_1 industry_workbench_belt_init)
+    (AtSpeed conveyor_belt_1 -0.0312 steady takt_4.0 offset_1.5)
+    (On toy_tray_1 industry_workbench_target_init_0)
+    (On mario_flat_1 conveyor_belt_1_tail_region_1)
+    (On school_bus_upright_1 conveyor_belt_1_tail_region_2)
+    (On thomas_upright_1 conveyor_belt_1_tail_region_3)
+  )
+
+  (:goal
+    (And (ReleasedOn mario_flat_1 toy_tray_1_goal_region) (ReleasedOn school_bus_upright_1 toy_tray_1_goal_region) (ReleasedOn thomas_upright_1 toy_tray_1_goal_region))
+  )
+
+)

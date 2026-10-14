@@ -1,0 +1,24 @@
+{
+  "embodiment": "panda",
+  "generated_at": "2026-10-11T04:50:56.028927+00:00",
+  "profile": {
+    "compact_filenames": false,
+    "gripper_types": "default",
+    "name": "panda",
+    "relative_init_root": null,
+    "robots": [
+      "Panda"
+    ]
+  },
+  "schema_version": 1,
+  "source_commit": "ab9bdee89a6c1f3a8ff56e80cf36fb49cc0e04a8",
+  "state_format": "torch-saved numpy.ndarray[num_states, flattened_mujoco_state]",
+  "versions": {
+    "mujoco": "3.2.3",
+    "mujoco_py": null,
+    "numpy": "1.22.4",
+    "python": "3.8.20",
+    "robosuite": "1.4.0",
+    "torch": "1.11.0+cpu"
+  }
+}

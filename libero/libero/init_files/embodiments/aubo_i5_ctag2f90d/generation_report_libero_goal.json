@@ -1,0 +1,148 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "dry_run": false,
+  "embodiment": "aubo_i5_ctag2f90d",
+  "finished_at": "2026-08-27T12:29:04.377086+00:00",
+  "init_policy": "standard",
+  "init_root": "libero/libero/init_files/embodiments/aubo_i5_ctag2f90d",
+  "overwrite": false,
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "schema_version": 1,
+  "seed": 42,
+  "selectors": {
+    "families": null,
+    "levels": null,
+    "tasks": null
+  },
+  "source_commit": "9de5207f17e3d73df7de987a3750fb6fa8994ed9",
+  "started_at": "2026-08-27T12:26:33.877453+00:00",
+  "suite": "libero_goal",
+  "summary": {
+    "failed_tasks": 0,
+    "selected_tasks": 10,
+    "successful_tasks": 10
+  },
+  "takt_horizon_applied": false,
+  "target_states": 50,
+  "task_map_synchronized": false,
+  "tasks": [
+    {
+      "bddl_sha256": "832ab48ec476807c767e8985666e295700f92d1f8daeae1c34eee1e75293769b",
+      "init_file": "open_the_middle_drawer_of_the_cabinet.init",
+      "problem_folder": "libero_goal",
+      "pruned_init_file": "open_the_middle_drawer_of_the_cabinet.pruned_init",
+      "state_count": 50,
+      "state_sha256": "6126c90b4e109acb21660934740f7de8da3d2bba5c119104d2248bf076d53598",
+      "state_width": 85,
+      "status": "generated",
+      "task": "open_the_middle_drawer_of_the_cabinet"
+    },
+    {
+      "bddl_sha256": "c6812d6c988be830412aa6fc4801af04d60f8c4565d2625763b6a0f2b843a87f",
+      "init_file": "put_the_bowl_on_the_stove.init",
+      "problem_folder": "libero_goal",
+      "pruned_init_file": "put_the_bowl_on_the_stove.pruned_init",
+      "state_count": 50,
+      "state_sha256": "80e2c1ea4c20a181912e7bc819999d22a3a3d85b4cda1c4aa3d66b53ba0818f6",
+      "state_width": 85,
+      "status": "generated",
+      "task": "put_the_bowl_on_the_stove"
+    },
+    {
+      "bddl_sha256": "2ef6f403a8451e216af44158c1a6c975cf8e5058ad02d78367ac0be443d096fe",
+      "init_file": "put_the_wine_bottle_on_top_of_the_cabinet.init",
+      "problem_folder": "libero_goal",
+      "pruned_init_file": "put_the_wine_bottle_on_top_of_the_cabinet.pruned_init",
+      "state_count": 50,
+      "state_sha256": "763f51dabfb501a8efe14ffc036e2fa1cd2a5e95cee204ede75cab5b1454d8d7",
+      "state_width": 85,
+      "status": "generated",
+      "task": "put_the_wine_bottle_on_top_of_the_cabinet"
+    },
+    {
+      "bddl_sha256": "3056e4dc72ee590432cfb18c610fd077a572c8b8f256e45328031005dd0b6757",
+      "init_file": "open_the_top_drawer_and_put_the_bowl_inside.init",
+      "problem_folder": "libero_goal",
+      "pruned_init_file": "open_the_top_drawer_and_put_the_bowl_inside.pruned_init",
+      "state_count": 50,
+      "state_sha256": "7c12ac79520d397305a9871a9f56ced74d5ea895f7e0dbc3702eddb0db2d58a3",
+      "state_width": 85,
+      "status": "generated",
+      "task": "open_the_top_drawer_and_put_the_bowl_inside"
+    },
+    {
+      "bddl_sha256": "2ffba859a154f50c3c99ffb3420743fa5aa65c70bf7d4cd26f5bc81d07be5713",
+      "init_file": "put_the_bowl_on_top_of_the_cabinet.init",
+      "problem_folder": "libero_goal",
+      "pruned_init_file": "put_the_bowl_on_top_of_the_cabinet.pruned_init",
+      "state_count": 50,
+      "state_sha256": "5a58f7e347f0cecf7e6ab21c277410ea04954f5447755463f152fe50fa29e989",
+      "state_width": 85,
+      "status": "generated",
+      "task": "put_the_bowl_on_top_of_the_cabinet"
+    },
+    {
+      "bddl_sha256": "26f22f8ad39a4b2b344b049115c45661a877fa0b4821fb78246725e7e87d8c0b",
+      "init_file": "push_the_plate_to_the_front_of_the_stove.init",
+      "problem_folder": "libero_goal",
+      "pruned_init_file": "push_the_plate_to_the_front_of_the_stove.pruned_init",
+      "state_count": 50,
+      "state_sha256": "560cc3dc20ce2d16a2837c168fe7904e82cc53d3ead39b1cf10833d921cddefb",
+      "state_width": 85,
+      "status": "generated",
+      "task": "push_the_plate_to_the_front_of_the_stove"
+    },
+    {
+      "bddl_sha256": "81c54eace32b92466598103b3b6e8435ce90f10996ef18cec4a35fe6c4d31a98",
+      "init_file": "put_the_cream_cheese_in_the_bowl.init",
+      "problem_folder": "libero_goal",
+      "pruned_init_file": "put_the_cream_cheese_in_the_bowl.pruned_init",
+      "state_count": 50,
+      "state_sha256": "fdcfe079c72096de2c2eb2a819d9240f8eda41428d8f6ff16ca3cad39b9907aa",
+      "state_width": 85,
+      "status": "generated",
+      "task": "put_the_cream_cheese_in_the_bowl"
+    },
+    {
+      "bddl_sha256": "cbd2a0514d53226c5d09e17af40b22935d4cb6ff8fdaff0d55f555de1adecc13",
+      "init_file": "turn_on_the_stove.init",
+      "problem_folder": "libero_goal",
+      "pruned_init_file": "turn_on_the_stove.pruned_init",
+      "state_count": 50,
+      "state_sha256": "91c8a200c1d6c75a210164d1f64c56e46e4fed465e7f815496c56966b8958533",
+      "state_width": 85,
+      "status": "generated",
+      "task": "turn_on_the_stove"
+    },
+    {
+      "bddl_sha256": "358b7781437e412c67d6a7648c1c28796b6b1bf117a25e61316cb8dfeb940e5b",
+      "init_file": "put_the_bowl_on_the_plate.init",
+      "problem_folder": "libero_goal",
+      "pruned_init_file": "put_the_bowl_on_the_plate.pruned_init",
+      "state_count": 50,
+      "state_sha256": "4fe0e48419ba0ef83781e8023743c5ad8da6f2091a5e5a11e9ae1055490754c5",
+      "state_width": 85,
+      "status": "generated",
+      "task": "put_the_bowl_on_the_plate"
+    },
+    {
+      "bddl_sha256": "3d3ee18139056aa3780572cde17b1c50dc20ae0d299403f65e514e8471ba0e8e",
+      "init_file": "put_the_wine_bottle_on_the_rack.init",
+      "problem_folder": "libero_goal",
+      "pruned_init_file": "put_the_wine_bottle_on_the_rack.pruned_init",
+      "state_count": 50,
+      "state_sha256": "7a907d9fbd26be2c43c4da604de9211649d25adb0944f602007c9c8091582fb0",
+      "state_width": 85,
+      "status": "generated",
+      "task": "put_the_wine_bottle_on_the_rack"
+    }
+  ]
+}

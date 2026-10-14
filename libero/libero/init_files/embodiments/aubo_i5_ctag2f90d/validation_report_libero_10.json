@@ -1,0 +1,105 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "embodiment": "aubo_i5_ctag2f90d",
+  "init_root": "libero/libero/init_files/embodiments/aubo_i5_ctag2f90d",
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "reset_smoke": true,
+  "schema_version": 1,
+  "suite": "libero_10",
+  "summary": {
+    "failed_tasks": 0,
+    "passed_tasks": 10,
+    "selected_tasks": 10
+  },
+  "tasks": [
+    {
+      "problem_folder": "libero_10",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 129,
+      "status": "passed",
+      "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket"
+    },
+    {
+      "problem_folder": "libero_10",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 129,
+      "status": "passed",
+      "task": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket"
+    },
+    {
+      "problem_folder": "libero_10",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 53,
+      "status": "passed",
+      "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it"
+    },
+    {
+      "problem_folder": "libero_10",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 57,
+      "status": "passed",
+      "task": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it"
+    },
+    {
+      "problem_folder": "libero_10",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 90,
+      "status": "passed",
+      "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate"
+    },
+    {
+      "problem_folder": "libero_10",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 51,
+      "status": "passed",
+      "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy"
+    },
+    {
+      "problem_folder": "libero_10",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 77,
+      "status": "passed",
+      "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate"
+    },
+    {
+      "problem_folder": "libero_10",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 90,
+      "status": "passed",
+      "task": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket"
+    },
+    {
+      "problem_folder": "libero_10",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 53,
+      "status": "passed",
+      "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove"
+    },
+    {
+      "problem_folder": "libero_10",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 53,
+      "status": "passed",
+      "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it"
+    }
+  ],
+  "validated_at": "2026-08-27T12:33:39.755272+00:00"
+}

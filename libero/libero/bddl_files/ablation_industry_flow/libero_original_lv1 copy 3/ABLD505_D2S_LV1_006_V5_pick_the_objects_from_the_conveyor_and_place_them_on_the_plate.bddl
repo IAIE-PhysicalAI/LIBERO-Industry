@@ -1,0 +1,108 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language pick the objects from the conveyor and place them on the plate)
+    (:regions
+      (conveyor_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (0.069 -0.0463 0.07100000000000001 -0.0443)
+            )
+          )
+          (:yaw_rotation (
+              (1.5707963267948966 1.5707963267948966)
+            )
+          )
+      )
+      (plate_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.21100000000000002 -0.0463 -0.20900000000000002 -0.0443)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (contact_region
+          (:target conveyor_belt_1)
+      )
+      (offset_region_1
+          (:target conveyor_belt_1)
+      )
+      (offset_region_2
+          (:target conveyor_belt_1)
+      )
+      (offset_region_3
+          (:target conveyor_belt_1)
+      )
+      (offset_region_4
+          (:target conveyor_belt_1)
+      )
+      (tail_region_1
+          (:target conveyor_belt_1)
+      )
+      (tail_region_2
+          (:target conveyor_belt_1)
+      )
+      (tail_region_3
+          (:target conveyor_belt_1)
+      )
+      (tail_region_4
+          (:target conveyor_belt_1)
+      )
+      (goal_region
+          (:target grey_plate_1)
+      )
+      (place_region_1
+          (:target grey_plate_1)
+      )
+      (place_region_2
+          (:target grey_plate_1)
+      )
+      (place_region_3
+          (:target grey_plate_1)
+      )
+      (place_region_4
+          (:target grey_plate_1)
+      )
+      (place_region_5
+          (:target grey_plate_1)
+      )
+      (place_region_6
+          (:target grey_plate_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_belt_1 - conveyor_belt
+    grey_plate_1 - grey_plate
+  )
+
+  (:objects
+    school_bus_upright_1 - school_bus_upright
+    mario_flat_1 - mario_flat
+    thomas_upright_1 - thomas_upright
+  )
+
+  (:obj_of_interest
+    mario_flat_1
+    school_bus_upright_1
+    thomas_upright_1
+  )
+
+  (:init
+    (On conveyor_belt_1 industry_workbench_conveyor_init_region)
+    (AtSpeed conveyor_belt_1 0.0476 steady)
+    (On grey_plate_1 industry_workbench_plate_init_region)
+    (On mario_flat_1 conveyor_belt_1_offset_region_1)
+    (On thomas_upright_1 conveyor_belt_1_offset_region_2)
+    (On school_bus_upright_1 conveyor_belt_1_offset_region_3)
+  )
+
+  (:goal
+    (And (ReleasedOn school_bus_upright_1 grey_plate_1_goal_region) (ReleasedOn mario_flat_1 grey_plate_1_goal_region) (ReleasedOn thomas_upright_1 grey_plate_1_goal_region))
+  )
+
+)

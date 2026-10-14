@@ -1,0 +1,148 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "dry_run": false,
+  "embodiment": "aubo_i5_ctag2f90d",
+  "finished_at": "2026-08-27T12:23:40.664269+00:00",
+  "init_policy": "standard",
+  "init_root": "libero/libero/init_files/embodiments/aubo_i5_ctag2f90d",
+  "overwrite": false,
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "schema_version": 1,
+  "seed": 42,
+  "selectors": {
+    "families": null,
+    "levels": null,
+    "tasks": null
+  },
+  "source_commit": "9de5207f17e3d73df7de987a3750fb6fa8994ed9",
+  "started_at": "2026-08-27T12:20:39.781411+00:00",
+  "suite": "libero_spatial",
+  "summary": {
+    "failed_tasks": 0,
+    "selected_tasks": 10,
+    "successful_tasks": 10
+  },
+  "takt_horizon_applied": false,
+  "target_states": 50,
+  "task_map_synchronized": false,
+  "tasks": [
+    {
+      "bddl_sha256": "9b59eb1287802868ad9bc78d58e6d36d4ba31134e679cfdbdf4b0feb660c959b",
+      "init_file": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.init",
+      "problem_folder": "libero_spatial",
+      "pruned_init_file": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate.pruned_init",
+      "state_count": 50,
+      "state_sha256": "15a0f67f16f4d0527c0f2db509df1eabb0077765007473f9de7d66eeb2b2579d",
+      "state_width": 98,
+      "status": "generated",
+      "task": "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_sha256": "53a7516571412a2f46a27cbf8482d3b76dbad4221858c8f6b565d506c274e61d",
+      "init_file": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate.init",
+      "problem_folder": "libero_spatial",
+      "pruned_init_file": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate.pruned_init",
+      "state_count": 50,
+      "state_sha256": "d34f848fe9d44932fd8720f21957d73a00aebc024e47a510f602093236fcd8a1",
+      "state_width": 98,
+      "status": "generated",
+      "task": "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_sha256": "5e19880ebc844f86b89f63b172aab0b7a89f85b6e6955891f544f0ea7d0795d5",
+      "init_file": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.init",
+      "problem_folder": "libero_spatial",
+      "pruned_init_file": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate.pruned_init",
+      "state_count": 50,
+      "state_sha256": "c904b55527d02cf56d86e613a1019ec1e0c832a084e499aa5826b57d7bcd1599",
+      "state_width": 98,
+      "status": "generated",
+      "task": "pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_sha256": "3d4ccf070c3d9883ae0676f2d888588f98c696ddad71b7694f47c379fc99ef36",
+      "init_file": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate.init",
+      "problem_folder": "libero_spatial",
+      "pruned_init_file": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate.pruned_init",
+      "state_count": 50,
+      "state_sha256": "273bef8b356d998c24ce84128c4abb0919596c7d2f8aa7bf2a9d5c4c928474fe",
+      "state_width": 98,
+      "status": "generated",
+      "task": "pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_sha256": "4371189e11d9fd29bb548ab9a8adcd741bb0ce41bb66c612672d0e8cb29a52a9",
+      "init_file": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate.init",
+      "problem_folder": "libero_spatial",
+      "pruned_init_file": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate.pruned_init",
+      "state_count": 50,
+      "state_sha256": "09c77713a84539429865c408e5e51ca540a08ba8c2832838e58bb0c937ed0aa7",
+      "state_width": 98,
+      "status": "generated",
+      "task": "pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_sha256": "10239815a9d18ad53e09365d453a362ee54d29ca276e04eef411cf1db8d72940",
+      "init_file": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate.init",
+      "problem_folder": "libero_spatial",
+      "pruned_init_file": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate.pruned_init",
+      "state_count": 50,
+      "state_sha256": "0e32ee0976f7f3c2d81051a8c8391b914cab3da86772c2c1f86313b4ec1c53a7",
+      "state_width": 98,
+      "status": "generated",
+      "task": "pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_sha256": "566c65596f3472e752e6522817bff51bbf3ce5159d7bec1d3554e5ead46b1e55",
+      "init_file": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate.init",
+      "problem_folder": "libero_spatial",
+      "pruned_init_file": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate.pruned_init",
+      "state_count": 50,
+      "state_sha256": "2dc399866f91d0107c7f5d22848653584e64ae7aa9b9f240ddd1b19359f3bd7a",
+      "state_width": 98,
+      "status": "generated",
+      "task": "pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_sha256": "dd11837141a30d874ebbbfaae20e91ecc67ec85ab3872ceb4cff3abfcbef7cb0",
+      "init_file": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate.init",
+      "problem_folder": "libero_spatial",
+      "pruned_init_file": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate.pruned_init",
+      "state_count": 50,
+      "state_sha256": "2aa4655d9a2e377ac3cacd36841667e4c5748a84e5aab4b8b1126245fc479819",
+      "state_width": 98,
+      "status": "generated",
+      "task": "pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_sha256": "c8fbb9effa27b947d04d26862d75273d93cac1806734e53836cd472a08aec1fe",
+      "init_file": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate.init",
+      "problem_folder": "libero_spatial",
+      "pruned_init_file": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate.pruned_init",
+      "state_count": 50,
+      "state_sha256": "3d96dace003286641d07ac4c8d435fd0cbd95d5ddb3917b83f41c75b651de1d1",
+      "state_width": 98,
+      "status": "generated",
+      "task": "pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate"
+    },
+    {
+      "bddl_sha256": "5293e759381b477e126beaf83d738542bbd4d93f522a3eead1066e612bad4a8c",
+      "init_file": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.init",
+      "problem_folder": "libero_spatial",
+      "pruned_init_file": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate.pruned_init",
+      "state_count": 50,
+      "state_sha256": "d2c9564a5a8f4cf82c30ad4a3df504f06fe0c52292e0ff15a24965f008bd92af",
+      "state_width": 98,
+      "status": "generated",
+      "task": "pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate"
+    }
+  ]
+}

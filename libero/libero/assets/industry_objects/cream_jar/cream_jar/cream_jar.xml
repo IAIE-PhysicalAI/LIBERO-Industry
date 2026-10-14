@@ -1,0 +1,100 @@
+<mujoco model="cream_jar">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <material name="Material.003" specular="0.5" shininess="0.25" rgba="0.800000 0.800000 0.800000 1.000000"/>
+    <material name="Material.004" specular="0.5" shininess="0.36" rgba="0.599630 0.209752 0.031296 1.000000"/>
+    <mesh file="cream_jar_0.obj"/>
+    <mesh file="cream_jar_1.obj"/>
+    <mesh file="cream_jar_collision_0.obj"/>
+    <mesh file="cream_jar_collision_1.obj"/>
+    <mesh file="cream_jar_collision_2.obj"/>
+    <mesh file="cream_jar_collision_3.obj"/>
+    <mesh file="cream_jar_collision_4.obj"/>
+    <mesh file="cream_jar_collision_5.obj"/>
+    <mesh file="cream_jar_collision_6.obj"/>
+    <mesh file="cream_jar_collision_7.obj"/>
+    <mesh file="cream_jar_collision_8.obj"/>
+    <mesh file="cream_jar_collision_9.obj"/>
+    <mesh file="cream_jar_collision_10.obj"/>
+    <mesh file="cream_jar_collision_11.obj"/>
+    <mesh file="cream_jar_collision_12.obj"/>
+    <mesh file="cream_jar_collision_13.obj"/>
+    <mesh file="cream_jar_collision_14.obj"/>
+    <mesh file="cream_jar_collision_15.obj"/>
+    <mesh file="cream_jar_collision_16.obj"/>
+    <mesh file="cream_jar_collision_17.obj"/>
+    <mesh file="cream_jar_collision_18.obj"/>
+    <mesh file="cream_jar_collision_19.obj"/>
+    <mesh file="cream_jar_collision_20.obj"/>
+    <mesh file="cream_jar_collision_21.obj"/>
+    <mesh file="cream_jar_collision_22.obj"/>
+    <mesh file="cream_jar_collision_23.obj"/>
+    <mesh file="cream_jar_collision_24.obj"/>
+    <mesh file="cream_jar_collision_25.obj"/>
+    <mesh file="cream_jar_collision_26.obj"/>
+    <mesh file="cream_jar_collision_27.obj"/>
+    <mesh file="cream_jar_collision_28.obj"/>
+    <mesh file="cream_jar_collision_29.obj"/>
+    <mesh file="cream_jar_collision_30.obj"/>
+    <mesh file="cream_jar_collision_31.obj"/>
+    <mesh file="cream_jar_collision_32.obj"/>
+    <mesh file="cream_jar_collision_33.obj"/>
+    <mesh file="cream_jar_collision_34.obj"/>
+    <mesh file="cream_jar_collision_35.obj"/>
+    <mesh file="cream_jar_collision_36.obj"/>
+    <mesh file="cream_jar_collision_37.obj"/>
+    <mesh file="cream_jar_collision_38.obj"/>
+  </asset>
+  <worldbody>
+    <body name="cream_jar">
+      <geom mesh="cream_jar_0" material="Material.003" class="visual"/>
+      <geom mesh="cream_jar_1" material="Material.004" class="visual"/>
+      <geom mesh="cream_jar_collision_0" rgba="0.399173277833497 0.7919114831084884 0.3217507722476126 1" class="collision"/>
+      <geom mesh="cream_jar_collision_1" rgba="0.8993928753548661 0.4687063070490419 0.8973037078793671 1" class="collision"/>
+      <geom mesh="cream_jar_collision_2" rgba="0.33798690437448786 0.25953410867694604 0.7845519673215423 1" class="collision"/>
+      <geom mesh="cream_jar_collision_3" rgba="0.33027360952000984 0.3773977729288065 0.9049440648771314 1" class="collision"/>
+      <geom mesh="cream_jar_collision_4" rgba="0.7046665576724003 0.6745675329219268 0.6832582232770684 1" class="collision"/>
+      <geom mesh="cream_jar_collision_5" rgba="0.8576660979862784 0.012468608916161972 0.3237605766974577 1" class="collision"/>
+      <geom mesh="cream_jar_collision_6" rgba="0.7436292115198965 0.2552107128400154 0.521854766409157 1" class="collision"/>
+      <geom mesh="cream_jar_collision_7" rgba="0.4500557263063777 0.37451992674806356 0.7759340170411229 1" class="collision"/>
+      <geom mesh="cream_jar_collision_8" rgba="0.45415056968266965 0.9916271133068237 0.9728226354786083 1" class="collision"/>
+      <geom mesh="cream_jar_collision_9" rgba="0.6921739310041493 0.7788182193717164 0.6624863051704063 1" class="collision"/>
+      <geom mesh="cream_jar_collision_10" rgba="0.06346511248131947 0.5344747346829074 0.3550564486782336 1" class="collision"/>
+      <geom mesh="cream_jar_collision_11" rgba="0.6627658581805048 0.03387289702424845 0.5694852369092982 1" class="collision"/>
+      <geom mesh="cream_jar_collision_12" rgba="0.019091616503603026 0.6063115986224091 0.34589070779950826 1" class="collision"/>
+      <geom mesh="cream_jar_collision_13" rgba="0.32957931256695805 0.6450422169212267 0.2581192078139899 1" class="collision"/>
+      <geom mesh="cream_jar_collision_14" rgba="0.20069518313415513 0.48079354136461294 0.10463686700505215 1" class="collision"/>
+      <geom mesh="cream_jar_collision_15" rgba="0.39482468346171096 0.7985723554655113 0.16590447525826757 1" class="collision"/>
+      <geom mesh="cream_jar_collision_16" rgba="0.3597938009711428 0.1385285423655943 0.6745645504978546 1" class="collision"/>
+      <geom mesh="cream_jar_collision_17" rgba="0.10298381139877577 0.24028043007688593 0.7700482536456493 1" class="collision"/>
+      <geom mesh="cream_jar_collision_18" rgba="0.5847124809742112 0.18791865899268978 0.6917116766986968 1" class="collision"/>
+      <geom mesh="cream_jar_collision_19" rgba="0.5846980074273309 0.5123111988351998 0.005636259272509214 1" class="collision"/>
+      <geom mesh="cream_jar_collision_20" rgba="0.06835487247192351 0.19517412530537293 0.27429641564173346 1" class="collision"/>
+      <geom mesh="cream_jar_collision_21" rgba="0.9929804842771989 0.32528148723095984 0.5250987527996396 1" class="collision"/>
+      <geom mesh="cream_jar_collision_22" rgba="0.9604995759707885 0.671439335413259 0.02867149415351422 1" class="collision"/>
+      <geom mesh="cream_jar_collision_23" rgba="0.8698747025252037 0.888670122017451 0.2650746249084712 1" class="collision"/>
+      <geom mesh="cream_jar_collision_24" rgba="0.2981530562549368 0.619632321493905 0.1099999925688584 1" class="collision"/>
+      <geom mesh="cream_jar_collision_25" rgba="0.7656333000577641 0.7007499162986273 0.9856774268295655 1" class="collision"/>
+      <geom mesh="cream_jar_collision_26" rgba="0.9821411717490943 0.9387446076727092 0.06426607253037897 1" class="collision"/>
+      <geom mesh="cream_jar_collision_27" rgba="0.8557507853041134 0.17110502652412785 0.9829400461189414 1" class="collision"/>
+      <geom mesh="cream_jar_collision_28" rgba="0.48776655476585196 0.3893745879910383 0.31048774931406575 1" class="collision"/>
+      <geom mesh="cream_jar_collision_29" rgba="0.5502331105053788 0.6123025476096573 0.5853972462712981 1" class="collision"/>
+      <geom mesh="cream_jar_collision_30" rgba="0.1785049899391522 0.02160787207850212 0.6254932230809345 1" class="collision"/>
+      <geom mesh="cream_jar_collision_31" rgba="0.4584367767804094 0.4890336749181541 0.1331193076914179 1" class="collision"/>
+      <geom mesh="cream_jar_collision_32" rgba="0.6520188621397933 0.7322955263016614 0.381340417050407 1" class="collision"/>
+      <geom mesh="cream_jar_collision_33" rgba="0.8640760334842783 0.6926472812340773 0.7627803073727784 1" class="collision"/>
+      <geom mesh="cream_jar_collision_34" rgba="0.47203191347233875 0.8707310501112737 0.6438951431801456 1" class="collision"/>
+      <geom mesh="cream_jar_collision_35" rgba="0.8118686748845118 0.047043694151766124 0.022471712089661144 1" class="collision"/>
+      <geom mesh="cream_jar_collision_36" rgba="0.5112903964472449 0.6430084542238323 0.005280828874999255 1" class="collision"/>
+      <geom mesh="cream_jar_collision_37" rgba="0.9672836671069592 0.7571645936302616 0.7916687526282933 1" class="collision"/>
+      <geom mesh="cream_jar_collision_38" rgba="0.5105551422631524 0.6890575818478754 0.47115426617067435 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

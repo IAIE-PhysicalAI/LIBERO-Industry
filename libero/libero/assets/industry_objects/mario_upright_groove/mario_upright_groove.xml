@@ -1,0 +1,20 @@
+<mujoco model="mario_upright_groove">
+    <worldbody>
+        <body>
+        <body name="object" pos="0 0 0" quat="1 0 0 0"> 
+            <body name="mario_upright_groove" pos="0 0 0" quat="1 0 0 0"> 
+                <inertial pos="0 0 0" mass="0.5" diaginertia="1e-3 1e-3 1e-3" />
+                  <geom name="groove_bottom" type="box" size="0.04528087788820266 0.06050910839438438 0.0025" pos="0 0 0.0025" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="groove_wall_left" type="box" size="0.002 0.06050910839438438 0.01" pos="-0.043280877888202667 0 0.015" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="groove_wall_right" type="box" size="0.002 0.06050910839438438 0.01" pos="0.043280877888202667 0 0.015" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="groove_wall_front" type="box" size="0.041280877888202665 0.002 0.01" pos="0 -0.05850910839438438 0.015" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="groove_wall_back" type="box" size="0.041280877888202665 0.002 0.01" pos="0 0.05850910839438438 0.015" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <site name="goal_region" type="box" size="0.03628087788820267 0.05650910839438438 0.001" pos="0 0 0.01" quat="1 0 0 0" rgba="0 1 0 0.4" group="0" />
+            </body>
+        </body>
+        <site rgba="0 0 0 0" size="0.01" pos="0 0 0" quat="1 0 0 0" name="bottom_site" />        
+        <site rgba="0 0 0 0" size="0.01" pos="0 0 0.0250" quat="1 0 0 0" name="top_site" />   
+        <site rgba="0 0 0 0" size="0.01" pos="0.0453 0.0605 0" quat="1 0 0 0" name="horizontal_radius_site" />
+        </body>
+    </worldbody>
+    </mujoco>

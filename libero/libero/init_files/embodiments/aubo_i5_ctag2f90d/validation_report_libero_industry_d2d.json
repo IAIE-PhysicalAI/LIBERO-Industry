@@ -1,0 +1,217 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "embodiment": "aubo_i5_ctag2f90d",
+  "init_root": "libero/libero/init_files/embodiments/aubo_i5_ctag2f90d",
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "reset_smoke": true,
+  "schema_version": 1,
+  "suite": "libero_industry_d2d",
+  "summary": {
+    "failed_tasks": 0,
+    "passed_tasks": 24,
+    "selected_tasks": 24
+  },
+  "tasks": [
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_001_V3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_002_V5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_003_V8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_004_M3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_005_M5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_006_M8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_007_V3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_008_V5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_009_V8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_010_M3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_011_M5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_012_M8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_013_V3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_014_V5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_015_V8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_016_M3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_017_M5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_018_M8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_019_V3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_020_V5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_021_V8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_022_M3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_023_M5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "reset_states_checked": 20,
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_024_M8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    }
+  ],
+  "validated_at": "2026-10-10T17:50:59.116116+00:00"
+}

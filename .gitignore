@@ -1,0 +1,66 @@
+# OS and editor metadata
+*~
+.DS_Store
+._*
+.vscode/
+.env
+CLAUDE.md
+.claude
+.cursor
+
+# Python, test, and packaging artifacts
+.hydra/
+*.py[cod]
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# Generated datasets and experiment outputs
+datasets
+results
+/outputs/
+/output/
+wandb
+experiments/
+experiments_saved/
+clip/
+gpt/
+bert/
+logs/
+*.mp4
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.xlsx
+
+# Temporary and generated repository artifacts
+/MUJOCO_LOG.TXT
+notebooks/auto_demo/tmp/
+notebooks/auto_demo/debug_videos/
+scripts/auto_demo_data/
+notebooks/collect_traj_trial
+*.bak
+*.blend1
+* copy.py
+/tmp/
+/.tmp/
+/.codex-build/
+/.codex-pptx-build/
+/docs/factory_rush/
+
+# LaTeX and paper build outputs
+*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+/paper.zip
+
+# Local publication-excluded material
+.industry-runs
+/AGENTS.md
+/artifacts/
+/notebooks/industry/predicates/PREDICATE_PLAYGROUND_*.bddl
+/notebooks/industry/predicates/*_final_frame.png

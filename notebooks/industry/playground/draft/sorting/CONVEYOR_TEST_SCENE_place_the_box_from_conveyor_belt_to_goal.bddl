@@ -1,0 +1,109 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language place the box from conveyor belt to goal)
+    (:regions
+      (conveyor_belt_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.05 0.15000000000000002 0.05 0.25)
+            )
+          )
+          (:yaw_rotation (
+              (-1.5707963267948966 -1.5707963267948966)
+            )
+          )
+      )
+      (region_1
+          (:target industry_workbench)
+          (:ranges (
+              (-0.05 -0.05 0.05 0.05)
+            )
+          )
+          (:yaw_rotation (
+              (0 -1.5707963267948966)
+            )
+          )
+      )
+      (region_2
+          (:target industry_workbench)
+          (:ranges (
+              (-0.05 -0.05 0.05 0.05)
+            )
+          )
+          (:yaw_rotation (
+              (0 -1.5707963267948966)
+            )
+          )
+      )
+      (goal_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.05 0.15000000000000002 0.05 0.25)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (contact_region
+          (:target conveyor_belt_1)
+      )
+      (offset_region_1
+          (:target conveyor_belt_1)
+      )
+      (offset_region_2
+          (:target conveyor_belt_1)
+      )
+      (offset_region_3
+          (:target conveyor_belt_1)
+      )
+      (offset_region_4
+          (:target conveyor_belt_1)
+      )
+      (offset_region_5
+          (:target conveyor_belt_1)
+      )
+      (stack_region_1
+          (:target conveyor_belt_1)
+      )
+      (stack_region_2
+          (:target conveyor_belt_1)
+      )
+      (stack_region_3
+          (:target conveyor_belt_1)
+      )
+      (stack_region_4
+          (:target conveyor_belt_1)
+      )
+      (stack_region_5
+          (:target conveyor_belt_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_belt_1 - conveyor_belt
+  )
+
+  (:objects
+    box_1 box_2 box_3 box_4 box_5 - box
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_belt_1 industry_workbench_conveyor_belt_init_region)
+    (On box_1 conveyor_belt_1_offset_region_1)
+    (On box_2 conveyor_belt_1_offset_region_2)
+    (On box_3 conveyor_belt_1_offset_region_3)
+    (On box_4 conveyor_belt_1_offset_region_4)
+    (On box_5 conveyor_belt_1_offset_region_5)
+  )
+
+  (:goal
+    (And (On box_1 industry_workbench_goal_region) (On box_2 industry_workbench_goal_region) (On box_3 industry_workbench_goal_region) (On box_4 industry_workbench_goal_region) (On box_5 industry_workbench_goal_region))
+  )
+
+)

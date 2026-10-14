@@ -1,0 +1,1285 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "embodiment": "aubo_i5_ctag2f90d",
+  "init_root": "libero/libero/init_files/embodiments/aubo_i5_ctag2f90d",
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "reset_smoke": false,
+  "schema_version": 1,
+  "suite": "libero_industry_train",
+  "summary": {
+    "failed_tasks": 0,
+    "passed_tasks": 180,
+    "selected_tasks": 180
+  },
+  "tasks": [
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_001_V3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_002_V5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_003_V8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_004_M3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_005_M5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_006_M8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_007_V3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_010_M3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_011_M5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_012_M8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_013_V3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_014_V5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_015_V8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_017_M5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_019_V3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_020_V5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_021_V8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_022_M3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_023_M5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 131,
+      "status": "passed",
+      "task": "D2D_LV1_024_M8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 170,
+      "status": "passed",
+      "task": "D2D_LV2_002_MOUSE_BLACK_TAIPAN_V5_V3_route_the_mouse_black_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 235,
+      "status": "passed",
+      "task": "D2D_LV2_005_MOUSE_BLACK_TAIPAN_M5_M8_route_the_mouse_black_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 222,
+      "status": "passed",
+      "task": "D2D_LV2_006_MOUSE_BLACK_TAIPAN_M8_M3_route_the_mouse_black_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 196,
+      "status": "passed",
+      "task": "D2D_LV2_007_MOUSE_NAGA_V3_V8_route_the_mouse_naga_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 248,
+      "status": "passed",
+      "task": "D2D_LV2_008_MOUSE_NAGA_V5_V3_route_the_mouse_naga_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 196,
+      "status": "passed",
+      "task": "D2D_LV2_009_MOUSE_NAGA_V8_V5_route_the_mouse_naga_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 196,
+      "status": "passed",
+      "task": "D2D_LV2_010_MOUSE_NAGA_M3_M5_route_the_mouse_naga_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 196,
+      "status": "passed",
+      "task": "D2D_LV2_011_MOUSE_NAGA_M5_M8_route_the_mouse_naga_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 248,
+      "status": "passed",
+      "task": "D2D_LV2_012_MOUSE_NAGA_M8_M5_route_the_mouse_naga_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 183,
+      "status": "passed",
+      "task": "D2D_LV2_013_HEADSET_V3_V8_route_the_headset_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 183,
+      "status": "passed",
+      "task": "D2D_LV2_014_HEADSET_V5_V3_route_the_headset_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 170,
+      "status": "passed",
+      "task": "D2D_LV2_015_HEADSET_V8_V3_route_the_headset_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 170,
+      "status": "passed",
+      "task": "D2D_LV2_016_HEADSET_M3_M8_route_the_headset_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 183,
+      "status": "passed",
+      "task": "D2D_LV2_017_HEADSET_M5_M8_route_the_headset_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 170,
+      "status": "passed",
+      "task": "D2D_LV2_018_HEADSET_M8_M3_route_the_headset_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 235,
+      "status": "passed",
+      "task": "D2D_LV2_019_MOUSE_WHITE_TAIPAN_V3_V5_route_the_mouse_white_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 170,
+      "status": "passed",
+      "task": "D2D_LV2_020_MOUSE_WHITE_TAIPAN_V5_V3_route_the_mouse_white_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 170,
+      "status": "passed",
+      "task": "D2D_LV2_021_MOUSE_WHITE_TAIPAN_V8_V3_route_the_mouse_white_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 170,
+      "status": "passed",
+      "task": "D2D_LV2_022_MOUSE_WHITE_TAIPAN_M3_M5_route_the_mouse_white_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 170,
+      "status": "passed",
+      "task": "D2D_LV2_024_MOUSE_WHITE_TAIPAN_M8_M5_route_the_mouse_white_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 183,
+      "status": "passed",
+      "task": "D2D_LV3_001_MOUSE_BLACK_TAIPAN_V3_M8_route_the_mouse_black_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 196,
+      "status": "passed",
+      "task": "D2D_LV3_003_MOUSE_BLACK_TAIPAN_V8_M5_route_the_mouse_black_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 222,
+      "status": "passed",
+      "task": "D2D_LV3_004_MOUSE_BLACK_TAIPAN_M3_V3_route_the_mouse_black_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 222,
+      "status": "passed",
+      "task": "D2D_LV3_005_MOUSE_BLACK_TAIPAN_M5_V8_route_the_mouse_black_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 196,
+      "status": "passed",
+      "task": "D2D_LV3_006_MOUSE_BLACK_TAIPAN_M8_V8_route_the_mouse_black_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 222,
+      "status": "passed",
+      "task": "D2D_LV3_007_MOUSE_WHITE_TAIPAN_V3_M3_route_the_mouse_white_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 183,
+      "status": "passed",
+      "task": "D2D_LV3_008_MOUSE_WHITE_TAIPAN_V5_M8_route_the_mouse_white_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 183,
+      "status": "passed",
+      "task": "D2D_LV3_009_MOUSE_WHITE_TAIPAN_V8_M5_route_the_mouse_white_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 222,
+      "status": "passed",
+      "task": "D2D_LV3_010_MOUSE_WHITE_TAIPAN_M3_V5_route_the_mouse_white_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 170,
+      "status": "passed",
+      "task": "D2D_LV3_011_MOUSE_WHITE_TAIPAN_M5_V5_route_the_mouse_white_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 222,
+      "status": "passed",
+      "task": "D2D_LV3_012_MOUSE_WHITE_TAIPAN_M8_V5_route_the_mouse_white_taipan_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 196,
+      "status": "passed",
+      "task": "D2D_LV3_014_MOUSE_NAGA_V5_M8_route_the_mouse_naga_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 196,
+      "status": "passed",
+      "task": "D2D_LV3_015_MOUSE_NAGA_V8_M3_route_the_mouse_naga_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 183,
+      "status": "passed",
+      "task": "D2D_LV3_016_MOUSE_NAGA_M3_V5_route_the_mouse_naga_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 196,
+      "status": "passed",
+      "task": "D2D_LV3_019_HEADSET_V3_M8_route_the_headset_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 183,
+      "status": "passed",
+      "task": "D2D_LV3_020_HEADSET_V5_M5_route_the_headset_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 183,
+      "status": "passed",
+      "task": "D2D_LV3_021_HEADSET_V8_M5_route_the_headset_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 183,
+      "status": "passed",
+      "task": "D2D_LV3_022_HEADSET_M3_V3_route_the_headset_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 196,
+      "status": "passed",
+      "task": "D2D_LV3_023_HEADSET_M5_V8_route_the_headset_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2d",
+      "state_count": 20,
+      "state_width": 196,
+      "status": "passed",
+      "task": "D2D_LV3_024_HEADSET_M8_V8_route_the_headset_from_the_conveyor_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_001_V3_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_002_V3_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_003_V3_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_004_V3_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_005_V5_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_007_V5_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_008_V5_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_010_V8_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_011_V8_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_012_V8_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_013_M3_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_015_M3_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_016_M3_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_017_M5_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_018_M5_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_019_M5_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_020_M5_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_021_M8_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_023_M8_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 66,
+      "status": "passed",
+      "task": "D2S_LV1_024_M8_pick_the_objects_from_the_conveyor_and_place_them_on_the_plate"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_001_SCHOOL_BUS_MARIO_PORTER_V3_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_002_MARIO_MINI_ROLLER_SCHOOL_BUS_V3_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_004_MINI_FIRE_ENGINE_MINI_ROLLER_PORTER_V3_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_005_SCHOOL_BUS_MARIO_PORTER_V5_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_006_MARIO_SCHOOL_BUS_PORTER_V5_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_007_THOMAS_PORTER_SCHOOL_BUS_V5_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_008_MINI_FIRE_ENGINE_PORTER_THOMAS_V5_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_009_SCHOOL_BUS_MINI_ROLLER_THOMAS_V8_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_010_MARIO_THOMAS_PORTER_V8_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_011_THOMAS_MINI_FIRE_ENGINE_MARIO_V8_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_013_SCHOOL_BUS_PORTER_MARIO_M3_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_015_THOMAS_SCHOOL_BUS_MINI_ROLLER_M3_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_016_MINI_FIRE_ENGINE_MARIO_THOMAS_M3_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_017_SCHOOL_BUS_PORTER_MINI_ROLLER_M5_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_018_MARIO_THOMAS_SCHOOL_BUS_M5_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_019_THOMAS_PORTER_MINI_FIRE_ENGINE_M5_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_021_SCHOOL_BUS_MARIO_MINI_FIRE_ENGINE_M8_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_022_MARIO_PORTER_MINI_ROLLER_M8_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_023_THOMAS_SCHOOL_BUS_MINI_ROLLER_M8_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV2_024_MINI_FIRE_ENGINE_THOMAS_SCHOOL_BUS_M8_sort_marked_toys_to_grooves"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_001_SCHOOL_BUS_MINI_ROLLER_MARIO_V3_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_002_MARIO_PORTER_THOMAS_V3_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_003_SCHOOL_BUS_MARIO_PORTER_V3_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_005_PORTER_MINI_ROLLER_THOMAS_V5_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_006_SCHOOL_BUS_MARIO_PORTER_V5_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_008_MARIO_MINI_ROLLER_SCHOOL_BUS_V5_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_009_SCHOOL_BUS_MARIO_PORTER_V8_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_010_MARIO_THOMAS_MINI_ROLLER_V8_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_011_PORTER_MINI_ROLLER_SCHOOL_BUS_V8_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_012_THOMAS_MINI_ROLLER_MARIO_V8_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_013_SCHOOL_BUS_THOMAS_MINI_ROLLER_M3_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_014_MARIO_PORTER_SCHOOL_BUS_M3_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_015_THOMAS_PORTER_MARIO_M3_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_016_PORTER_MINI_ROLLER_THOMAS_M3_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_018_SCHOOL_BUS_PORTER_MARIO_M5_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_019_MARIO_MINI_ROLLER_THOMAS_M5_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_020_SCHOOL_BUS_THOMAS_PORTER_M5_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 92,
+      "status": "passed",
+      "task": "D2S_LV3_021_SCHOOL_BUS_MINI_ROLLER_THOMAS_M8_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_023_MARIO_THOMAS_MINI_ROLLER_M8_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_d2s",
+      "state_count": 20,
+      "state_width": 79,
+      "status": "passed",
+      "task": "D2S_LV3_024_SCHOOL_BUS_PORTER_MARIO_M8_sort_toys_to_inlays"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_001_PUMP_BOTTLE_V3_put_the_pump_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_003_PUMP_BOTTLE_V8_put_the_pump_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_004_PUMP_BOTTLE_M3_put_the_pump_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_005_PUMP_BOTTLE_M5_put_the_pump_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_007_SERUM_BOTTLE_V3_put_the_serum_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_008_SERUM_BOTTLE_V5_put_the_serum_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_009_SERUM_BOTTLE_V8_put_the_serum_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_011_SERUM_BOTTLE_M5_put_the_serum_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_012_SERUM_BOTTLE_M8_put_the_serum_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_013_CREAM_BOTTLE_V3_put_the_cream_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_014_CREAM_BOTTLE_V5_put_the_cream_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_016_CREAM_BOTTLE_M3_put_the_cream_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_017_CREAM_BOTTLE_M5_put_the_cream_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_018_CREAM_BOTTLE_M8_put_the_cream_bottle_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_019_CREAM_JAR_V3_put_the_cream_jar_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_020_CREAM_JAR_V5_put_the_cream_jar_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_021_CREAM_JAR_V8_put_the_cream_jar_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_022_CREAM_JAR_M3_put_the_cream_jar_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_023_CREAM_JAR_M5_put_the_cream_jar_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 129,
+      "status": "passed",
+      "task": "S2D_LV1_024_CREAM_JAR_M8_put_the_cream_jar_to_the_moving_tray"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 181,
+      "status": "passed",
+      "task": "S2D_LV2_002_PUMP_BOTTLE_V5_pick_up_the_pump_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 181,
+      "status": "passed",
+      "task": "S2D_LV2_003_PUMP_BOTTLE_V8_pick_up_the_pump_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 181,
+      "status": "passed",
+      "task": "S2D_LV2_004_PUMP_BOTTLE_M3_pick_up_the_pump_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 181,
+      "status": "passed",
+      "task": "S2D_LV2_006_PUMP_BOTTLE_M8_pick_up_the_pump_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_007_SERUM_BOTTLE_V3_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_008_SERUM_BOTTLE_V5_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_011_SERUM_BOTTLE_M5_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_012_SERUM_BOTTLE_M8_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 194,
+      "status": "passed",
+      "task": "S2D_LV2_013_CREAM_BOTTLE_V3_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_014_CREAM_BOTTLE_V5_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 194,
+      "status": "passed",
+      "task": "S2D_LV2_015_CREAM_BOTTLE_V8_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_016_CREAM_BOTTLE_M3_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 194,
+      "status": "passed",
+      "task": "S2D_LV2_017_CREAM_BOTTLE_M5_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_018_CREAM_BOTTLE_M8_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 285,
+      "status": "passed",
+      "task": "S2D_LV2_019_CREAM_JAR_V3_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 285,
+      "status": "passed",
+      "task": "S2D_LV2_020_CREAM_JAR_V5_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 272,
+      "status": "passed",
+      "task": "S2D_LV2_021_CREAM_JAR_V8_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 272,
+      "status": "passed",
+      "task": "S2D_LV2_022_CREAM_JAR_M3_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 285,
+      "status": "passed",
+      "task": "S2D_LV2_023_CREAM_JAR_M5_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 272,
+      "status": "passed",
+      "task": "S2D_LV2_024_CREAM_JAR_M8_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 233,
+      "status": "passed",
+      "task": "S2D_LV3_003_PUMP_BOTTLE_V8_pick_up_the_pump_bottle_and_place_it_upright_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 233,
+      "status": "passed",
+      "task": "S2D_LV3_004_PUMP_BOTTLE_M3_pick_up_the_pump_bottle_and_place_it_upright_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 233,
+      "status": "passed",
+      "task": "S2D_LV3_005_PUMP_BOTTLE_M5_pick_up_the_pump_bottle_and_place_it_upright_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV3_007_SERUM_BOTTLE_V3_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV3_008_SERUM_BOTTLE_V5_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV3_009_SERUM_BOTTLE_V8_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV3_010_SERUM_BOTTLE_M3_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV3_011_SERUM_BOTTLE_M5_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 194,
+      "status": "passed",
+      "task": "S2D_LV3_012_SERUM_BOTTLE_M8_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV3_013_CREAM_BOTTLE_V3_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 220,
+      "status": "passed",
+      "task": "S2D_LV3_014_CREAM_BOTTLE_V5_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 220,
+      "status": "passed",
+      "task": "S2D_LV3_015_CREAM_BOTTLE_V8_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 220,
+      "status": "passed",
+      "task": "S2D_LV3_016_CREAM_BOTTLE_M3_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 220,
+      "status": "passed",
+      "task": "S2D_LV3_017_CREAM_BOTTLE_M5_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 220,
+      "status": "passed",
+      "task": "S2D_LV3_018_CREAM_BOTTLE_M8_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 233,
+      "status": "passed",
+      "task": "S2D_LV3_019_CREAM_JAR_V3_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 233,
+      "status": "passed",
+      "task": "S2D_LV3_020_CREAM_JAR_V5_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 233,
+      "status": "passed",
+      "task": "S2D_LV3_021_CREAM_JAR_V8_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 220,
+      "status": "passed",
+      "task": "S2D_LV3_022_CREAM_JAR_M3_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "state_count": 20,
+      "state_width": 233,
+      "status": "passed",
+      "task": "S2D_LV3_024_CREAM_JAR_M8_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_inlay"
+    }
+  ],
+  "validated_at": "2026-09-06T18:37:53.376620+00:00"
+}

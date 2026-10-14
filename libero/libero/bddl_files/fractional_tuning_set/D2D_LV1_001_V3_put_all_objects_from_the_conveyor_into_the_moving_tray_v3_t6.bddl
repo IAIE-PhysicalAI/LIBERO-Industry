@@ -1,0 +1,118 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language put all objects from the conveyor into the moving tray)
+    (:regions
+      (belt_init
+          (:target industry_workbench)
+          (:ranges (
+              (-0.13048501890962097 0.30991887959358116 -0.11048501890962097 0.3299188795935812)
+            )
+          )
+          (:yaw_rotation (
+              (1.5707963267948966 1.5707963267948966)
+            )
+          )
+      )
+      (ghost_init
+          (:target industry_workbench)
+          (:ranges (
+              (0.024514981090379036 -0.14008112040641882 0.04451498109037904 -0.12008112040641881)
+            )
+          )
+          (:yaw_rotation (
+              (1.5707963267948966 1.5707963267948966)
+            )
+          )
+      )
+      (contact_region
+          (:target conveyor_belt_1)
+      )
+      (offset_region_1
+          (:target conveyor_belt_1)
+      )
+      (offset_region_2
+          (:target conveyor_belt_1)
+      )
+      (offset_region_3
+          (:target conveyor_belt_1)
+      )
+      (offset_region_4
+          (:target conveyor_belt_1)
+      )
+      (tail_region_1
+          (:target conveyor_belt_1)
+      )
+      (tail_region_2
+          (:target conveyor_belt_1)
+      )
+      (tail_region_3
+          (:target conveyor_belt_1)
+      )
+      (tail_region_4
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_1
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_2
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_3
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_1
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_2
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_3
+          (:target conveyor_belt_1)
+      )
+      (ablation_region_d2s
+          (:target conveyor_belt_1)
+      )
+      (ablation_region_d2d
+          (:target conveyor_belt_1)
+      )
+      (centre_region
+          (:target conveyor_belt_1)
+      )
+      (centre_region_d2d
+          (:target conveyor_belt_1)
+      )
+      (ghost_active_region
+          (:target conveyor_ghost_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_belt_1 - conveyor_belt
+    conveyor_ghost_1 - conveyor_ghost
+  )
+
+  (:objects
+    mouse_black_taipan_upright_1 - mouse_black_taipan_upright
+    mouse_white_taipan_upright_1 - mouse_white_taipan_upright
+    mouse_naga_upright_1 - mouse_naga_upright
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_belt_1 industry_workbench_belt_init)
+    (AtSpeed conveyor_belt_1 0.0296 steady takt_6 offset_1.5)
+    (On conveyor_ghost_1 industry_workbench_ghost_init)
+    (LoadSlot conveyor_ghost_1 electronics_tray y pulse 0.0296 service_1.5)
+    (On mouse_black_taipan_upright_1 conveyor_belt_1_offset_region_1)
+    (On mouse_white_taipan_upright_1 conveyor_belt_1_offset_region_2)
+    (On mouse_naga_upright_1 conveyor_belt_1_offset_region_3)
+  )
+
+  (:goal
+    (And (DynamicOn mouse_black_taipan_upright_1 conveyor_ghost_1) (DynamicOn mouse_white_taipan_upright_1 conveyor_ghost_1) (DynamicOn mouse_naga_upright_1 conveyor_ghost_1))
+  )
+
+)

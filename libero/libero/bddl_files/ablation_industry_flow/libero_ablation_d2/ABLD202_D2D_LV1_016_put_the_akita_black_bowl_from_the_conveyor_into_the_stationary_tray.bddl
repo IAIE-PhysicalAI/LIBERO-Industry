@@ -1,0 +1,53 @@
+(define (problem LIBERO_Industry_Workbench_Ablation)
+  (:domain robosuite)
+  (:language put the akita black bowl into the tray)
+    (:regions
+      (object_init
+          (:target industry_workbench)
+          (:ranges (
+              (-0.428328852147 0.274281068618 -0.0883288521471 0.394281068618)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (tray_init
+          (:target industry_workbench)
+          (:ranges (
+              (0.0266711478529 -0.155718931382 0.0666711478529 -0.115718931382)
+            )
+          )
+          (:yaw_rotation (
+              (1.57079632679 1.57079632679)
+            )
+          )
+      )
+      (goal_region
+          (:target electronics_tray_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+  )
+
+  (:objects
+    electronics_tray_1 - electronics_tray
+    ablation_akita_black_bowl_1 - ablation_akita_black_bowl
+  )
+
+  (:obj_of_interest
+    ablation_akita_black_bowl_1
+  )
+
+  (:init
+    (On electronics_tray_1 industry_workbench_tray_init)
+    (On ablation_akita_black_bowl_1 industry_workbench_object_init)
+  )
+
+  (:goal
+    (And (ReleasedOn ablation_akita_black_bowl_1 electronics_tray_1_goal_region))
+  )
+)
