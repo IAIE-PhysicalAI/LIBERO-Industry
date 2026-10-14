@@ -1,0 +1,50 @@
+<mujoco model="cosmetics_tray">
+  <asset>
+    <!-- Wall meshes recalculated for 0.18276 x 0.18276 base -->
+    <mesh name="front_mesh" vertex="0.08938 0.08938 0.0020 -0.08938 0.08938 0.0020 -0.09338 0.09338 0.0250 0.09338 0.09338 0.0250 0.09138 0.09138 0.0000 -0.09138 0.09138 0.0000 -0.09538 0.09538 0.0250 0.09538 0.09538 0.0250"/>
+    <mesh name="back_mesh"  vertex="0.08938 -0.08938 0.0020 -0.08938 -0.08938 0.0020 -0.09338 -0.09338 0.0250 0.09338 -0.09338 0.0250 0.09138 -0.09138 0.0000 -0.09138 -0.09138 0.0000 -0.09538 -0.09538 0.0250 0.09538 -0.09538 0.0250"/>
+    <mesh name="right_mesh" vertex="0.09138 0.09138 0.0020 0.09138 -0.09138 0.0020 0.09538 -0.09538 0.0250 0.09538 0.09138 0.0250 0.09338 0.09138 0.0000 0.09338 -0.09138 0.0000 0.09738 -0.09538 0.0250 0.09738 0.09538 0.0250"/>
+    <mesh name="left_mesh"  vertex="-0.09138 0.09138 0.0020 -0.09138 -0.09138 0.0020 -0.09538 -0.09538 0.0250 -0.09538 0.09138 0.0250 -0.09338 0.09138 0.0000 -0.09338 -0.09138 0.0000 -0.09738 -0.09538 0.0250 -0.09738 0.09538 0.0250"/>
+  </asset>
+
+  <worldbody>
+    <body>
+      <body name="object" pos="0 0 0" quat="1 0 0 0"> 
+          <body name="cosmetics_tray" pos="0 0 0" quat="1 0 0 0"> 
+              <inertial pos="0 0 0" mass="0.3" diaginertia="1e-3 1e-3 1e-3" />
+              
+              <!-- Bottom size updated to 0.09138 half-width -->
+              <geom name="bottom" type="box" size="0.09138 0.09138 0.0010" pos="0 0 0.0010" 
+                    rgba="0.35 0.35 0.35 1" 
+                    condim="4"
+                    friction="1.5 0.1 0.001" 
+                    solref="0.02 1" 
+                    solimp="0.9 0.95 0.001" 
+                    group="1" conaffinity="1" contype="1"/>
+             <geom name="wall_front" type="mesh" mesh="front_mesh" rgba="0.35 0.35 0.35 1" 
+                    friction="1.0 0.05 0.001" solref="0.02 1" solimp="0.9 0.95 0.001" 
+                    group="1" conaffinity="1" contype="1"/>
+                    
+              <geom name="wall_back"  type="mesh" mesh="back_mesh"  rgba="0.35 0.35 0.35 1" 
+                    friction="1.0 0.05 0.001" solref="0.02 1" solimp="0.9 0.95 0.001" 
+                    group="1" conaffinity="1" contype="1"/>
+                    
+              <geom name="wall_right" type="mesh" mesh="right_mesh" rgba="0.35 0.35 0.35 1" 
+                    friction="1.0 0.05 0.001" solref="0.02 1" solimp="0.9 0.95 0.001" 
+                    group="1" conaffinity="1" contype="1"/>
+                    
+              <geom name="wall_left"  type="mesh" mesh="left_mesh"  rgba="0.35 0.35 0.35 1" 
+                    friction="1.0 0.05 0.001" solref="0.02 1" solimp="0.9 0.95 0.001" 
+                    group="1" conaffinity="1" contype="1"/>
+              <!-- Goal region resized to fit interior -->
+              <site name="goal_region" type="box" size="0.08738 0.08738 0.001" pos="0 0 0.0040" quat="1 0 0 0" rgba="0 1 0 0.1" group="0" />
+          </body>
+      </body>
+      
+      <site rgba="0 0 0 0" size="0.01" pos="0 0 -0.010" quat="1 0 0 0" name="bottom_site"/>        
+      <site rgba="0 0 0 0" size="0.01" pos="0 0 0.0020" quat="1 0 0 0" name="top_site"/>   
+      <!-- horizontal_radius_site updated to new boundary -->
+      <site rgba="0 0 0 0" size="0.01" pos="0.09538 0.09538 0" quat="1 0 0 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

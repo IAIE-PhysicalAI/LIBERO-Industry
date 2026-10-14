@@ -1,0 +1,307 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "dry_run": false,
+  "embodiment": "panda",
+  "finished_at": "2026-10-10T17:42:45.644770+00:00",
+  "init_policy": "standard",
+  "init_root": "libero/libero/init_files",
+  "overwrite": false,
+  "profile": {
+    "compact_filenames": false,
+    "gripper_types": "default",
+    "name": "panda",
+    "relative_init_root": null,
+    "robots": [
+      "Panda"
+    ]
+  },
+  "schema_version": 1,
+  "seed": 42,
+  "selectors": {
+    "families": [
+      "D2D"
+    ],
+    "levels": [
+      1
+    ],
+    "tasks": null
+  },
+  "source_commit": "e1a80c6b539a40d00c2816ac1d6b109de73b13db",
+  "started_at": "2026-10-10T17:34:16.871302+00:00",
+  "suite": "libero_industry_d2d",
+  "summary": {
+    "failed_tasks": 0,
+    "selected_tasks": 24,
+    "successful_tasks": 24
+  },
+  "takt_horizon_applied": false,
+  "target_states": 20,
+  "task_map_source": "live",
+  "task_map_synchronized": false,
+  "tasks": [
+    {
+      "bddl_sha256": "ece3a0d985e5e60136809a495070a335a4d99a1a2246f84651400d8506df020c",
+      "init_file": "D2D_LV1_001_V3_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_001_V3_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "e91cb2aa621b000419d1d1ce789d6f3bd3458c56c2ab2cacd17956a8be1c1b98",
+      "state_width": 125,
+      "status": "complete_existing",
+      "task": "D2D_LV1_001_V3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "8fcb3cca2694064e2ccf69c3b62f3ace64c3eccc121f33d77ff5e4ddc626d309",
+      "init_file": "D2D_LV1_002_V5_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_002_V5_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "b5067d862c233bccb266312a63bcfa405aa450d9002372a36a012c2e9055cc0d",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_002_V5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "14a41a9374b0550feb6489a4889eb3946349d1161e85c585b9408eb365929526",
+      "init_file": "D2D_LV1_003_V8_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_003_V8_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "7e363efac819187d4b1e9d3da48360baca24528d78a29dba55a7478b590cf315",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_003_V8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "8b3ffee15b16c47f5615aa3f828f5b8dd82302ce2c40755af484f97a01fa7921",
+      "init_file": "D2D_LV1_004_M3_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_004_M3_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "9de2d48f5df9ce598885115555a2a6d4af30600f22a213fe91c4b579bfa1e051",
+      "state_width": 125,
+      "status": "complete_existing",
+      "task": "D2D_LV1_004_M3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "24a47401c91f697407906ba796b43b432d8c399b130f469b1141289fba169582",
+      "init_file": "D2D_LV1_005_M5_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_005_M5_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "5ed1f4ff6ebb03815c1377963eabf080dac366b76ee2e5c4d93a192842c3cf41",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_005_M5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "50fa3f694e44c43f5d61e18ee5f694dc9213425bebf730d83b18af1267cdb412",
+      "init_file": "D2D_LV1_006_M8_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_006_M8_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "5291cb9abf8871da4ad8eb253dac249090e5260eab78dfca897f189e9b7f65ff",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_006_M8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "21224c1db0700198779323d5bae3a91c314aea440e91d1a59ae237522f37ac9f",
+      "init_file": "D2D_LV1_007_V3_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_007_V3_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "e9e1094c471d0e394aa7083710787670d4f9230882a98f3cc62b75fc845dd404",
+      "state_width": 125,
+      "status": "complete_existing",
+      "task": "D2D_LV1_007_V3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "c61169f453fe4dc648d9d53c60ea3c546367ec6f12556a184ae1bfd8bb61d536",
+      "init_file": "D2D_LV1_008_V5_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_008_V5_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "b12c89710fe1c1f583cc9d088c8ead7994344080dde5a0f3f4db4850b3f02d3c",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_008_V5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "b44715c5ce101774268532a629fc229cb03df3d922b6a6d34a9883835ba57353",
+      "init_file": "D2D_LV1_009_V8_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_009_V8_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "585e6f5536de0b7825a9ae43d6ed83e6d6551bf440e8472d280e4b84c130ab9e",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_009_V8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "a59333b348d9c3b9455fc417747e778acfc5e07aeb729e35e51a69204b0f01f4",
+      "init_file": "D2D_LV1_010_M3_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_010_M3_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "e67fe0f76c62c82bbdec7d3cb83d74c5a2391052640a6b7c1ead6e93a9341982",
+      "state_width": 125,
+      "status": "complete_existing",
+      "task": "D2D_LV1_010_M3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "58cd65a0b2cdf55086aabd487b15a212bbfc3f658fa737d019b69361f5cc44c0",
+      "init_file": "D2D_LV1_011_M5_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_011_M5_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "4ffbbfe4939aa41a00094533af892d18c854adfba2a49a467a39a38b2de05368",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_011_M5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "8e5d6cdc724b60ef9da25ac624a6024680a32a0068ae50c1959c05a9617dba7e",
+      "init_file": "D2D_LV1_012_M8_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_012_M8_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "d58529fd7f45aae80fb9ac324c1c777f305d63fb63264c7925705dbfac664750",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_012_M8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "e67c30eb3511ca06114f5b30d6bcc29a25cfb9b7165bec3890ad786764bdff29",
+      "init_file": "D2D_LV1_013_V3_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_013_V3_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "342ce547d57f70d53cc0848f6744e6dd78e68513b3631336b7a60b9aba4627fd",
+      "state_width": 125,
+      "status": "complete_existing",
+      "task": "D2D_LV1_013_V3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "83a06280c19f2e7fec80fff9ec578e9e6d54bde3a45c76e264df780f18715518",
+      "init_file": "D2D_LV1_014_V5_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_014_V5_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "b56e1046e2dc3ecf8153e6b02650b35d4ef782207c7f626e37c050b51a37c12a",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_014_V5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "25d82ce67ebdabb5a5ad8e3aef606e898fb3dec14564aaeebc1c4d640760ee4d",
+      "init_file": "D2D_LV1_015_V8_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_015_V8_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "4a2f64a0e06d3521ad0e4e9524fa505547c002a12315c2ca7b76aecd48bfd432",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_015_V8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "b41cf41496bc68e0837748f585ee743da1e140006a584b15e1b9f0ae4aa33456",
+      "init_file": "D2D_LV1_016_M3_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_016_M3_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "cab81f58806ccdf8ecee21b694c05a66aeb3fe3c8ed1ae696802832668e4f13c",
+      "state_width": 125,
+      "status": "complete_existing",
+      "task": "D2D_LV1_016_M3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "9f53708075845df74d1c56c82d93f9c83d6e54bf118719750bfa316c084bc4d1",
+      "init_file": "D2D_LV1_017_M5_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_017_M5_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "5d37f3317c897aa4c1a1dc3aeb51f79749a951d2fdec5d2b19a50e379589868f",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_017_M5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "b188d6d8d0a4c06d53a50e2d81012f61b956947534f5b46900f155803c1422e8",
+      "init_file": "D2D_LV1_018_M8_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_018_M8_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "8f0810d1de9e97de6e0793c80ea36ae73e1367c72c2a1efc7c9b2784d353fafa",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_018_M8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "17dde484c121143c5c5131da3b921b7fa5a9f14490cbbfd3a416c384dcf1a42a",
+      "init_file": "D2D_LV1_019_V3_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_019_V3_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "9ed0f456f673f02c01f4dddabb8d1f87319387bd38b0f9c6250cb05c5e1302d9",
+      "state_width": 125,
+      "status": "complete_existing",
+      "task": "D2D_LV1_019_V3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "69091d22de4f69ba3c77f8913b5fde595018c2ee90fef1ac92af89aa0e328d39",
+      "init_file": "D2D_LV1_020_V5_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_020_V5_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "9eab765745f9eedf66a88478e6946043dda5abdbcf61a886b4c25bd68bba4830",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_020_V5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "84ea77620c5a42c8aa7c7df59fc93af2ab56ba46130ac291f3f35ff3dd49a546",
+      "init_file": "D2D_LV1_021_V8_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_021_V8_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "12fa17b2f3d2a0c5e791e6d736902fb725f9242a34f0e5a0c4ba3728e0535afd",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_021_V8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "ed91aacd5812adedb95028b80636908f2e8a3b64aa192226a2659eea6d5f74e9",
+      "init_file": "D2D_LV1_022_M3_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_022_M3_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "7eef446ed856b98fa7fd5172c0081f03e535a3faee2dea1b38fa599fb49d37bb",
+      "state_width": 125,
+      "status": "complete_existing",
+      "task": "D2D_LV1_022_M3_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "973977fe6e4393388d2efac7a61ee1066b646310da2fe9351f20004b5073c8e5",
+      "init_file": "D2D_LV1_023_M5_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_023_M5_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "76fd08f70440e591bdae9ba6255815c84bcc1623922f65676ad8a7a77524e45e",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_023_M5_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    },
+    {
+      "bddl_sha256": "5f5c2378482f2eebf1fa660bbb8efe6d4b29d1c9616979826c78f4e9e13e238b",
+      "init_file": "D2D_LV1_024_M8_put_all_objects_from_the_conveyor_into_the_moving_tray.init",
+      "problem_folder": "libero_industry_d2d",
+      "pruned_init_file": "D2D_LV1_024_M8_put_all_objects_from_the_conveyor_into_the_moving_tray.pruned_init",
+      "state_count": 20,
+      "state_sha256": "4f8dc417a268de02725eff6190c534e95de9a496c6bda3426bbc732bdbf03c4e",
+      "state_width": 125,
+      "status": "generated",
+      "task": "D2D_LV1_024_M8_put_all_objects_from_the_conveyor_into_the_moving_tray"
+    }
+  ]
+}

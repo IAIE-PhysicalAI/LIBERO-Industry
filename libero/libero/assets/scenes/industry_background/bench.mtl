@@ -1,0 +1,13 @@
+# Blender 5.1.0 MTL File: 'ammo-bench-output2.blend'
+# www.blender.org
+
+newmtl ReloadingBench
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ReloadingBench_BaseColor.png
+map_Ns ReloadingBench_Roughness.png
+map_Bump -bm 1.000000 ReloadingBench_NormalOGL16.png

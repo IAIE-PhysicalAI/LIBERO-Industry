@@ -1,0 +1,21 @@
+# Deploy requirements without robomimic (temporary workaround for egl-probe/robomimic install issues)
+
+# --- Robotics & Physics ---
+robosuite==1.5.2
+robosuite_models>=1.0.0
+mujoco==3.7.0          # Native DeepMind bindings
+
+# --- Utilities ---
+opencv-python>=4.8.0
+matplotlib>=3.7.1
+cloudpickle>=2.2.0      # Necessary for PyTorch 2.x spawn/multiprocessing support
+thop>=0.1.1.post2209072238
+hydra-core==1.3.2
+numpy>=1.24.0,<2.0.0    # Strictly constrained to prevent NumPy 2.x ABI runtime crashes
+wandb>=0.15.0
+easydict>=1.10          # Upgraded to ensure PyTorch 2.x/Python 3.10 parsing safety
+transformers>=4.36.0    # Updated to prevent legacy C-extension build issues on modern CUDA 12
+einops>=0.6.1
+future>=0.18.3          # REQUIRED for bddl==1.0.1
+bddl==1.0.1
+gymnasium>=0.29.0       # Stable Gymnasium release

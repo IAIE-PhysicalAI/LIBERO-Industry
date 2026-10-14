@@ -1,0 +1,92 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language place the pump bottle from conveyor belt to the inlay c)
+    (:regions
+      (conveyor_belt_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.05 -0.05 0.05 0.05)
+            )
+          )
+          (:yaw_rotation (
+              (1.5707963267948966 1.5707963267948966)
+            )
+          )
+      )
+      (carrier_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.25 -0.05 -0.15000000000000002 0.05)
+            )
+          )
+          (:yaw_rotation (
+              (1.5707963267948966 1.5707963267948966)
+            )
+          )
+      )
+      (contact_region
+          (:target conveyor_belt_1)
+      )
+      (offset_region_1
+          (:target conveyor_belt_1)
+      )
+      (offset_region_2
+          (:target conveyor_belt_1)
+      )
+      (offset_region_3
+          (:target conveyor_belt_1)
+      )
+      (offset_region_4
+          (:target conveyor_belt_1)
+      )
+      (offset_region_5
+          (:target conveyor_belt_1)
+      )
+      (stack_region_1
+          (:target conveyor_belt_1)
+      )
+      (stack_region_2
+          (:target conveyor_belt_1)
+      )
+      (stack_region_3
+          (:target conveyor_belt_1)
+      )
+      (stack_region_4
+          (:target conveyor_belt_1)
+      )
+      (stack_region_5
+          (:target conveyor_belt_1)
+      )
+      (goal_region
+          (:target pump_bottle_inlay_c_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_belt_1 - conveyor_belt
+    pump_bottle_inlay_c_1 - pump_bottle_inlay_c
+  )
+
+  (:objects
+    pump_bottle_1 pump_bottle_2 pump_bottle_3 pump_bottle_4 - pump_bottle
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_belt_1 industry_workbench_conveyor_belt_init_region)
+    (On pump_bottle_1 conveyor_belt_1_offset_region_1)
+    (On pump_bottle_2 conveyor_belt_1_offset_region_2)
+    (On pump_bottle_3 conveyor_belt_1_offset_region_3)
+    (On pump_bottle_4 conveyor_belt_1_offset_region_4)
+    (On pump_bottle_inlay_c_1 industry_workbench_carrier_region)
+    (FromBelt conveyor_belt_1 0.02 pulse)
+  )
+
+  (:goal
+    (And (On pump_bottle_1 pump_bottle_inlay_c_1_goal_region) (On pump_bottle_2 pump_bottle_inlay_c_1_goal_region) (On pump_bottle_3 pump_bottle_inlay_c_1_goal_region) (On pump_bottle_4 pump_bottle_inlay_c_1_goal_region))
+  )
+
+)

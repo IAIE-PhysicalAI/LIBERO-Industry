@@ -1,0 +1,100 @@
+<mujoco model="serum_bottle_flat_inlay">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <mesh file="serum_bottle_flat_inlay.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_0.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_1.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_2.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_3.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_4.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_5.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_6.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_7.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_8.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_9.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_10.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_11.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_12.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_13.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_14.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_15.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_16.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_17.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_18.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_19.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_20.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_21.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_22.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_23.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_24.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_25.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_26.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_27.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_28.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_29.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_30.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_31.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_32.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_33.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_34.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_35.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_36.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_37.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_38.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_39.obj"/>
+    <mesh file="serum_bottle_flat_inlay_collision_40.obj"/>
+  </asset>
+  <worldbody>
+    <body name="serum_bottle_flat_inlay">
+      <geom mesh="serum_bottle_flat_inlay" class="visual"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_0" rgba="0.2745453975418354 0.7462310154138526 0.13403209654736192 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_1" rgba="0.060738400870786746 0.03406704983577491 0.5855209282356205 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_2" rgba="0.023618296943775263 0.4865571068285568 0.8015558687438799 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_3" rgba="0.7568878183538796 0.7656770706747246 0.9781417212897258 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_4" rgba="0.31422839210341336 0.509406759221076 0.9713984809419908 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_5" rgba="0.2604804957334348 0.6535971733054681 0.6093042708465558 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_6" rgba="0.39123236373225556 0.1623741264252483 0.1612621328919146 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_7" rgba="0.8496026466715508 0.4918954916567819 0.3629253497336058 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_8" rgba="0.1378413068284955 0.7425647009772577 0.7839358301047348 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_9" rgba="0.2733823015025366 0.1661720563568958 0.9748459201350838 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_10" rgba="0.7824424862226259 0.6999173486341839 0.45025810832875646 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_11" rgba="0.1961831824972745 0.0975748312891932 0.5987942324028955 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_12" rgba="0.8627674768282337 0.8421775921030225 0.672654507033098 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_13" rgba="0.09158058178045281 0.3694013713155251 0.6793168707505594 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_14" rgba="0.15610596787539655 0.5578205819332299 0.4164194177306473 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_15" rgba="0.3355076036525614 0.13432319464296405 0.6476849993643851 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_16" rgba="0.6906378855378636 0.7048357548941646 0.7526601843076273 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_17" rgba="0.6913640559097721 0.5351082873146764 0.9218715592254185 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_18" rgba="0.18303002039490845 0.1137999107454174 0.07605702694235583 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_19" rgba="0.6836867751223934 0.24506593799437537 0.33606830222030815 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_20" rgba="0.6536427712765627 0.4358989570754569 0.6783933139510315 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_21" rgba="0.5681699598345933 0.5601699061158413 0.9199502969492479 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_22" rgba="0.6560935430490973 0.38807115070948717 0.6896781323800624 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_23" rgba="0.9476317567948179 0.2894189263665371 0.32011752133547167 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_24" rgba="0.9746963779727486 0.9634178166137557 0.48849219455089576 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_25" rgba="0.00799265760840484 0.2678488035617079 0.17232808776733055 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_26" rgba="0.5739784686138167 0.39489143335234045 0.0934526319924307 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_27" rgba="0.3475203912412641 0.8213796485016339 0.47957105394099964 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_28" rgba="0.4957271661192568 0.1276957364546738 0.7171389802354917 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_29" rgba="0.6298355850702194 0.8218661109389943 0.2991470014337618 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_30" rgba="0.2986398382898572 0.7490354018325311 0.21558931335121834 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_31" rgba="0.9816119154337195 0.0007187287670585851 0.24329226531183235 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_32" rgba="0.7124007977941368 0.5916297925770276 0.6988246588887438 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_33" rgba="0.1287592917739785 0.39964623707712477 0.8787859032154017 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_34" rgba="0.44467609860408 0.9469950332235432 0.18141598793126978 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_35" rgba="0.3124168489508584 0.23861598294759212 0.8761220637750224 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_36" rgba="0.8746489595818424 0.06121276758713623 0.3178880752612071 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_37" rgba="0.20460444432756686 0.16713614453997494 0.8452013063110885 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_38" rgba="0.1628689950064749 0.4144619172288133 0.699250246728128 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_39" rgba="0.48036026840324075 0.434353424007884 0.37644351673386367 1" class="collision"/>
+      <geom mesh="serum_bottle_flat_inlay_collision_40" rgba="0.0933753635314385 0.9765255389867834 0.19309916239797376 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

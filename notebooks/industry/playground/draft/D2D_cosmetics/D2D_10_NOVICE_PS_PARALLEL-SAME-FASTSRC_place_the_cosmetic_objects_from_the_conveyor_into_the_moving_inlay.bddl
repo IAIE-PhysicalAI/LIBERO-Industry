@@ -1,0 +1,96 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language place the cosmetic objects from the conveyor into the moving inlay)
+    (:regions
+      (ghost_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (0.199 -0.001 0.201 0.001)
+            )
+          )
+          (:yaw_rotation (
+              (1.5707963267948966 1.5708963267948965)
+            )
+          )
+      )
+      (belt_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.32999999999999996 -0.03 -0.27 0.03)
+            )
+          )
+          (:yaw_rotation (
+              (1.5708 1.5709)
+            )
+          )
+      )
+      (contact_region
+          (:target conveyor_belt_1)
+      )
+      (offset_region_1
+          (:target conveyor_belt_1)
+      )
+      (offset_region_2
+          (:target conveyor_belt_1)
+      )
+      (offset_region_3
+          (:target conveyor_belt_1)
+      )
+      (offset_region_4
+          (:target conveyor_belt_1)
+      )
+      (offset_region_5
+          (:target conveyor_belt_1)
+      )
+      (stack_region_1
+          (:target conveyor_belt_1)
+      )
+      (stack_region_2
+          (:target conveyor_belt_1)
+      )
+      (stack_region_3
+          (:target conveyor_belt_1)
+      )
+      (stack_region_4
+          (:target conveyor_belt_1)
+      )
+      (stack_region_5
+          (:target conveyor_belt_1)
+      )
+      (ghost_active_region
+          (:target conveyor_ghost_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_belt_1 - conveyor_belt
+    conveyor_ghost_1 - conveyor_ghost
+  )
+
+  (:objects
+    pump_bottle_flat_1 - pump_bottle_flat
+    serum_bottle_flat_1 - serum_bottle_flat
+    cream_bottle_flat_1 - cream_bottle_flat
+    cream_jar_flat_1 - cream_jar_flat
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_belt_1 industry_workbench_belt_init_region)
+    (On conveyor_ghost_1 industry_workbench_ghost_init_region)
+    (AtSpeed conveyor_belt_1 0.0554 pulse)
+    (LoadSlot conveyor_ghost_1 cosmetics_inlay_a x steady 0.0204)
+    (On pump_bottle_flat_1 conveyor_belt_1_offset_region_1)
+    (On serum_bottle_flat_1 conveyor_belt_1_offset_region_2)
+    (On cream_bottle_flat_1 conveyor_belt_1_offset_region_3)
+    (On cream_jar_flat_1 conveyor_belt_1_offset_region_4)
+  )
+
+  (:goal
+    (And (Routed pump_bottle_flat_1 conveyor_ghost_1) (Routed serum_bottle_flat_1 conveyor_ghost_1) (Routed cream_bottle_flat_1 conveyor_ghost_1) (Routed cream_jar_flat_1 conveyor_ghost_1))
+  )
+
+)

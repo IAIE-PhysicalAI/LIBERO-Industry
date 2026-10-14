@@ -1,0 +1,40 @@
+<mujoco model="industry_shelf">
+  <asset>
+    <texture file="cart_BaseColor.png" name="tex_cart" type="2d" />
+    <texture file="desk.png" name="tex_desk" type="2d" />
+    <texture file="extenguisher_BaseColor.png" name="tex_extinguisher" type="2d" />
+    <texture file="shelf_BaseColor.png" name="tex_shelf" type="2d" />
+
+    <material name="mat_cart" texture="tex_cart" reflectance="0.3" shininess="0.5" specular="0.5" />
+    <material name="mat_desk" texture="tex_desk" reflectance="0.05" shininess="0.1" specular="0.1" />
+    <material name="mat_extinguisher" texture="tex_extinguisher" reflectance="0.6" shininess="0.8" specular="0.8" />
+    <material name="mat_shelf" texture="tex_shelf" reflectance="0.2" shininess="0.3" specular="0.3" />
+
+    <mesh file="cart-base.obj" name="mesh_cart_base" />
+    <mesh file="cart-frame.obj" name="mesh_cart_frame" />
+    <mesh file="desk.obj" name="mesh_desk" />
+    <mesh file="extinguisher.obj" name="mesh_extinguisher" />
+    <mesh file="shelf-board.obj" name="mesh_shelf_board" />
+    <mesh file="shelf-leg.obj" name="mesh_shelf_leg" />
+  </asset>
+
+  <worldbody>
+    <body name="industry_shelf_group">
+      
+      <geom type="mesh" mesh="mesh_cart_base" material="mat_cart" group="1" conaffinity="0" contype="0" />
+      <geom type="mesh" mesh="mesh_cart_frame" material="mat_cart" group="1" conaffinity="0" contype="0" />
+      
+      <geom type="mesh" mesh="mesh_shelf_board" material="mat_shelf" group="1" conaffinity="0" contype="0" />
+      <geom type="mesh" mesh="mesh_shelf_leg" material="mat_shelf" group="1" conaffinity="0" contype="0" />
+      
+      <geom type="mesh" mesh="mesh_desk" material="mat_desk" group="1" conaffinity="0" contype="0" />
+      <geom type="mesh" mesh="mesh_extinguisher" material="mat_extinguisher" group="1" conaffinity="0" contype="0" />
+
+      <geom type="box" size="1.0 0.3 0.9" pos="0 0 0.9" group="0" rgba="0.8 0.8 0.8 0.0" />
+      
+      <site name="bottom_site" pos="0 0 0" size="0.005" rgba="0 0 0 0" />
+      <site name="top_site" pos="0 0 1.8" size="0.005" rgba="0 0 0 0" />
+      <site name="horizontal_radius_site" pos="1.0 0.3 0" size="0.005" rgba="0 0 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

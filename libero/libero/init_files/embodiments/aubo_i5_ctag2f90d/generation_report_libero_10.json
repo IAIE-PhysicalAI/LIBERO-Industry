@@ -1,0 +1,148 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "dry_run": false,
+  "embodiment": "aubo_i5_ctag2f90d",
+  "finished_at": "2026-08-27T12:32:18.468621+00:00",
+  "init_policy": "standard",
+  "init_root": "libero/libero/init_files/embodiments/aubo_i5_ctag2f90d",
+  "overwrite": false,
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "schema_version": 1,
+  "seed": 42,
+  "selectors": {
+    "families": null,
+    "levels": null,
+    "tasks": null
+  },
+  "source_commit": "9de5207f17e3d73df7de987a3750fb6fa8994ed9",
+  "started_at": "2026-08-27T12:29:07.428645+00:00",
+  "suite": "libero_10",
+  "summary": {
+    "failed_tasks": 0,
+    "selected_tasks": 10,
+    "successful_tasks": 10
+  },
+  "takt_horizon_applied": false,
+  "target_states": 50,
+  "task_map_synchronized": false,
+  "tasks": [
+    {
+      "bddl_sha256": "2e661058917f683a25bce480015197f0a2c1911bcbc2b9dd9d947199069c9618",
+      "init_file": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.init",
+      "problem_folder": "libero_10",
+      "pruned_init_file": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "26fd4e42e154438476a70fb0888c066d71ce4c1bc8dc9903686c99bb17ad9ad8",
+      "state_width": 129,
+      "status": "generated",
+      "task": "LIVING_ROOM_SCENE2_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_basket"
+    },
+    {
+      "bddl_sha256": "3f552805c7ab34c44debcf38a48b8131d6fee3011dd86c039650b84e0f77d058",
+      "init_file": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket.init",
+      "problem_folder": "libero_10",
+      "pruned_init_file": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "9a7e622549759cd18070ce379a30feed250d5da9436535b191a08078fd66882c",
+      "state_width": 129,
+      "status": "generated",
+      "task": "LIVING_ROOM_SCENE2_put_both_the_cream_cheese_box_and_the_butter_in_the_basket"
+    },
+    {
+      "bddl_sha256": "491835cc2eb6956f7ce3d1ee4e266377116168fe453e6529fe105e3b0333635d",
+      "init_file": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.init",
+      "problem_folder": "libero_10",
+      "pruned_init_file": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it.pruned_init",
+      "state_count": 50,
+      "state_sha256": "8edc471b5e72793fcf38316964a39c0eab6ef080171b6dda63c91c0fe1cd2101",
+      "state_width": 53,
+      "status": "generated",
+      "task": "KITCHEN_SCENE3_turn_on_the_stove_and_put_the_moka_pot_on_it"
+    },
+    {
+      "bddl_sha256": "5255fe54d7f25fad4dee8fa30a30033d8cb908f1708d953c91ab609264fb4fb8",
+      "init_file": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.init",
+      "problem_folder": "libero_10",
+      "pruned_init_file": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it.pruned_init",
+      "state_count": 50,
+      "state_sha256": "eccef53c9d2958afcbb806352d59b897487c0a82c81da7f294dca681108f93bf",
+      "state_width": 57,
+      "status": "generated",
+      "task": "KITCHEN_SCENE4_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_close_it"
+    },
+    {
+      "bddl_sha256": "0c6749b920bff1e1efe47ffb0e0b801a3e6959a650e710f376dd2b812c74e865",
+      "init_file": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_an__7e3b516213.init",
+      "problem_folder": "libero_10",
+      "pruned_init_file": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_an__7e3b516213.pruned_init",
+      "state_count": 50,
+      "state_sha256": "71932a49d41ea2f958cbede7eaed36c12e54898f797ce30644b1fbdb4f8c6381",
+      "state_width": 90,
+      "status": "generated",
+      "task": "LIVING_ROOM_SCENE5_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_white_mug_on_the_right_plate"
+    },
+    {
+      "bddl_sha256": "07ca32c940d70c065e870452ef9c63e6dfa1d8506e6a86cf9b3763f652ba2d9f",
+      "init_file": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.init",
+      "problem_folder": "libero_10",
+      "pruned_init_file": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.pruned_init",
+      "state_count": 50,
+      "state_sha256": "c9eef6aa34027d85ba4a759f4b1261e49ac541fdfc63567636adf5f74cf1fb40",
+      "state_width": 51,
+      "status": "generated",
+      "task": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy"
+    },
+    {
+      "bddl_sha256": "dbc9464b424cdc9b771b92d0b8a8c185b1b539f6a4133b323dc858bcf8f6a9c2",
+      "init_file": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudd__a2ad276158.init",
+      "problem_folder": "libero_10",
+      "pruned_init_file": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudd__a2ad276158.pruned_init",
+      "state_count": 50,
+      "state_sha256": "fb5443f90c19bc26029fc5023b0627f9744ca9d0c475f82a1ad17788c560a073",
+      "state_width": 77,
+      "status": "generated",
+      "task": "LIVING_ROOM_SCENE6_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_to_the_right_of_the_plate"
+    },
+    {
+      "bddl_sha256": "e27ab37f512fe42e35771d6130f531e6a9656929e7b4c60b348b81360cf5675d",
+      "init_file": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket.init",
+      "problem_folder": "libero_10",
+      "pruned_init_file": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket.pruned_init",
+      "state_count": 50,
+      "state_sha256": "88f24426bb27f20d0ea4d1e30c9fb145798d409386ac67feaaa2c1d07e14564f",
+      "state_width": 90,
+      "status": "generated",
+      "task": "LIVING_ROOM_SCENE1_put_both_the_alphabet_soup_and_the_cream_cheese_box_in_the_basket"
+    },
+    {
+      "bddl_sha256": "ae1299a707d3e810096ad648948c517de40474bcdacca93a15e17d191e34454a",
+      "init_file": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.init",
+      "problem_folder": "libero_10",
+      "pruned_init_file": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove.pruned_init",
+      "state_count": 50,
+      "state_sha256": "f7a49cbb592d14157b772c0f927868313a681fa295cd6c7e51addadff4ff90cb",
+      "state_width": 53,
+      "status": "generated",
+      "task": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove"
+    },
+    {
+      "bddl_sha256": "456d145f92be049f445fc77673dc583d9d17ea7afe92f6ffcb2fd1fa5565d420",
+      "init_file": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.init",
+      "problem_folder": "libero_10",
+      "pruned_init_file": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it.pruned_init",
+      "state_count": 50,
+      "state_sha256": "b852b3c57dbe409e14ede360c6fd4799759c629765b2f498ce8ef809be963688",
+      "state_width": 53,
+      "status": "generated",
+      "task": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it"
+    }
+  ]
+}

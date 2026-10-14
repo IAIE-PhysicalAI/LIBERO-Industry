@@ -1,0 +1,136 @@
+(define (problem LIBERO_Industry_Workbench_Ablation)
+  (:domain robosuite)
+  (:language pick the akita black bowl from the conveyor and place it on the plate)
+    (:regions
+      (belt_init
+          (:target industry_workbench)
+          (:ranges (
+              (0.02316320284031477 -0.05081725261316779 0.02516320284031477 -0.048817252613167786)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (target_init_0
+          (:target industry_workbench)
+          (:ranges (
+              (-0.21683679715968524 -0.05081725261316779 -0.21483679715968523 -0.048817252613167786)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (contact_region
+          (:target conveyor_belt_1)
+      )
+      (offset_region_1
+          (:target conveyor_belt_1)
+      )
+      (offset_region_2
+          (:target conveyor_belt_1)
+      )
+      (offset_region_3
+          (:target conveyor_belt_1)
+      )
+      (offset_region_4
+          (:target conveyor_belt_1)
+      )
+      (tail_region_1
+          (:target conveyor_belt_1)
+      )
+      (tail_region_2
+          (:target conveyor_belt_1)
+      )
+      (tail_region_3
+          (:target conveyor_belt_1)
+      )
+      (tail_region_4
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_1
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_2
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_3
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_1
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_2
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_3
+          (:target conveyor_belt_1)
+      )
+      (ablation_region_d2s
+          (:target conveyor_belt_1)
+      )
+      (ablation_region_d2d
+          (:target conveyor_belt_1)
+      )
+      (centre_region
+          (:target conveyor_belt_1)
+      )
+      (centre_region_d2d
+          (:target conveyor_belt_1)
+      )
+      (goal_region
+          (:target toy_tray_1)
+      )
+      (place_region_1
+          (:target toy_tray_1)
+      )
+      (place_region_2
+          (:target toy_tray_1)
+      )
+      (place_region_3
+          (:target toy_tray_1)
+      )
+      (place_region_4
+          (:target toy_tray_1)
+      )
+      (place_region_5
+          (:target toy_tray_1)
+      )
+      (place_region_6
+          (:target toy_tray_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_belt_1 - conveyor_belt
+    toy_tray_1 - toy_tray
+  )
+
+  (:objects
+    ablation_akita_black_bowl_1 - ablation_akita_black_bowl
+  )
+
+
+  (:obj_of_interest
+    ablation_akita_black_bowl_1
+  )
+
+
+  (:init
+    (On conveyor_belt_1 industry_workbench_belt_init)
+    (AtSpeed conveyor_belt_1 0.0813 steady takt_4.0 offset_1.5)
+    (On toy_tray_1 industry_workbench_target_init_0)
+    (On ablation_akita_black_bowl_1 conveyor_belt_1_offset_bowl_3)
+  )
+
+
+  (:goal
+    (And (ReleasedOn ablation_akita_black_bowl_1 toy_tray_1_goal_region))
+  )
+
+
+)

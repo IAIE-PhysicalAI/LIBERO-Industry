@@ -1,0 +1,105 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "embodiment": "panda",
+  "init_root": "libero/libero/init_files",
+  "profile": {
+    "compact_filenames": false,
+    "gripper_types": "default",
+    "name": "panda",
+    "relative_init_root": null,
+    "robots": [
+      "Panda"
+    ]
+  },
+  "reset_smoke": true,
+  "schema_version": 1,
+  "suite": "fractional_tuning_set",
+  "summary": {
+    "failed_tasks": 0,
+    "passed_tasks": 10,
+    "selected_tasks": 10
+  },
+  "tasks": [
+    {
+      "problem_folder": "fractional_tuning_set",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 279,
+      "status": "passed",
+      "task": "S2D_LV2_019_CREAM_JAR_V3_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove_svc1.5"
+    },
+    {
+      "problem_folder": "fractional_tuning_set",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 279,
+      "status": "passed",
+      "task": "S2D_LV2_019_CREAM_JAR_V3_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove_svc2.0"
+    },
+    {
+      "problem_folder": "fractional_tuning_set",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 279,
+      "status": "passed",
+      "task": "S2D_LV2_019_CREAM_JAR_V3_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove_svc2.5"
+    },
+    {
+      "problem_folder": "fractional_tuning_set",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 279,
+      "status": "passed",
+      "task": "S2D_LV2_019_CREAM_JAR_V3_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove_svc3.0"
+    },
+    {
+      "problem_folder": "fractional_tuning_set",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 279,
+      "status": "passed",
+      "task": "S2D_LV2_019_CREAM_JAR_V3_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove_svc3.5"
+    },
+    {
+      "problem_folder": "fractional_tuning_set",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 279,
+      "status": "passed",
+      "task": "S2D_LV2_019_CREAM_JAR_V3_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove_svc4.0"
+    },
+    {
+      "problem_folder": "fractional_tuning_set",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 279,
+      "status": "passed",
+      "task": "S2D_LV2_020_CREAM_JAR_V5_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove_svc1.5"
+    },
+    {
+      "problem_folder": "fractional_tuning_set",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 279,
+      "status": "passed",
+      "task": "S2D_LV2_020_CREAM_JAR_V5_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove_svc2.0"
+    },
+    {
+      "problem_folder": "fractional_tuning_set",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 266,
+      "status": "passed",
+      "task": "S2D_LV2_021_CREAM_JAR_V8_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove_svc1.5"
+    },
+    {
+      "problem_folder": "fractional_tuning_set",
+      "reset_states_checked": 1,
+      "state_count": 20,
+      "state_width": 266,
+      "status": "passed",
+      "task": "S2D_LV2_021_CREAM_JAR_V8_pick_up_the_cream_jar_and_place_it_upright_into_the_moving_groove_svc2.0"
+    }
+  ],
+  "validated_at": "2026-09-02T20:55:46.680186+00:00"
+}

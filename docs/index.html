@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#172634">
+    <meta
+      name="description"
+      content="LIBERO-Industry benchmarks robotic manipulation under industrial process constraints across 216 S2D, D2S, and D2D tasks."
+    >
+    <meta property="og:title" content="LIBERO-Industry">
+    <meta property="og:description" content="Benchmarking Robotic Manipulation under Industrial Process Constraints.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://IAIE-PhysicalAI.github.io/LIBERO-Industry/">
+    <meta property="og:image" content="https://IAIE-PhysicalAI.github.io/LIBERO-Industry/assets/overview.png">
+    <link rel="canonical" href="https://IAIE-PhysicalAI.github.io/LIBERO-Industry/">
+    <link rel="stylesheet" href="./styles.css?v=20261014-transfer-compact">
+    <title>LIBERO-Industry — Industrial Process Constraints</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav-shell nav-shell-centered" aria-label="Primary navigation">
+        <a class="nav-brand" href="./index.html" aria-label="LIBERO-Industry home">
+          <img src="./assets/libero-industry-logo.png" alt="LIBERO-Industry">
+        </a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="home-hero">
+        <!-- Thirty unique 256x256 agentview frames from accepted training-dataset
+             state replays, arranged once in a 10-by-3 desktop grid and
+             reflowed into square tiles on narrower screens. -->
+        <div class="hero-collage" aria-hidden="true">
+          <figure class="hero-shot suite-s2d"><img src="./assets/hero-s2d-lv2-002.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2s"><img src="./assets/hero-d2s-lv3-001.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2d"><img src="./assets/hero-d2d-lv2-015.jpg" alt=""></figure>
+          <figure class="hero-shot suite-s2d"><img src="./assets/hero-s2d-lv3-003.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2s"><img src="./assets/hero-d2s-lv2-008.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2d"><img src="./assets/hero-d2d-lv3-007.jpg" alt=""></figure>
+          <figure class="hero-shot suite-s2d"><img src="./assets/hero-s2d-lv2-013.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2s"><img src="./assets/hero-d2s-lv3-019.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2d"><img src="./assets/hero-d2d-lv1-001.jpg" alt=""></figure>
+          <figure class="hero-shot suite-s2d"><img src="./assets/hero-s2d-lv3-007.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2s"><img src="./assets/hero-d2s-lv2-005.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2d"><img src="./assets/hero-d2d-lv3-001.jpg" alt=""></figure>
+          <figure class="hero-shot suite-s2d"><img src="./assets/hero-s2d-lv2-006.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2s"><img src="./assets/hero-d2s-lv3-005.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2d"><img src="./assets/hero-d2d-lv2-007.jpg" alt=""></figure>
+          <figure class="hero-shot suite-s2d"><img src="./assets/hero-s2d-lv3-013.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2s"><img src="./assets/hero-d2s-lv2-016.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2d"><img src="./assets/hero-d2d-lv3-015.jpg" alt=""></figure>
+          <figure class="hero-shot suite-s2d"><img src="./assets/hero-s2d-lv2-008.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2s"><img src="./assets/hero-d2s-lv3-013.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2d"><img src="./assets/hero-d2d-lv2-001.jpg" alt=""></figure>
+          <figure class="hero-shot suite-s2d"><img src="./assets/hero-s2d-lv3-019.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2s"><img src="./assets/hero-d2s-lv3-024.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2d"><img src="./assets/hero-d2d-lv3-016.jpg" alt=""></figure>
+          <figure class="hero-shot suite-s2d"><img src="./assets/hero-s2d-groove.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2s"><img src="./assets/hero-d2s-pick.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2d"><img src="./assets/hero-d2d-transfer.jpg" alt=""></figure>
+          <figure class="hero-shot suite-s2d"><img src="./assets/hero-s2d-inlay.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2s"><img src="./assets/hero-d2s-place.jpg" alt=""></figure>
+          <figure class="hero-shot suite-d2d"><img src="./assets/hero-d2d-pick.jpg" alt=""></figure>
+        </div>
+        <div class="page-shell hero-content">
+          <h1>Benchmarking Robotic Manipulation under Industrial Process Constraints</h1>
+          <p class="authors">
+            <span>Ming Shin Cindy Sung<sup>1</sup></span>,
+            <span>Duan Leijiahao<sup>1</sup></span>,
+            <span>Haoxiang Wang<sup>1</sup></span>,
+            <span>Boning Tan<sup>1</sup></span>,
+            <span>Liangna Fu<sup>1</sup></span>,
+            <span>Chao Tan<sup>1</sup></span>,
+            <span>Yafu Li<sup>2</sup></span>,
+            <span>Yulong Chen<sup>3,4</sup></span>,
+            <span>Chaoqun Wan<sup>1</sup></span>,
+            <span>Zhen Huang<sup>1</sup></span>,
+            <span>Shuxian Liang<sup>1*</sup></span>,
+            <span>Xian-Sheng Hua<sup>1</sup></span>
+          </p>
+          <p class="affiliations">
+            <span><sup>1</sup>Institute of AI for Engineering, Tongji University</span>
+            <span><sup>2</sup>The Chinese University of Hong Kong</span><br>
+            <span><sup>3</sup>University of Aberdeen</span>
+            <span><sup>4</sup>University of Cambridge</span>
+          </p>
+          <p class="corresponding-author">*Corresponding author</p>
+          <nav class="hero-links" aria-label="Project resources">
+            <a href="https://arxiv.org/abs/2610.16782" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a href="https://github.com/IAIE-PhysicalAI/LIBERO-Industry" target="_blank" rel="noopener noreferrer">Code</a>
+            <a href="#datasets">Datasets</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section home-overview">
+        <div class="page-shell">
+          <div class="section-heading">
+            <h2>Industrial constraints as controlled task conditions</h2>
+          </div>
+
+          <figure class="paper-figure overview-figure animated-overview" id="overview">
+            <div class="overview-layout">
+              <div class="overview-constraints" role="img" aria-label="Industrial process conditions: product variants, material flow, execution time window, and tight geometric tolerance. These create reconfiguration overhead through reprogramming, recalibration, and reteaching."></div>
+              <div class="overview-connector" aria-hidden="true"><span></span><p>Instantiated as</p></div>
+              <div class="overview-suites">
+                <img class="overview-logo" src="./overview-media/overview-logo.png" alt="LIBERO-Industry">
+                <p class="overview-facts">216 tasks · 180 training · 36 held-out evaluation</p>
+                <h3>Task suites organized by source–destination dynamics</h3>
+                <p class="overview-legend">S = Static · D = Dynamic</p>
+                <div class="overview-videos">
+                  <figure class="overview-demo">
+                    <h4>S2D</h4>
+                    <video autoplay muted loop playsinline preload="auto" width="128" height="128"
+                      poster="./overview-media/overview-s2d-lv2.jpg?v=upright1" aria-label="S2D Level 2 scripted expert demonstration: place the pump bottle flat into the moving groove">
+                      <source src="./overview-media/overview-s2d-lv2.mp4?v=upright1" type="video/mp4">
+                    </video>
+                    <figcaption>
+                      <strong>Static → Dynamic loading</strong>
+                      <span>Place the pump bottle flat into the moving groove.</span>
+                      <small>Level 2 · Scripted expert</small>
+                    </figcaption>
+                  </figure>
+                  <figure class="overview-demo">
+                    <h4>D2S</h4>
+                    <video autoplay muted loop playsinline preload="auto" width="128" height="128"
+                      poster="./overview-media/overview-d2s-lv2-019.jpg" aria-label="D2S Level 2 scripted expert demonstration on a glossy green work surface: sort the marked toys from the conveyor into stationary grooves">
+                      <source src="./overview-media/overview-d2s-lv2-019.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>
+                      <strong>Dynamic → Static unloading</strong>
+                      <span>Sort the marked toys into stationary grooves.</span>
+                      <small>Level 2 · Scripted expert</small>
+                    </figcaption>
+                  </figure>
+                  <figure class="overview-demo">
+                    <h4>D2D</h4>
+                    <video autoplay muted loop playsinline preload="auto" width="128" height="128"
+                      poster="./overview-media/overview-d2d-lv2.jpg?v=upright1" aria-label="D2D Level 2 scripted expert demonstration: transfer the mouse from the conveyor into the moving groove">
+                      <source src="./overview-media/overview-d2d-lv2.mp4?v=upright1" type="video/mp4">
+                    </video>
+                    <figcaption>
+                      <strong>Dynamic → Dynamic transfer</strong>
+                      <span>Transfer the mouse from the conveyor into the moving groove.</span>
+                      <small>Level 2 · Scripted expert</small>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <figcaption>
+              <span>Industrial process conditions are instantiated as controlled task
+              variations across the three material-flow suites. Videos show accepted scripted-expert demonstrations from Level 2.
+              <a href="./assets/overview.png" target="_blank" rel="noopener noreferrer">View the paper figure →</a></span>
+              <button class="overview-playback" type="button" aria-pressed="false">Pause demonstrations</button>
+            </figcaption>
+          </figure>
+
+          <div class="abstract-panel">
+            <h2>Abstract</h2>
+            <p>
+              Industrial manipulation in flexible manufacturing, e.g., high-mix,
+              low-volume (HMLV) electronics assembly, requires robot policies to
+              adapt to changing products and production conditions. Such settings
+              impose industrial process constraints, including product variants,
+              moving material flows, finite execution windows, and tight geometric
+              tolerances. However, existing evaluation frameworks do not
+              systematically capture these constraints when assessing generalist
+              robot policies. To address this gap, we introduce LIBERO-Industry, a
+              novel benchmark built on the widely used robot learning benchmark
+              LIBERO, that translates the aforementioned industrial constraints into
+              controllable task conditions and measurable success criteria.
+              Specifically, LIBERO-Industry comprises three classic task scenarios:
+              Static-to-Dynamic (S2D) loading, Dynamic-to-Static (D2S) unloading,
+              and Dynamic-to-Dynamic (D2D) transfer. The suites contain 216 tasks in
+              total that systematically vary object geometry, conveyor speed,
+              interaction-window duration, and geometric acceptance region size.
+              Extensive experiments across five generalist robot policies (including
+              vision-language-action models and world-action models) show that
+              performance progressively degrades as industrial constraints are
+              introduced and combined. Under a shared fine-tuning and evaluation protocol,
+              the LIBERO-Industry co-training condition achieved higher observed
+              target-transfer completion than the original-LIBERO condition.
+            </p>
+          </div>
+
+          <div class="merged-block">
+            <div class="section-heading research-heading">
+              <h2>Task generation and validation</h2>
+              <p>
+                One pipeline converts BDDL task specifications into validated task
+                instances and admitted demonstrations.
+              </p>
+            </div>
+
+            <figure class="paper-figure">
+              <img src="./assets/task-generation-pipeline.png" alt="LIBERO-Industry task-generation pipeline from BDDL definition to admitted demonstrations">
+            </figure>
+          </div>
+
+          <div class="merged-block" id="datasets">
+            <div class="section-heading">
+              <h2>Datasets</h2>
+              <p>
+                We use the Aubo i5h equipped with the CTAG2F90D gripper for
+                real-world validation.
+              </p>
+            </div>
+
+            <div class="dataset-grid dataset-grid-large">
+              <a href="https://huggingface.co/datasets/cindysung/LIBERO-industry-datasets">
+                <span class="dataset-format">HDF5</span>
+                <h2>LIBERO-Industry demonstrations</h2>
+                <p>Native trajectory archives for benchmark training and evaluation.</p>
+                <span class="arrow" aria-hidden="true">Open dataset →</span>
+              </a>
+              <a href="https://huggingface.co/datasets/cindysung/LIBERO-industry-realworld-auboi5h">
+                <span class="dataset-format">Real-world HDF5</span>
+                <h2>Real-World Validation Demonstrations</h2>
+                <p>95 accepted Aubo i5h and CTAG2F90D demonstrations with aligned external and wrist-camera observations.</p>
+                <span class="arrow" aria-hidden="true">Open dataset →</span>
+              </a>
+            </div>
+
+            <div class="resource-facts">
+              <article>
+                <strong>180 / 36</strong>
+                <h3>Train and held-out split</h3>
+                <p>Use the training split for policy learning and the held-out split for official reporting.</p>
+              </article>
+              <article>
+                <strong>S2D · D2S · D2D</strong>
+                <h3>Suite coverage</h3>
+                <p>Resources follow the benchmark’s three source–destination dynamics.</p>
+              </article>
+              <article>
+                <strong>SR · PCR-T · PCR-S</strong>
+                <h3>Evaluation metrics</h3>
+                <p><b>SR:</b> Complete-task success.</p>
+                <p><b>PCR-T:</b> Target-transfer completion.</p>
+                <p><b>PCR-S:</b> Final placement completion, including pre-existing destination workpieces.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="merged-block">
+            <div class="section-heading research-heading">
+              <h2>Research</h2>
+            </div>
+
+            <div class="research-figures">
+              <details class="benchmark-results">
+                <summary>Cross-benchmark transfer evaluation <span>(Table 3)</span></summary>
+                <div class="research-study-heading">
+                  <p>Five original-LIBERO-fine-tuned checkpoints, without further LIBERO-Industry fine-tuning. Evaluated on 36 held-out tasks, with 10 initial states per task: 360 rollouts per policy.</p>
+                </div>
+                <div class="results-table-wrap">
+                  <table class="results-table">
+                    <caption>Evaluation-set results from Table 3 of the paper. Scores in %.</caption>
+                    <thead>
+                      <tr><th scope="col">Policy</th><th scope="col">SR</th><th scope="col">PCR-T</th><th scope="col">PCR-S</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><th scope="row">π<sub>0.5</sub></th><td>0.0</td><td>0.4</td><td>12.5</td></tr>
+                      <tr><th scope="row">OpenVLA-OFT</th><td>0.0</td><td>0.0</td><td>11.2</td></tr>
+                      <tr><th scope="row">UniVLA</th><td>0.0</td><td>0.0</td><td>12.2</td></tr>
+                      <tr><th scope="row">X-VLA</th><td>0.0</td><td>0.0</td><td>11.9</td></tr>
+                      <tr><th scope="row">Cosmos Policy</th><td>0.0</td><td>0.0</td><td>11.8</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p class="results-note">All five policies recorded 0/360 complete-task successes. PCR-S includes pre-existing destination workpieces that remain valid; their mean initial-state baseline is 12.3%. PCR-T isolates newly completed target transfers.</p>
+              </details>
+              <article class="research-study">
+                <div class="research-study-heading">
+                  <h3>Diagnostic stress progression</h3>
+                  <p>
+                    The cumulative D0–D6 diagnostic stress progression shows how
+                    generalist robot policies respond as industrial constraints accumulate.
+                  </p>
+                </div>
+                <figure class="paper-figure">
+                  <img src="./assets/ablation-progression.png" alt="Cumulative D0 to D6 diagnostic progression for success rate and task progression">
+                  <figcaption>
+                    Cumulative D0–D6 diagnostic progression. Each setting retains the
+                    preceding changes; this is not a causal one-factor ablation.
+                  </figcaption>
+                </figure>
+              </article>
+
+              <section class="media-showcase" aria-labelledby="failure-cases-title">
+                <div class="media-showcase-heading">
+                  <h3 id="failure-cases-title">Representative failure cases</h3>
+                  <label class="speed-control">
+                    <span>Playback speed</span>
+                    <select data-speed-group="failure" aria-label="Failure case playback speed">
+                      <option value="1" selected>1×</option>
+                      <option value="2">2×</option>
+                      <option value="4">4×</option>
+                    </select>
+                  </label>
+                </div>
+
+                <p class="failure-classification">
+                  <strong>Failure classification:</strong>
+                  Pre-reach policy freeze &rarr; Reach failure &rarr; Grasp acquisition failure &rarr;
+                  Lift failure (early slip) &rarr; Dropped midway &rarr; Post-release goal failure
+                </p>
+
+                <div class="media-grid">
+                  <figure class="media-card">
+                    <div class="media-frame">
+                      <video controls playsinline preload="none" width="256" height="256"
+                        poster="./assets/failure-cases/failure-grasp-paper-abld306-ep10.jpg" data-speed-group="failure"
+                        aria-label="Reach failure in D2S D3 task 6 episode 10">
+                        <source src="./assets/failure-cases/failure-grasp-paper-abld306-ep10.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <figcaption>
+                      <strong>Reach Failure</strong>
+                      <span>D2S &middot; D3 &middot; Task 6 &middot; Episode 10</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="media-card">
+                    <div class="media-frame">
+                      <video controls playsinline preload="none" width="256" height="256"
+                        poster="./assets/failure-cases/failure-grasp-s2d-ablation.jpg" data-speed-group="failure"
+                        aria-label="Lift failure with early slip in S2D D3 task 9 episode 15">
+                        <source src="./assets/failure-cases/failure-grasp-s2d-ablation.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <figcaption>
+                      <strong>Lift Failure (early slip)</strong>
+                      <span>S2D &middot; D3 &middot; Task 9 &middot; Episode 15</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="media-card">
+                    <div class="media-frame">
+                      <video controls playsinline preload="none" width="256" height="256"
+                        poster="./assets/failure-cases/failure-transport-d2s-drop.jpg" data-speed-group="failure"
+                        aria-label="Dropped midway failure in D2S D5 task 4 episode 1">
+                        <source src="./assets/failure-cases/failure-transport-d2s-drop.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <figcaption>
+                      <strong>Dropped Midway</strong>
+                      <span>D2S &middot; D5 &middot; Task 4 &middot; Episode 1</span>
+                    </figcaption>
+                  </figure>
+                  <figure class="media-card">
+                    <div class="media-frame">
+                      <video controls playsinline preload="none" width="256" height="256"
+                        poster="./assets/failure-cases/failure-placement-paper-abld509-ep15.jpg" data-speed-group="failure"
+                        aria-label="Post-release goal failure in S2D D5 task 9 episode 15">
+                        <source src="./assets/failure-cases/failure-placement-paper-abld509-ep15.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <figcaption>
+                      <strong>Post-release Goal Failure</strong>
+                      <span>S2D &middot; D5 &middot; Task 9 &middot; Episode 15</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </section>
+
+              <article class="research-study">
+                <div class="research-study-heading">
+                  <h3>Real-world Aubo workcell evaluation</h3>
+                  <p>
+                    An Aubo i5h workcell evaluation compares policies fine-tuned on
+                    LIBERO and LIBERO-Industry across consecutive pick-and-place trials
+                    and controlled perturbations.
+                  </p>
+                </div>
+                <figure class="paper-figure">
+                  <img src="./assets/real-world-evaluation.png" alt="Real-world AUBO-i5H evaluation setup and results">
+                  <figcaption>Real-world AUBO-i5H evaluation summary reported in the manuscript.</figcaption>
+                </figure>
+              </article>
+            </div>
+
+            <div class="paper-panel">
+              <div>
+                <p class="eyebrow">Paper</p>
+                <h2>Manuscript link and citation</h2>
+                <p><a class="paper-link" href="https://arxiv.org/abs/2610.16782" target="_blank" rel="noopener noreferrer">Read the paper on arXiv →</a></p>
+                <pre class="citation-block"><code>@misc{sung2026liberoindustry,
+  title={{LIBERO-Industry}: Benchmarking Robotic Manipulation under Industrial Process Constraints},
+  author={Sung, Ming Shin Cindy and Duan, Leijiahao and Wang, Haoxiang and
+          Tan, Boning and Fu, Liangna and Tan, Chao and Li, Yafu and
+          Chen, Yulong and Wan, Chaoqun and Huang, Zhen and Liang, Shuxian and
+          Hua, Xian-Sheng},
+  year={2026},
+  eprint={2610.16782},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  doi={10.48550/arXiv.2610.16782},
+  url={https://arxiv.org/abs/2610.16782}
+}</code></pre>
+              </div>
+              <p class="lineage">
+                LIBERO-Industry builds on
+                <a href="https://libero-project.github.io/">LIBERO</a>, the lifelong
+                robot-learning benchmark.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="page-shell footer-layout">
+        <p>LIBERO-Industry</p>
+      </div>
+    </footer>
+    <script>
+      const overviewVideos = [...document.querySelectorAll(".overview-demo video")];
+      const overviewPlayback = document.querySelector(".overview-playback");
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      const pauseOverview = () => {
+        overviewVideos.forEach((video) => video.pause());
+        overviewPlayback.textContent = "Play demonstrations";
+        overviewPlayback.setAttribute("aria-pressed", "true");
+      };
+      if (reducedMotion.matches) pauseOverview();
+      reducedMotion.addEventListener("change", (event) => {
+        if (event.matches) pauseOverview();
+      });
+      overviewPlayback.addEventListener("click", async () => {
+        if (overviewVideos.some((video) => !video.paused)) {
+          pauseOverview();
+          return;
+        }
+        await Promise.allSettled(overviewVideos.map((video) => video.play()));
+        const paused = overviewVideos.every((video) => video.paused);
+        overviewPlayback.textContent = paused ? "Play demonstrations" : "Pause demonstrations";
+        overviewPlayback.setAttribute("aria-pressed", String(paused));
+      });
+      Promise.allSettled(overviewVideos.map((video) => reducedMotion.matches ? Promise.resolve() : video.play())).then(() => {
+        if (overviewVideos.every((video) => video.paused)) pauseOverview();
+      });
+      document.querySelectorAll("select[data-speed-group]").forEach((select) => {
+        const applySpeed = () => {
+          document.querySelectorAll(`video[data-speed-group="${select.dataset.speedGroup}"]`).forEach((video) => {
+            video.playbackRate = Number(select.value);
+          });
+        };
+        select.addEventListener("change", applySpeed);
+        applySpeed();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language place toys)
+    (:regions
+      (belt_init
+          (:target industry_workbench)
+          (:ranges (
+              (-0.10214653361753598 0.40299599662819735 -0.10014653361753598 0.40499599662819735)
+            )
+          )
+          (:yaw_rotation (
+              (4.728989510114737 4.728989510114737)
+            )
+          )
+      )
+      (target_init_0
+          (:target industry_workbench)
+          (:ranges (
+              (-0.10202126273968204 -0.1291488101966396 -0.10002126273968204 -0.1271488101966396)
+            )
+          )
+          (:yaw_rotation (
+              (6.203869405385853 6.203869405385853)
+            )
+          )
+      )
+      (target_init_1
+          (:target industry_workbench)
+          (:ranges (
+              (-0.1827544843144265 0.06811475559926715 -0.1807544843144265 0.07011475559926715)
+            )
+          )
+          (:yaw_rotation (
+              (6.388399687807448 6.388399687807448)
+            )
+          )
+      )
+      (target_init_2
+          (:target industry_workbench)
+          (:ranges (
+              (-0.020910036307880697 0.06448989672091468 -0.018910036307880695 0.06648989672091468)
+            )
+          )
+          (:yaw_rotation (
+              (6.250664191970477 6.250664191970477)
+            )
+          )
+      )
+      (contact_region
+          (:target conveyor_belt_1)
+      )
+      (offset_region_1
+          (:target conveyor_belt_1)
+      )
+      (offset_region_2
+          (:target conveyor_belt_1)
+      )
+      (offset_region_3
+          (:target conveyor_belt_1)
+      )
+      (offset_region_4
+          (:target conveyor_belt_1)
+      )
+      (tail_region_1
+          (:target conveyor_belt_1)
+      )
+      (tail_region_2
+          (:target conveyor_belt_1)
+      )
+      (tail_region_3
+          (:target conveyor_belt_1)
+      )
+      (tail_region_4
+          (:target conveyor_belt_1)
+      )
+      (offset_region_d2d_1
+          (:target conveyor_belt_1)
+      )
+      (offset_region_d2d_2
+          (:target conveyor_belt_1)
+      )
+      (offset_region_d2d_3
+          (:target conveyor_belt_1)
+      )
+      (offset_region_d2d_4
+          (:target conveyor_belt_1)
+      )
+      (tail_region_d2d_1
+          (:target conveyor_belt_1)
+      )
+      (tail_region_d2d_2
+          (:target conveyor_belt_1)
+      )
+      (tail_region_d2d_3
+          (:target conveyor_belt_1)
+      )
+      (tail_region_d2d_4
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_1
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_2
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_3
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_1
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_2
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_3
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_d2d_1
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_d2d_2
+          (:target conveyor_belt_1)
+      )
+      (offset_bowl_d2d_3
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_d2d_1
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_d2d_2
+          (:target conveyor_belt_1)
+      )
+      (tail_bowl_d2d_3
+          (:target conveyor_belt_1)
+      )
+      (ablation_region_d2s
+          (:target conveyor_belt_1)
+      )
+      (ablation_region_d2d
+          (:target conveyor_belt_1)
+      )
+      (centre_region
+          (:target conveyor_belt_1)
+      )
+      (centre_region_d2d
+          (:target conveyor_belt_1)
+      )
+      (goal_region
+          (:target mario_flat_inlay_1)
+      )
+      (goal_region
+          (:target mini_roller_flat_inlay_1)
+      )
+      (goal_region
+          (:target school_bus_flat_inlay_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_belt_1 - conveyor_belt
+    mario_flat_inlay_1 - mario_flat_inlay
+    mini_roller_flat_inlay_1 - mini_roller_flat_inlay
+    school_bus_flat_inlay_1 - school_bus_flat_inlay
+  )
+
+  (:objects
+    mario_flat_1 - mario_flat
+    mini_roller_flat_1 - mini_roller_flat
+    thomas_flat_1 - thomas_flat
+    school_bus_flat_1 - school_bus_flat
+  )
+
+  (:obj_of_interest
+    mario_flat_1
+    mini_roller_flat_1
+    school_bus_flat_1
+  )
+
+  (:init
+    (On conveyor_belt_1 industry_workbench_belt_init)
+    (AtSpeed conveyor_belt_1 0.05 steady takt_6.0 offset_1.5)
+    (On mini_roller_flat_inlay_1 industry_workbench_target_init_0)
+    (On school_bus_flat_inlay_1 industry_workbench_target_init_1)
+    (On mario_flat_inlay_1 industry_workbench_target_init_2)
+    (AlignedOn school_bus_flat_1 school_bus_flat_inlay_1_goal_region)
+    (On mario_flat_1 conveyor_belt_1_offset_region_3)
+    (On mini_roller_flat_1 conveyor_belt_1_offset_region_1)
+    (On thomas_flat_1 conveyor_belt_1_offset_region_4)
+  )
+
+  (:goal
+    (And (AlignedOn mario_flat_1 mario_flat_inlay_1_goal_region) (AlignedOn mini_roller_flat_1 mini_roller_flat_inlay_1_goal_region) (AlignedOn school_bus_flat_1 school_bus_flat_inlay_1_goal_region))
+  )
+
+)

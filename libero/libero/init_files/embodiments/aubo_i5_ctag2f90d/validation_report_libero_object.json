@@ -1,0 +1,105 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "embodiment": "aubo_i5_ctag2f90d",
+  "init_root": "libero/libero/init_files/embodiments/aubo_i5_ctag2f90d",
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "reset_smoke": true,
+  "schema_version": 1,
+  "suite": "libero_object",
+  "summary": {
+    "failed_tasks": 0,
+    "passed_tasks": 10,
+    "selected_tasks": 10
+  },
+  "tasks": [
+    {
+      "problem_folder": "libero_object",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 116,
+      "status": "passed",
+      "task": "pick_up_the_alphabet_soup_and_place_it_in_the_basket"
+    },
+    {
+      "problem_folder": "libero_object",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 116,
+      "status": "passed",
+      "task": "pick_up_the_cream_cheese_and_place_it_in_the_basket"
+    },
+    {
+      "problem_folder": "libero_object",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 116,
+      "status": "passed",
+      "task": "pick_up_the_salad_dressing_and_place_it_in_the_basket"
+    },
+    {
+      "problem_folder": "libero_object",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 116,
+      "status": "passed",
+      "task": "pick_up_the_bbq_sauce_and_place_it_in_the_basket"
+    },
+    {
+      "problem_folder": "libero_object",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 116,
+      "status": "passed",
+      "task": "pick_up_the_ketchup_and_place_it_in_the_basket"
+    },
+    {
+      "problem_folder": "libero_object",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 116,
+      "status": "passed",
+      "task": "pick_up_the_tomato_sauce_and_place_it_in_the_basket"
+    },
+    {
+      "problem_folder": "libero_object",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 116,
+      "status": "passed",
+      "task": "pick_up_the_butter_and_place_it_in_the_basket"
+    },
+    {
+      "problem_folder": "libero_object",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 116,
+      "status": "passed",
+      "task": "pick_up_the_milk_and_place_it_in_the_basket"
+    },
+    {
+      "problem_folder": "libero_object",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 116,
+      "status": "passed",
+      "task": "pick_up_the_chocolate_pudding_and_place_it_in_the_basket"
+    },
+    {
+      "problem_folder": "libero_object",
+      "reset_states_checked": 50,
+      "state_count": 50,
+      "state_width": 116,
+      "status": "passed",
+      "task": "pick_up_the_orange_juice_and_place_it_in_the_basket"
+    }
+  ],
+  "validated_at": "2026-08-27T12:32:47.782672+00:00"
+}

@@ -1,0 +1,81 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language route cosmetics)
+    (:regions
+      (ghost_init
+          (:target industry_workbench)
+          (:ranges (
+              (0.02999776432652744 0.012368830065211115 0.029999764326527442 0.012370830065211114)
+            )
+          )
+          (:yaw_rotation (
+              (0.047127649716427335 0.047127649716427335)
+            )
+          )
+      )
+      (tray_init
+          (:target industry_workbench)
+          (:ranges (
+              (-0.1844139093145651 0.002256624251165725 -0.1844119093145651 0.0022586242511657252)
+            )
+          )
+          (:yaw_rotation (
+              (1.617923976511324 1.617923976511324)
+            )
+          )
+      )
+      (ghost_active_region
+          (:target conveyor_ghost_1)
+      )
+      (goal_region
+          (:target grey_plate_1)
+      )
+      (place_region_1
+          (:target grey_plate_1)
+      )
+      (place_region_2
+          (:target grey_plate_1)
+      )
+      (place_region_3
+          (:target grey_plate_1)
+      )
+      (place_region_4
+          (:target grey_plate_1)
+      )
+      (place_region_5
+          (:target grey_plate_1)
+      )
+      (place_region_6
+          (:target grey_plate_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_ghost_1 - conveyor_ghost
+    grey_plate_1 - grey_plate
+  )
+
+  (:objects
+    pump_bottle_flat_1 pump_bottle_flat_2 pump_bottle_flat_3 - pump_bottle_flat
+    serum_bottle_flat_1 - serum_bottle_flat
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_ghost_1 industry_workbench_ghost_init)
+    (On grey_plate_1 industry_workbench_tray_init)
+    (LoadSlot conveyor_ghost_1 pump_bottle_flat_groove y pulse -0.0829 service_2.0)
+    (On pump_bottle_flat_1 grey_plate_1_place_region_2)
+    (On pump_bottle_flat_2 grey_plate_1_place_region_5)
+    (On pump_bottle_flat_3 grey_plate_1_place_region_6)
+    (On serum_bottle_flat_1 grey_plate_1_place_region_3)
+  )
+
+  (:goal
+    (And (Routed pump_bottle_flat_1 conveyor_ghost_1) (Routed pump_bottle_flat_2 conveyor_ghost_1) (Routed pump_bottle_flat_3 conveyor_ghost_1))
+  )
+
+)

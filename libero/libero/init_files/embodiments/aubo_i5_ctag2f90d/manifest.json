@@ -1,0 +1,24 @@
+{
+  "embodiment": "aubo_i5_ctag2f90d",
+  "generated_at": "2026-10-10T18:59:47.462578+00:00",
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "schema_version": 1,
+  "source_commit": "ab9bdee89a6c1f3a8ff56e80cf36fb49cc0e04a8",
+  "state_format": "torch-saved numpy.ndarray[num_states, flattened_mujoco_state]",
+  "versions": {
+    "mujoco": "3.7.0",
+    "mujoco_py": null,
+    "numpy": "1.26.4",
+    "python": "3.10.20",
+    "robosuite": "1.5.2",
+    "torch": "2.2.2+cpu"
+  }
+}

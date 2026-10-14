@@ -1,0 +1,37 @@
+<mujoco model="industry_bench">
+  <asset>
+    <texture file="ReloadingBench_BaseColor.png" name="tex_bench" type="2d" />
+    <texture file="ReloadingPressBoxes_BaseColor.png" name="tex_boxes" type="2d" />
+    <texture file="ReloadingTools_BaseColor.png" name="tex_tools" type="2d" />
+
+    <material name="mat_bench" texture="tex_bench" reflectance="0.05" shininess="0.1" specular="0.1" />
+    
+    <material name="mat_boxes" texture="tex_boxes" reflectance="0.2" shininess="0.3" specular="0.3" />
+    
+    <material name="mat_tools" texture="tex_tools" reflectance="0.8" shininess="0.9" specular="0.9" />
+    
+    <material name="mat_wire" rgba="0.018 0.018 0.018 1" reflectance="0.5" shininess="0.2" />
+
+    <mesh file="bench.obj" name="mesh_bench" />
+    <mesh file="boxes.obj" name="mesh_boxes" />
+    <mesh file="tools.obj" name="mesh_tools" />
+    <mesh file="wire.obj" name="mesh_wire" />
+  </asset>
+
+  <worldbody>
+    <body>
+      <body name="object">
+        <geom type="mesh" mesh="mesh_bench" material="mat_bench" group="1" conaffinity="0" contype="0" />
+        <geom type="mesh" mesh="mesh_boxes" material="mat_boxes" group="1" conaffinity="0" contype="0" />
+        <geom type="mesh" mesh="mesh_tools" material="mat_tools" group="1" conaffinity="0" contype="0" />
+        <geom type="mesh" mesh="mesh_wire" material="mat_wire" group="1" conaffinity="0" contype="0" />
+
+        <geom type="box" size="2.25 0.4525 0.525" pos="0 0 0.525" group="0" rgba="0.8 0.8 0.8 0.0" />
+      </body>
+
+      <site name="bottom_site" pos="0 0 0" size="0.005" rgba="0 0 0 0" />
+      <site name="top_site" pos="0 0 1.05" size="0.005" rgba="0 0 0 0" />
+      <site name="horizontal_radius_site" pos="2.25 0.4525 0" size="0.005" rgba="0 0 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

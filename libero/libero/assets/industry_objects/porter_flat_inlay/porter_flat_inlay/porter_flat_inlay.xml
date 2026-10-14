@@ -1,0 +1,144 @@
+<mujoco model="porter_flat_inlay">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <mesh file="porter_flat_inlay.obj"/>
+    <mesh file="porter_flat_inlay_collision_0.obj"/>
+    <mesh file="porter_flat_inlay_collision_1.obj"/>
+    <mesh file="porter_flat_inlay_collision_2.obj"/>
+    <mesh file="porter_flat_inlay_collision_3.obj"/>
+    <mesh file="porter_flat_inlay_collision_4.obj"/>
+    <mesh file="porter_flat_inlay_collision_5.obj"/>
+    <mesh file="porter_flat_inlay_collision_6.obj"/>
+    <mesh file="porter_flat_inlay_collision_7.obj"/>
+    <mesh file="porter_flat_inlay_collision_8.obj"/>
+    <mesh file="porter_flat_inlay_collision_9.obj"/>
+    <mesh file="porter_flat_inlay_collision_10.obj"/>
+    <mesh file="porter_flat_inlay_collision_11.obj"/>
+    <mesh file="porter_flat_inlay_collision_12.obj"/>
+    <mesh file="porter_flat_inlay_collision_13.obj"/>
+    <mesh file="porter_flat_inlay_collision_14.obj"/>
+    <mesh file="porter_flat_inlay_collision_15.obj"/>
+    <mesh file="porter_flat_inlay_collision_16.obj"/>
+    <mesh file="porter_flat_inlay_collision_17.obj"/>
+    <mesh file="porter_flat_inlay_collision_18.obj"/>
+    <mesh file="porter_flat_inlay_collision_19.obj"/>
+    <mesh file="porter_flat_inlay_collision_20.obj"/>
+    <mesh file="porter_flat_inlay_collision_21.obj"/>
+    <mesh file="porter_flat_inlay_collision_22.obj"/>
+    <mesh file="porter_flat_inlay_collision_23.obj"/>
+    <mesh file="porter_flat_inlay_collision_24.obj"/>
+    <mesh file="porter_flat_inlay_collision_25.obj"/>
+    <mesh file="porter_flat_inlay_collision_26.obj"/>
+    <mesh file="porter_flat_inlay_collision_27.obj"/>
+    <mesh file="porter_flat_inlay_collision_28.obj"/>
+    <mesh file="porter_flat_inlay_collision_29.obj"/>
+    <mesh file="porter_flat_inlay_collision_30.obj"/>
+    <mesh file="porter_flat_inlay_collision_31.obj"/>
+    <mesh file="porter_flat_inlay_collision_32.obj"/>
+    <mesh file="porter_flat_inlay_collision_33.obj"/>
+    <mesh file="porter_flat_inlay_collision_34.obj"/>
+    <mesh file="porter_flat_inlay_collision_35.obj"/>
+    <mesh file="porter_flat_inlay_collision_36.obj"/>
+    <mesh file="porter_flat_inlay_collision_37.obj"/>
+    <mesh file="porter_flat_inlay_collision_38.obj"/>
+    <mesh file="porter_flat_inlay_collision_39.obj"/>
+    <mesh file="porter_flat_inlay_collision_40.obj"/>
+    <mesh file="porter_flat_inlay_collision_41.obj"/>
+    <mesh file="porter_flat_inlay_collision_42.obj"/>
+    <mesh file="porter_flat_inlay_collision_43.obj"/>
+    <mesh file="porter_flat_inlay_collision_44.obj"/>
+    <mesh file="porter_flat_inlay_collision_45.obj"/>
+    <mesh file="porter_flat_inlay_collision_46.obj"/>
+    <mesh file="porter_flat_inlay_collision_47.obj"/>
+    <mesh file="porter_flat_inlay_collision_48.obj"/>
+    <mesh file="porter_flat_inlay_collision_49.obj"/>
+    <mesh file="porter_flat_inlay_collision_50.obj"/>
+    <mesh file="porter_flat_inlay_collision_51.obj"/>
+    <mesh file="porter_flat_inlay_collision_52.obj"/>
+    <mesh file="porter_flat_inlay_collision_53.obj"/>
+    <mesh file="porter_flat_inlay_collision_54.obj"/>
+    <mesh file="porter_flat_inlay_collision_55.obj"/>
+    <mesh file="porter_flat_inlay_collision_56.obj"/>
+    <mesh file="porter_flat_inlay_collision_57.obj"/>
+    <mesh file="porter_flat_inlay_collision_58.obj"/>
+    <mesh file="porter_flat_inlay_collision_59.obj"/>
+    <mesh file="porter_flat_inlay_collision_60.obj"/>
+    <mesh file="porter_flat_inlay_collision_61.obj"/>
+    <mesh file="porter_flat_inlay_collision_62.obj"/>
+  </asset>
+  <worldbody>
+    <body name="porter_flat_inlay">
+      <geom mesh="porter_flat_inlay" class="visual"/>
+      <geom mesh="porter_flat_inlay_collision_0" rgba="0.19596098470404966 0.41040915739242323 0.7383280805989672 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_1" rgba="0.6544067511516719 0.5766586283513253 0.21346844609715865 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_2" rgba="0.9971998179114908 0.1675400216040771 0.8765790418869815 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_3" rgba="0.6355091646381538 0.8485634475229706 0.6279671945603899 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_4" rgba="0.2766813451068708 0.5858633934182239 0.4068280923316362 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_5" rgba="0.6532481030507403 0.07339829931886743 0.5124969849084506 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_6" rgba="0.04191374019371841 0.8815751670360253 0.23832639636862707 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_7" rgba="0.5033330566699602 0.4187240039100081 0.6412080199915463 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_8" rgba="0.6909266460361162 0.4287681629038964 0.9871414808801359 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_9" rgba="0.8990687382511527 0.715188571385325 0.8231349863299238 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_10" rgba="0.3421213080833412 0.8088947251861153 0.8873060457738926 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_11" rgba="0.353949723331653 0.1189381717848863 0.19441767016667488 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_12" rgba="0.9312599234082928 0.5679538316467506 0.1239069272542419 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_13" rgba="0.377463171082814 0.8693422605307081 0.267730628142404 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_14" rgba="0.6869142126196286 0.8987109711811065 0.857328454831583 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_15" rgba="0.40655844877293723 0.4267764623684124 0.8471235691523324 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_16" rgba="0.40101365665825794 0.6935743438088681 0.13333195119272256 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_17" rgba="0.1000370506741256 0.8362770670243617 0.8233978817273655 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_18" rgba="0.7986210015346735 0.018670381990408158 0.03585049187149325 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_19" rgba="0.5958853701130096 0.5844192748179088 0.9045633098592321 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_20" rgba="0.3204569580203447 0.24668233326635547 0.23446477096842955 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_21" rgba="0.11855613708668533 0.39400114015408694 0.8408966021246542 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_22" rgba="0.07737996234025346 0.4205131655845261 0.8809652598207296 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_23" rgba="0.7200274561241069 0.6832055139960794 0.6858212199979806 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_24" rgba="0.8329961894809508 0.8112820119295319 0.11103435931182237 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_25" rgba="0.865278713771093 0.4920510125579157 0.4220709758550023 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_26" rgba="0.7540264675773574 0.8438511390152802 0.7645725245743754 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_27" rgba="0.03388838231261371 0.42445457472319403 0.45207514876975363 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_28" rgba="0.45080303718330117 0.43990986289341605 0.37108916423903204 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_29" rgba="0.008054360523151005 0.8791082628221171 0.3156794746087984 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_30" rgba="0.4841487716643167 0.7507985572479109 0.006081845427654997 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_31" rgba="0.40228895676469334 0.39279089569564063 0.4980759984326383 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_32" rgba="0.047256801122123604 0.5034865547344392 0.4116191872710431 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_33" rgba="0.3196365247885482 0.8672379324282334 0.9927072593811679 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_34" rgba="0.05268665651789339 0.6465151134807361 0.3904284094678526 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_35" rgba="0.22574716008200202 0.6313875341770443 0.7295670661799267 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_36" rgba="0.06681656937123837 0.31549742853660834 0.39738402673893203 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_37" rgba="0.18117047906251627 0.7598265440753069 0.7533499787282969 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_38" rgba="0.21564855352569 0.43005098502013506 0.7761752776140273 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_39" rgba="0.08435607572431869 0.5867787021496788 0.3722249578690944 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_40" rgba="0.6902126587812564 0.10608419582382655 0.48631217960761464 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_41" rgba="0.6435468737899556 0.15536977715710465 0.9948919572898772 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_42" rgba="0.3284437289736283 0.06840303464472675 0.8785084430035136 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_43" rgba="0.8670700995731659 0.6919709702864657 0.9122842748359734 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_44" rgba="0.4897517273941677 0.21354052258842682 0.19230300334764971 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_45" rgba="0.4095538887113924 0.78833657419105 0.08261662654928581 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_46" rgba="0.3578636049173607 0.7281569255882517 0.0890947153499424 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_47" rgba="0.835940387002648 0.18432850878916163 0.9686323726446826 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_48" rgba="0.48599941291983595 0.7280506770583464 0.8345303271625797 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_49" rgba="0.7060449065270473 0.3045898040716567 0.0071208815032970385 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_50" rgba="0.7214097502078429 0.632414530001037 0.8025928858806529 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_51" rgba="0.016998310043958798 0.8223194955428316 0.8997222706104777 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_52" rgba="0.8201842674600873 0.2991449879601754 0.03049360208565277 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_53" rgba="0.3917661598976029 0.081845805271335 0.733186161377566 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_54" rgba="0.6300852955766929 0.6513784913842926 0.13071316403765654 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_55" rgba="0.021099516138656793 0.4710515256014295 0.050797445798615226 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_56" rgba="0.42600285766990054 0.8882074665521361 0.5452614956011208 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_57" rgba="0.600187042842737 0.6948038669521819 0.33115216067527165 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_58" rgba="0.42496221606079376 0.04796094694237851 0.6976357314314361 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_59" rgba="0.6771790846787967 0.9700958114666054 0.6516295317463737 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_60" rgba="0.08634907417722693 0.34971280075354594 0.6042346265653621 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_61" rgba="0.8330234007437514 0.4401599042797383 0.4083427260885799 1" class="collision"/>
+      <geom mesh="porter_flat_inlay_collision_62" rgba="0.0005951793137094485 0.5095217989785639 0.2511807687626718 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

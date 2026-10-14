@@ -1,0 +1,211 @@
+<mujoco model="mario_flat_inlay">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <material name="material_0.014" specular="0.0" shininess="0.0" rgba="0.800000 0.800000 0.800000 1.000000"/>
+    <mesh file="mario_flat_inlay.obj"/>
+    <mesh file="mario_flat_inlay_collision_0.obj"/>
+    <mesh file="mario_flat_inlay_collision_1.obj"/>
+    <mesh file="mario_flat_inlay_collision_2.obj"/>
+    <mesh file="mario_flat_inlay_collision_3.obj"/>
+    <mesh file="mario_flat_inlay_collision_4.obj"/>
+    <mesh file="mario_flat_inlay_collision_5.obj"/>
+    <mesh file="mario_flat_inlay_collision_6.obj"/>
+    <mesh file="mario_flat_inlay_collision_7.obj"/>
+    <mesh file="mario_flat_inlay_collision_8.obj"/>
+    <mesh file="mario_flat_inlay_collision_9.obj"/>
+    <mesh file="mario_flat_inlay_collision_10.obj"/>
+    <mesh file="mario_flat_inlay_collision_11.obj"/>
+    <mesh file="mario_flat_inlay_collision_12.obj"/>
+    <mesh file="mario_flat_inlay_collision_13.obj"/>
+    <mesh file="mario_flat_inlay_collision_14.obj"/>
+    <mesh file="mario_flat_inlay_collision_15.obj"/>
+    <mesh file="mario_flat_inlay_collision_16.obj"/>
+    <mesh file="mario_flat_inlay_collision_17.obj"/>
+    <mesh file="mario_flat_inlay_collision_18.obj"/>
+    <mesh file="mario_flat_inlay_collision_19.obj"/>
+    <mesh file="mario_flat_inlay_collision_20.obj"/>
+    <mesh file="mario_flat_inlay_collision_21.obj"/>
+    <mesh file="mario_flat_inlay_collision_22.obj"/>
+    <mesh file="mario_flat_inlay_collision_23.obj"/>
+    <mesh file="mario_flat_inlay_collision_24.obj"/>
+    <mesh file="mario_flat_inlay_collision_25.obj"/>
+    <mesh file="mario_flat_inlay_collision_26.obj"/>
+    <mesh file="mario_flat_inlay_collision_27.obj"/>
+    <mesh file="mario_flat_inlay_collision_28.obj"/>
+    <mesh file="mario_flat_inlay_collision_29.obj"/>
+    <mesh file="mario_flat_inlay_collision_30.obj"/>
+    <mesh file="mario_flat_inlay_collision_31.obj"/>
+    <mesh file="mario_flat_inlay_collision_32.obj"/>
+    <mesh file="mario_flat_inlay_collision_33.obj"/>
+    <mesh file="mario_flat_inlay_collision_34.obj"/>
+    <mesh file="mario_flat_inlay_collision_35.obj"/>
+    <mesh file="mario_flat_inlay_collision_36.obj"/>
+    <mesh file="mario_flat_inlay_collision_37.obj"/>
+    <mesh file="mario_flat_inlay_collision_38.obj"/>
+    <mesh file="mario_flat_inlay_collision_39.obj"/>
+    <mesh file="mario_flat_inlay_collision_40.obj"/>
+    <mesh file="mario_flat_inlay_collision_41.obj"/>
+    <mesh file="mario_flat_inlay_collision_42.obj"/>
+    <mesh file="mario_flat_inlay_collision_43.obj"/>
+    <mesh file="mario_flat_inlay_collision_44.obj"/>
+    <mesh file="mario_flat_inlay_collision_45.obj"/>
+    <mesh file="mario_flat_inlay_collision_46.obj"/>
+    <mesh file="mario_flat_inlay_collision_47.obj"/>
+    <mesh file="mario_flat_inlay_collision_48.obj"/>
+    <mesh file="mario_flat_inlay_collision_49.obj"/>
+    <mesh file="mario_flat_inlay_collision_50.obj"/>
+    <mesh file="mario_flat_inlay_collision_51.obj"/>
+    <mesh file="mario_flat_inlay_collision_52.obj"/>
+    <mesh file="mario_flat_inlay_collision_53.obj"/>
+    <mesh file="mario_flat_inlay_collision_54.obj"/>
+    <mesh file="mario_flat_inlay_collision_55.obj"/>
+    <mesh file="mario_flat_inlay_collision_56.obj"/>
+    <mesh file="mario_flat_inlay_collision_57.obj"/>
+    <mesh file="mario_flat_inlay_collision_58.obj"/>
+    <mesh file="mario_flat_inlay_collision_59.obj"/>
+    <mesh file="mario_flat_inlay_collision_60.obj"/>
+    <mesh file="mario_flat_inlay_collision_61.obj"/>
+    <mesh file="mario_flat_inlay_collision_62.obj"/>
+    <mesh file="mario_flat_inlay_collision_63.obj"/>
+    <mesh file="mario_flat_inlay_collision_64.obj"/>
+    <mesh file="mario_flat_inlay_collision_65.obj"/>
+    <mesh file="mario_flat_inlay_collision_66.obj"/>
+    <mesh file="mario_flat_inlay_collision_67.obj"/>
+    <mesh file="mario_flat_inlay_collision_68.obj"/>
+    <mesh file="mario_flat_inlay_collision_69.obj"/>
+    <mesh file="mario_flat_inlay_collision_70.obj"/>
+    <mesh file="mario_flat_inlay_collision_71.obj"/>
+    <mesh file="mario_flat_inlay_collision_72.obj"/>
+    <mesh file="mario_flat_inlay_collision_73.obj"/>
+    <mesh file="mario_flat_inlay_collision_74.obj"/>
+    <mesh file="mario_flat_inlay_collision_75.obj"/>
+    <mesh file="mario_flat_inlay_collision_76.obj"/>
+    <mesh file="mario_flat_inlay_collision_77.obj"/>
+    <mesh file="mario_flat_inlay_collision_78.obj"/>
+    <mesh file="mario_flat_inlay_collision_79.obj"/>
+    <mesh file="mario_flat_inlay_collision_80.obj"/>
+    <mesh file="mario_flat_inlay_collision_81.obj"/>
+    <mesh file="mario_flat_inlay_collision_82.obj"/>
+    <mesh file="mario_flat_inlay_collision_83.obj"/>
+    <mesh file="mario_flat_inlay_collision_84.obj"/>
+    <mesh file="mario_flat_inlay_collision_85.obj"/>
+    <mesh file="mario_flat_inlay_collision_86.obj"/>
+    <mesh file="mario_flat_inlay_collision_87.obj"/>
+    <mesh file="mario_flat_inlay_collision_88.obj"/>
+    <mesh file="mario_flat_inlay_collision_89.obj"/>
+    <mesh file="mario_flat_inlay_collision_90.obj"/>
+    <mesh file="mario_flat_inlay_collision_91.obj"/>
+    <mesh file="mario_flat_inlay_collision_92.obj"/>
+    <mesh file="mario_flat_inlay_collision_93.obj"/>
+    <mesh file="mario_flat_inlay_collision_94.obj"/>
+    <mesh file="mario_flat_inlay_collision_95.obj"/>
+  </asset>
+  <worldbody>
+    <body name="mario_flat_inlay">
+      <geom material="material_0.014" mesh="mario_flat_inlay" class="visual"/>
+      <geom mesh="mario_flat_inlay_collision_0" rgba="0.3975673724043237 0.9732485737548466 0.9506969114059052 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_1" rgba="0.9750571894665204 0.05795594834275597 0.9890258506463728 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_2" rgba="0.13040046543397177 0.08898767937891372 0.75370879546697 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_3" rgba="0.3931072051093214 0.9778703898204827 0.8563207056473405 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_4" rgba="0.9035234793483189 0.8889172999305215 0.28016273499111655 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_5" rgba="0.07430835682479442 0.20279860091022628 0.5446361875644938 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_6" rgba="0.0447927347055439 0.610250896536685 0.05860978217678414 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_7" rgba="0.642130897128924 0.30211257939796765 0.9981783760557215 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_8" rgba="0.10999621173806384 0.9751693479426804 0.9036206191288038 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_9" rgba="0.9215310798864862 0.46403063481853535 0.14893113656012547 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_10" rgba="0.733377943875135 0.14951858058859013 0.8702776973361451 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_11" rgba="0.9848772705404854 0.33737245903158 0.7631670688918707 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_12" rgba="0.3106813854517271 0.48357303423398 0.7887969772007078 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_13" rgba="0.525401501891627 0.3020812157682753 0.9780401718193792 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_14" rgba="0.8124299830497153 0.3729243059954811 0.29243454196615637 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_15" rgba="0.04064147936677154 0.9479136769841024 0.5717846206941782 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_16" rgba="0.46286355726468276 0.36021344500974173 0.5896207757333437 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_17" rgba="0.24906275645950204 0.8591284092731291 0.8247890437344775 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_18" rgba="0.3434345977128891 0.9775810874083386 0.15642507740522538 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_19" rgba="0.6102897020250505 0.09915969082487874 0.2077275131124805 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_20" rgba="0.6540944721418432 0.5894401162798295 0.5895123216478864 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_21" rgba="0.2409919660009867 0.4242114353212305 0.4982696644393281 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_22" rgba="0.5424528194702558 0.15721031453688283 0.29644074287443045 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_23" rgba="0.3983214608965433 0.9583289874391214 0.7317817243748636 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_24" rgba="0.6314703933572011 0.8551316435591297 0.7473915446283912 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_25" rgba="0.351048512782726 0.3418651694277718 0.3416127435621882 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_26" rgba="0.9346150937091916 0.3491659460999351 0.7274255220304595 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_27" rgba="0.593504801895826 0.3335212528678869 0.0940426297699073 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_28" rgba="0.5550198084774383 0.52340034558859 0.4260957452278079 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_29" rgba="0.03575071983114897 0.7705232939920676 0.3693816831473443 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_30" rgba="0.7786193798074359 0.22799485612942005 0.24382384556152836 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_31" rgba="0.15605736659025704 0.2749023242401556 0.46941356898569075 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_32" rgba="0.1045447722727485 0.6014997430309892 0.07243583294823253 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_33" rgba="0.40210609498549577 0.8801742135043356 0.04286922898328627 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_34" rgba="0.2003898394403707 0.7367270404244138 0.47825320862995235 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_35" rgba="0.13429241413044102 0.8191358821524286 0.020402652890587847 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_36" rgba="0.6637835022884364 0.3719112662533811 0.06201965585869873 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_37" rgba="0.14673232322421348 0.14509815124499437 0.08233708020943098 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_38" rgba="0.4080477183567788 0.5007687263070494 0.281236613378261 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_39" rgba="0.16155861431974217 0.046549711973552954 0.11642204166916059 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_40" rgba="0.7091988434066827 0.18322883411340274 0.4608628002212014 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_41" rgba="0.4143973817087855 0.018598933150069552 0.9319143496070771 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_42" rgba="0.645986524224782 0.6806019401059525 0.555635728831811 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_43" rgba="0.3642127781310699 0.035384125652908605 0.7847191319086014 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_44" rgba="0.6987470233469555 0.24600553892295618 0.3362738315533672 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_45" rgba="0.3628728145087201 0.5224063539041385 0.8997682714132099 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_46" rgba="0.3945759552421084 0.5248705324661861 0.9294144017438027 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_47" rgba="0.5923394107894913 0.020111197033320094 0.6513963246219264 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_48" rgba="0.1732837376127938 0.4493689820946629 0.5664297711086849 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_49" rgba="0.3752092205292167 0.7760055012269986 0.2533791851543633 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_50" rgba="0.597608371812489 0.34213638240705246 0.4268334352471763 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_51" rgba="0.829824910569221 0.16360690794127875 0.3883074562441208 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_52" rgba="0.6617434297513173 0.11303836286974578 0.8632804591602586 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_53" rgba="0.7023726176664222 0.6515648467158208 0.43365217502080067 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_54" rgba="0.3909301253607662 0.34604546083861376 0.8054075631124203 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_55" rgba="0.0582895799468266 0.33561304258609614 0.6120190488706144 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_56" rgba="0.5484673069139474 0.28839445533439656 0.2622275803889248 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_57" rgba="0.928267744256265 0.5485169616281664 0.4090509983874959 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_58" rgba="0.07416005578816787 0.5943957312583996 0.4230167421317015 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_59" rgba="0.30504780809384247 0.18460568612122963 0.8014656424366453 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_60" rgba="0.19173002617355306 0.9194836558482257 0.09860692331774212 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_61" rgba="0.9256896846887411 0.3293900082064253 0.578686712445655 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_62" rgba="0.7298690335505736 0.5891341148155176 0.9278826419278283 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_63" rgba="0.9185054903976652 0.345876253303233 0.6302846540820651 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_64" rgba="0.5634118190343234 0.5746504800791025 0.8795795716806393 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_65" rgba="0.74541210200383 0.9092960642358289 0.8719725318893826 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_66" rgba="0.5134178142058724 0.6468807127667509 0.9195929084333533 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_67" rgba="0.8988574414569425 0.3544680036325806 0.2940086077915467 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_68" rgba="0.8636159933346902 0.9995767125300126 0.26023545709635676 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_69" rgba="0.9054060756006829 0.3495057285101605 0.4187294126790032 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_70" rgba="0.27678841550460564 0.5698002274400713 0.5688971795339265 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_71" rgba="0.39033100425194145 0.055464384711886194 0.5230706640827597 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_72" rgba="0.15942598748110504 0.022297723063146258 0.4428102069728054 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_73" rgba="0.20283653823904557 0.7722002508666332 0.5210382575995061 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_74" rgba="0.7165202257056946 0.13229618356660422 0.8774342334949995 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_75" rgba="0.37095353153064436 0.8363171668158941 0.9765011688054749 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_76" rgba="0.03928885367513524 0.13734218789522745 0.8005029277676137 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_77" rgba="0.025216017803468938 0.7704644227654717 0.9088225219542914 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_78" rgba="0.12671682671349205 0.30979079581559366 0.5929582794982066 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_79" rgba="0.18871220117014942 0.06391503811063626 0.45472243663694134 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_80" rgba="0.158395112426718 0.28594972261628526 0.07067301323085717 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_81" rgba="0.6660779398209676 0.657578942399041 0.05644956070263629 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_82" rgba="0.4911540311048094 0.9542504244515043 0.7989933762887037 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_83" rgba="0.8913090801475889 0.9875488306079714 0.40038512353222255 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_84" rgba="0.8538837123782784 0.5528898555227822 0.6583428770728643 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_85" rgba="0.6440883977778457 0.1352676047760608 0.006668391490166181 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_86" rgba="0.8374695518888648 0.25950823491945674 0.005314763581329096 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_87" rgba="0.3831282097327682 0.28076563950451394 0.8412742793888053 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_88" rgba="0.2358905408919102 0.12408245314987687 0.972323102711733 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_89" rgba="0.5717231250036148 0.4639706571757035 0.010895339919621772 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_90" rgba="0.8006376313284933 0.6945681290313311 0.2918517599460445 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_91" rgba="0.007594411450582594 0.9044358611588804 0.9557064675449808 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_92" rgba="0.48906942700136835 0.759787932860733 0.5973082648543107 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_93" rgba="0.6302375056917084 0.049192416858430676 0.2169812649334314 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_94" rgba="0.011660242272449883 0.34052749568591734 0.7730343141036381 1" class="collision"/>
+      <geom mesh="mario_flat_inlay_collision_95" rgba="0.1268814314404214 0.0776473152499354 0.34699431170792394 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,34 @@
+<mujoco model="grey_plate">
+  <worldbody>
+    <body>
+      <body name="object" pos="0 0 0" quat="1 0 0 0"> 
+          <body name="grey_plate" pos="0 0 0" quat="1 0 0 0"> 
+              <inertial pos="0 0 0" mass="0.5" diaginertia="1e-3 1e-3 1e-3" />
+
+              <geom name="base_plate" 
+                    type="box" 
+                    size="0.150 0.180 0.003" 
+                    pos="0 0 0.003" 
+                    rgba="1 1 1 1" 
+                    friction="2.0 0.1 0.1" 
+                    solref="0.02 1" 
+                    solimp="0.9 0.95 0.001" 
+                    group="1" conaffinity="1" contype="1"/>
+
+              <site name="goal_region" type="box" size="0.145 0.175 0.001" pos="0 0 0.0075" quat="1 0 0 0" rgba="0 1 0 0.1" group="0" />
+
+              <site name="place_region_1" type="box" size="0.010 0.020 0.001" pos="-0.095 -0.095 0.0075" quat="1 0 0 0" rgba="0 0 1 0" group="0" />
+              <site name="place_region_2" type="box" size="0.010 0.020 0.001" pos="0.000 -0.095 0.0075" quat="1 0 0 0" rgba="0 0 1 0" group="0" />
+              <site name="place_region_3" type="box" size="0.010 0.020 0.001" pos="0.095 -0.095 0.0075" quat="1 0 0 0" rgba="0 0 1 0" group="0" />
+              <site name="place_region_4" type="box" size="0.010 0.020 0.001" pos="-0.095 0.095 0.0075" quat="1 0 0 0" rgba="0 0 1 0" group="0" />
+              <site name="place_region_5" type="box" size="0.010 0.020 0.001" pos="0.000 0.095 0.0075" quat="1 0 0 0" rgba="0 0 1 0" group="0" />
+              <site name="place_region_6" type="box" size="0.010 0.020 0.001" pos="0.095 0.095 0.0075" quat="1 0 0 0" rgba="0 0 1 0" group="0" />
+          </body>
+      </body>
+
+      <site rgba="0 0 0 0" size="0.01" pos="0 0 0.000" quat="1 0 0 0" name="bottom_site"/>        
+      <site rgba="0 0 0 0" size="0.01" pos="0 0 0.005" quat="1 0 0 0" name="top_site"/>   
+      <site rgba="0 0 0 0" size="0.01" pos="0.150 0.180 0" quat="1 0 0 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

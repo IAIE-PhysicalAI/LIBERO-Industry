@@ -1,0 +1,44 @@
+(define (problem LIBERO_Industry_Workbench_D0_Ablation)
+  (:domain robosuite)
+  (:language Pick up the akita black bowl and place it on the plate)
+    (:regions
+      (plate_region
+          (:target industry_workbench)
+          (:ranges (
+              (0.05 0.19 0.07 0.21)
+            )
+          )
+      )
+      (cabinet_region
+          (:target industry_workbench)
+          (:ranges (
+              (0.02 -0.28 0.04 -0.26)
+            )
+          )
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+  )
+
+  (:objects
+    akita_black_bowl_1 - akita_black_bowl
+    plate_1 - plate
+  )
+
+  (:obj_of_interest
+    akita_black_bowl_1
+    plate_1
+  )
+
+  (:init
+    (On akita_black_bowl_1 industry_workbench_cabinet_region)
+    (On plate_1 industry_workbench_plate_region)
+  )
+
+  (:goal
+  (And (On akita_black_bowl_1 plate_1))
+  )
+
+)

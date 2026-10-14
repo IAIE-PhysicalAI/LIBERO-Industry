@@ -1,0 +1,265 @@
+{
+  "bddl_root": "libero/libero/bddl_files",
+  "embodiment": "aubo_i5_ctag2f90d",
+  "init_root": "libero/libero/init_files/embodiments/aubo_i5_ctag2f90d",
+  "profile": {
+    "compact_filenames": true,
+    "gripper_types": "CTAG2F90DGripper",
+    "name": "aubo_i5_ctag2f90d",
+    "relative_init_root": "embodiments/aubo_i5_ctag2f90d",
+    "robots": [
+      "AuboI5"
+    ]
+  },
+  "reset_smoke": true,
+  "schema_version": 1,
+  "suite": "libero_industry_s2d",
+  "summary": {
+    "failed_tasks": 0,
+    "passed_tasks": 30,
+    "selected_tasks": 30
+  },
+  "tasks": [
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 194,
+      "status": "passed",
+      "task": "S2D_LV2_001_PUMP_BOTTLE_V3_pick_up_the_pump_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 181,
+      "status": "passed",
+      "task": "S2D_LV2_002_PUMP_BOTTLE_V5_pick_up_the_pump_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 181,
+      "status": "passed",
+      "task": "S2D_LV2_003_PUMP_BOTTLE_V8_pick_up_the_pump_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 181,
+      "status": "passed",
+      "task": "S2D_LV2_004_PUMP_BOTTLE_M3_pick_up_the_pump_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 181,
+      "status": "passed",
+      "task": "S2D_LV2_005_PUMP_BOTTLE_M5_pick_up_the_pump_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 181,
+      "status": "passed",
+      "task": "S2D_LV2_006_PUMP_BOTTLE_M8_pick_up_the_pump_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_007_SERUM_BOTTLE_V3_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_008_SERUM_BOTTLE_V5_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_009_SERUM_BOTTLE_V8_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 220,
+      "status": "passed",
+      "task": "S2D_LV2_010_SERUM_BOTTLE_M3_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_011_SERUM_BOTTLE_M5_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_012_SERUM_BOTTLE_M8_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 194,
+      "status": "passed",
+      "task": "S2D_LV2_013_CREAM_BOTTLE_V3_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_014_CREAM_BOTTLE_V5_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 194,
+      "status": "passed",
+      "task": "S2D_LV2_015_CREAM_BOTTLE_V8_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_016_CREAM_BOTTLE_M3_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 194,
+      "status": "passed",
+      "task": "S2D_LV2_017_CREAM_BOTTLE_M5_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV2_018_CREAM_BOTTLE_M8_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_groove"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV3_007_SERUM_BOTTLE_V3_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV3_008_SERUM_BOTTLE_V5_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV3_009_SERUM_BOTTLE_V8_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV3_010_SERUM_BOTTLE_M3_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV3_011_SERUM_BOTTLE_M5_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 194,
+      "status": "passed",
+      "task": "S2D_LV3_012_SERUM_BOTTLE_M8_pick_up_the_serum_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 207,
+      "status": "passed",
+      "task": "S2D_LV3_013_CREAM_BOTTLE_V3_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 220,
+      "status": "passed",
+      "task": "S2D_LV3_014_CREAM_BOTTLE_V5_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 220,
+      "status": "passed",
+      "task": "S2D_LV3_015_CREAM_BOTTLE_V8_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 220,
+      "status": "passed",
+      "task": "S2D_LV3_016_CREAM_BOTTLE_M3_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 220,
+      "status": "passed",
+      "task": "S2D_LV3_017_CREAM_BOTTLE_M5_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_inlay"
+    },
+    {
+      "problem_folder": "libero_industry_s2d",
+      "reset_states_checked": 1,
+      "state_count": 10,
+      "state_width": 220,
+      "status": "passed",
+      "task": "S2D_LV3_018_CREAM_BOTTLE_M8_pick_up_the_cream_bottle_and_place_it_flat_into_the_moving_inlay"
+    }
+  ],
+  "validated_at": "2026-09-11T16:37:32.325938+00:00"
+}

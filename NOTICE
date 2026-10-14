@@ -1,0 +1,89 @@
+LIBERO-Industry
+
+This repository is derived from LIBERO: Benchmarking Knowledge Transfer for
+Lifelong Robot Learning.
+
+Original LIBERO authors:
+Bo Liu, Yifeng Zhu, Chongkai Gao, Yihao Feng, Qiang Liu, Yuke Zhu, and
+Peter Stone.
+
+LIBERO-Industry authors:
+Ming Shin Cindy Sung, Duan Leijiahao, Haoxiang Wang, Boning Tan, Liangna Fu,
+Chao Tan, Yafu Li, Yulong Chen, Chaoqun Wan, Zhen Huang, Shuxian Liang, and
+Xian-Sheng Hua.
+
+The original LIBERO copyright and MIT license are retained in LICENSE. This
+notice supplements, and does not replace, that license.
+
+Third-party notices
+===================
+
+This section covers third-party material under
+`libero/libero/assets/industry_objects/`. Original LIBERO asset directories
+outside this path are not re-audited here and are not modified by this notice.
+
+Google Scanned Objects
+----------------------
+
+The following base-object directories contain assets adapted from the Google
+Scanned Objects dataset:
+
+- `bumblebee/`, `grimlock/`, `mario/`, `thomas/`, and `porter/`
+- `mouse_black_taipan/`, `mouse_white_taipan/`, and `mouse_naga/`
+- `ink_cartridge_green/`, `ink_cartridge_magenta/`,
+  `ink_cartridge_red/`, and `ink_cartridge_white/`
+- `shoe_left/` and `shoe_right/`
+- `school_bus/`, `mini_fire_engine/`, `mini_roller/`, and `dragon/`
+- `headset/` and `keyboard/`
+
+"Google Scanned Objects", Copyright 2020 Google LLC, is licensed under the
+Creative Commons Attribution 4.0 International license:
+
+- Source:
+  https://research.google/blog/scanned-objects-by-google-research-a-dataset-of-3d-scanned-common-household-items/
+- License: https://creativecommons.org/licenses/by/4.0/
+
+These assets have been adapted for MuJoCo and LIBERO-Industry. Changes may
+include scaling, orientation, mesh conversion, collision geometry, packaging,
+and simulation metadata.
+
+CGTrader source assets
+----------------------
+
+The following directories contain adaptations of models obtained from
+CGTrader:
+
+- `cream_jar/`, `serum_bottle/`, `cream_bottle/`, and `pump_bottle/`:
+  "Skincare Cosmetics Pack" by ProductViz3D (2025),
+  https://www.cgtrader.com/free-3d-models/industrial/other/skincare-cosmetics-pack
+- `conveyor_belt/`: "Conveyor Belt Assembly Line" by Lovano (2023),
+  https://www.cgtrader.com/free-3d-models/industrial/industrial-machine/conveyor-belt-assembly-line
+
+The source pages list both models under the CGTrader Royalty Free License
+(No AI). The applicable terms for redistribution of the adapted assets will be
+confirmed before public release.
+
+Assets copied from upstream LIBERO
+----------------------------------
+
+The following directories copy or adapt asset files already included elsewhere
+in the upstream LIBERO distribution:
+
+- `ablation_plate/`
+- `ablation_akita_black_bowl/`
+- `ablation_bbq_sauce/`
+- `ablation_cream_cheese/`
+- `ablation_tomato_sauce/`
+
+They remain subject to the copyright and license terms of their corresponding
+upstream assets. This notice does not relicense those files.
+`ablation_plate/model.obj` and `ablation_plate/model.mtl` retain the embedded
+Google CC BY 4.0 notice from upstream.
+
+Project-authored benchmark assets
+---------------------------------
+
+The `*_groove/` and `*_inlay/` fixture families, including `shoes_inlay/`,
+and the `box/`, `conveyor_ghost/`, `plates/`, `cosmetics_tray/`,
+`electronics_tray/`, and `toy_tray/` assets were created for LIBERO-Industry.
+Project-authored portions are provided under the repository's MIT license.

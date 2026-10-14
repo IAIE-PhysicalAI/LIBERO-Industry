@@ -1,0 +1,56 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language place the pump bottle into the moving inlay)
+    (:regions
+      (ghost_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.05 0.05 0.05 0.15000000000000002)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (bottle_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.25 -0.25 -0.15000000000000002 -0.15000000000000002)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (ghost_master_region
+          (:target conveyor_ghost_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_ghost_1 - conveyor_ghost
+  )
+
+  (:objects
+    pump_bottle_1 - pump_bottle
+    pump_bottle_inlay_a_dyn_1_1 - pump_bottle_inlay_a_dyn_1
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_ghost_1 industry_workbench_ghost_init_region)
+    (On pump_bottle_1 industry_workbench_bottle_init_region)
+    (Running conveyor_ghost_1 0.02 steady)
+    (Repeat pump_bottle_inlay_a_dyn_1 conveyor_ghost_1 6)
+  )
+
+  (:goal
+    (And (On pump_bottle_1 pump_bottle_inlay_a_dyn_1_goal_region))
+  )
+
+)

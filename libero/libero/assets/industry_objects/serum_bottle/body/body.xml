@@ -1,0 +1,29 @@
+<mujoco model="body">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <material name="Bottle" specular="0.5" shininess="0.753739685" rgba="0.007547 0.007547 0.007547 1.000000"/>
+    <mesh file="body.obj"/>
+    <mesh file="body_collision_0.obj"/>
+    <mesh file="body_collision_1.obj"/>
+    <mesh file="body_collision_2.obj"/>
+    <mesh file="body_collision_3.obj"/>
+    <mesh file="body_collision_4.obj"/>
+  </asset>
+  <worldbody>
+    <body name="body">
+      <geom material="Bottle" mesh="body" class="visual"/>
+      <geom mesh="body_collision_0" rgba="0.49832854680515937 0.09316424510863541 0.9673133511330435 1" class="collision"/>
+      <geom mesh="body_collision_1" rgba="0.2903794560648323 0.06774945771947372 0.2091781501186737 1" class="collision"/>
+      <geom mesh="body_collision_2" rgba="0.4614906359917532 0.8347713240011139 0.3247332165813188 1" class="collision"/>
+      <geom mesh="body_collision_3" rgba="0.9999907222529907 0.780156986311694 0.9504478760244062 1" class="collision"/>
+      <geom mesh="body_collision_4" rgba="0.7277303464305878 0.25815165723789024 0.5635083223200414 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

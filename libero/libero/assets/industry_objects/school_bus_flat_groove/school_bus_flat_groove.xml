@@ -1,0 +1,20 @@
+<mujoco model="school_bus_flat_groove">
+    <worldbody>
+        <body>
+        <body name="object" pos="0 0 0" quat="1 0 0 0"> 
+            <body name="school_bus_flat_groove" pos="0 0 0" quat="1 0 0 0"> 
+                <inertial pos="0 0 0" mass="0.5" diaginertia="1e-3 1e-3 1e-3" />
+                  <geom name="groove_bottom" type="box" size="0.030371563896536828 0.059039306282997125 0.0025" pos="0 0 0.0025" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="groove_wall_left" type="box" size="0.002 0.059039306282997125 0.01" pos="-0.028371563896536826 0 0.015" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="groove_wall_right" type="box" size="0.002 0.059039306282997125 0.01" pos="0.028371563896536826 0 0.015" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="groove_wall_front" type="box" size="0.026371563896536828 0.002 0.01" pos="0 -0.05703930628299713 0.015" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <geom name="groove_wall_back" type="box" size="0.026371563896536828 0.002 0.01" pos="0 0.05703930628299713 0.015" rgba="0.6 0.6 0.6 1" friction="0.6 0.005 0.001" group="1" contype="1" conaffinity="1" />
+              <site name="goal_region" type="box" size="0.021371563896536827 0.05503930628299713 0.001" pos="0 0 0.01" quat="1 0 0 0" rgba="0 1 0 0.4" group="0" />
+            </body>
+        </body>
+        <site rgba="0 0 0 0" size="0.01" pos="0 0 0" quat="1 0 0 0" name="bottom_site" />        
+        <site rgba="0 0 0 0" size="0.01" pos="0 0 0.0250" quat="1 0 0 0" name="top_site" />   
+        <site rgba="0 0 0 0" size="0.01" pos="0.0304 0.0590 0" quat="1 0 0 0" name="horizontal_radius_site" />
+        </body>
+    </worldbody>
+    </mujoco>

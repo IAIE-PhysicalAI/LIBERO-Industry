@@ -1,0 +1,80 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language place the pump bottle into the moving inlay a)
+    (:regions
+      (ghost_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (0.249 -0.001 0.251 0.001)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (bottle_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.4 -0.2 0.0 0.2)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (ghost_active_region
+          (:target conveyor_ghost_1)
+      )
+      (goal_region
+          (:target white_tray_1)
+      )
+      (place_region_1
+          (:target white_tray_1)
+      )
+      (place_region_2
+          (:target white_tray_1)
+      )
+      (place_region_3
+          (:target white_tray_1)
+      )
+      (place_region_4
+          (:target white_tray_1)
+      )
+      (place_region_5
+          (:target white_tray_1)
+      )
+      (place_region_6
+          (:target white_tray_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_ghost_1 - conveyor_ghost
+    white_tray_1 - white_tray
+  )
+
+  (:objects
+    cream_jar_flat_1 cream_jar_flat_2 - cream_jar_flat
+    cream_bottle_upright_1 - cream_bottle_upright
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_ghost_1 industry_workbench_ghost_init_region)
+    (On white_tray_1 industry_workbench_bottle_init_region)
+    (On cream_jar_flat_1 white_tray_1_place_region_1)
+    (On cream_jar_flat_2 white_tray_1_place_region_3)
+    (On cream_bottle_upright_1 white_tray_1_place_region_4)
+    (LoadSlot conveyor_ghost_1 cream_bottle_flat_groove y pulse 0.05)
+  )
+
+  (:goal
+    (And (Routed cream_jar_flat_1 conveyor_ghost_1) (Routed cream_jar_flat_2 conveyor_ghost_1))
+  )
+
+)

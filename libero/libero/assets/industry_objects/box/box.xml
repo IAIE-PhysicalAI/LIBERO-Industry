@@ -1,0 +1,17 @@
+<mujoco model="box">
+  <worldbody>
+    <body>
+      <body name="object" pos="0 0 0">
+        <inertial pos="0 0 0" mass="0.1" diaginertia="1e-4 1e-4 1e-4" /> 
+        <geom name="box_geom" type="box" size="0.01 0.05 0.01" rgba="1 0 0 1" 
+              friction="0.6 0.005 0.001" group="1" conaffinity="1" contype="1"/>
+        <site name="box_site" type="box" size="0.01 0.05 0.01" rgba="0 1 0 0.5" />
+      </body>
+      
+      <!-- Critical: Fix these sites! -->
+      <site rgba="0 1 0 0" size="0.01" pos="0 0 -0.01" name="bottom_site"/> 
+      <site rgba="0 0 1 0" size="0.01" pos="0 0 0.01" name="top_site"/>   
+      <site rgba="0 1 1 0" size="0.01" pos="0 0.051 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

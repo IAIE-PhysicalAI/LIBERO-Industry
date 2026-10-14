@@ -1,0 +1,79 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language route cosmetics)
+    (:regions
+      (ghost_init
+          (:target industry_workbench)
+          (:ranges (
+              (0.0034712263659692775 -0.0076795355051656735 0.0034732263659692777 -0.007677535505165673)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (tray_init
+          (:target industry_workbench)
+          (:ranges (
+              (-0.23087906205947478 -0.0076795355051656735 -0.23087706205947478 -0.007677535505165673)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (ghost_active_region
+          (:target conveyor_ghost_1)
+      )
+      (goal_region
+          (:target grey_plate_1)
+      )
+      (place_region_1
+          (:target grey_plate_1)
+      )
+      (place_region_2
+          (:target grey_plate_1)
+      )
+      (place_region_3
+          (:target grey_plate_1)
+      )
+      (place_region_4
+          (:target grey_plate_1)
+      )
+      (place_region_5
+          (:target grey_plate_1)
+      )
+      (place_region_6
+          (:target grey_plate_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_ghost_1 - conveyor_ghost
+    grey_plate_1 - grey_plate
+  )
+
+  (:objects
+    serum_bottle_flat_1 serum_bottle_flat_2 serum_bottle_flat_3 - serum_bottle_flat
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_ghost_1 industry_workbench_ghost_init)
+    (On grey_plate_1 industry_workbench_tray_init)
+    (LoadSlot conveyor_ghost_1 cosmetics_tray y pulse 0.05 service_3.0)
+    (On serum_bottle_flat_1 grey_plate_1_place_region_3)
+    (On serum_bottle_flat_2 grey_plate_1_place_region_6)
+    (On serum_bottle_flat_3 grey_plate_1_place_region_5)
+  )
+
+  (:goal
+    (And (DynamicOn serum_bottle_flat_1 conveyor_ghost_1) (DynamicOn serum_bottle_flat_2 conveyor_ghost_1) (DynamicOn serum_bottle_flat_3 conveyor_ghost_1))
+  )
+
+)

@@ -1,0 +1,93 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language place the cosmetic products to the moving inlay with objects front facing up)
+    (:regions
+      (ghost_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (0.099 -0.001 0.101 0.001)
+            )
+          )
+          (:yaw_rotation (
+              (-0.1173 -0.1172)
+            )
+          )
+      )
+      (bottle_init_region_0
+          (:target industry_workbench)
+          (:ranges (
+              (-0.2446764317184562 -0.21178932483943735 -0.20467643171845623 -0.17178932483943737)
+            )
+          )
+          (:yaw_rotation (
+              (2.0183 2.0184)
+            )
+          )
+      )
+      (bottle_init_region_1
+          (:target industry_workbench)
+          (:ranges (
+              (-0.23297331263062712 -0.11247650087588225 -0.19297331263062714 -0.07247650087588224)
+            )
+          )
+          (:yaw_rotation (
+              (2.0183 2.0184)
+            )
+          )
+      )
+      (bottle_init_region_2
+          (:target industry_workbench)
+          (:ranges (
+              (-0.22127019354279803 -0.013163676912327116 -0.18127019354279805 0.026836323087672885)
+            )
+          )
+          (:yaw_rotation (
+              (2.0183 2.0184)
+            )
+          )
+      )
+      (bottle_init_region_3
+          (:target industry_workbench)
+          (:ranges (
+              (-0.20956707445496892 0.08614914705122799 -0.16956707445496894 0.12614914705122798)
+            )
+          )
+          (:yaw_rotation (
+              (2.0183 2.0184)
+            )
+          )
+      )
+      (ghost_active_region
+          (:target conveyor_ghost_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_ghost_1 - conveyor_ghost
+  )
+
+  (:objects
+    pump_bottle_upright_1 - pump_bottle_upright
+    serum_bottle_upright_1 - serum_bottle_upright
+    cream_bottle_upright_1 - cream_bottle_upright
+    cream_jar_upright_1 - cream_jar_upright
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_ghost_1 industry_workbench_ghost_init_region)
+    (On pump_bottle_upright_1 industry_workbench_bottle_init_region_0)
+    (On serum_bottle_upright_1 industry_workbench_bottle_init_region_2)
+    (On cream_bottle_upright_1 industry_workbench_bottle_init_region_3)
+    (On cream_jar_upright_1 industry_workbench_bottle_init_region_1)
+    (LoadSlot conveyor_ghost_1 cosmetics_inlay_b y steady 0.0579)
+  )
+
+  (:goal
+    (And (Routed pump_bottle_upright_1 conveyor_ghost_1) (Routed serum_bottle_upright_1 conveyor_ghost_1) (Routed cream_bottle_upright_1 conveyor_ghost_1) (Routed cream_jar_upright_1 conveyor_ghost_1))
+  )
+
+)

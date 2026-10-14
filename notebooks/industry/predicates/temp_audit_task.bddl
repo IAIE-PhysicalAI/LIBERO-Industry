@@ -1,0 +1,48 @@
+(define (problem LIBERO_Industry_Workbench_Ablation)
+  (:domain robosuite)
+  (:language auto-generated audit task for mario_flat_1)
+    (:regions
+      (plate_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (0.0 0.0 0.05 0.05)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (object_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.2 -0.2 -0.15 -0.15)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (goal_region
+          (:target grey_plate_1)
+      )
+    )
+  (:fixtures
+    industry_workbench - industry_workbench
+    grey_plate_1 - grey_plate
+  )
+  (:objects
+    mario_flat_1 - mario_flat
+  )
+  (:obj_of_interest
+    mario_flat_1
+  )
+  (:init
+    (On grey_plate_1 industry_workbench_plate_init_region)
+    (On mario_flat_1 industry_workbench_object_init_region)
+  )
+  (:goal
+    (And (on mario_flat_1 grey_plate_1_goal_region))
+  )
+)

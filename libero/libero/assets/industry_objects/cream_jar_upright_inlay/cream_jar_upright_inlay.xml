@@ -1,0 +1,191 @@
+<mujoco model="cream_jar_upright_inlay">
+  <default>
+    <default class="visual">
+      <geom group="1" type="mesh" contype="0" conaffinity="0" rgba="0.5 0.5 0.5 1" />
+    </default>
+    <default class="collision">
+    <geom group="0" type="mesh" friction="1.0 0.005 0.0001" solimp="0.9 0.95 0.001" solref="0.02 1" />
+    </default>
+  </default>
+  
+  <asset>
+    <mesh name="model" file="model.obj" />
+    <mesh name="model_collision_0" file="model_collision_0.obj" />
+    <mesh name="model_collision_1" file="model_collision_1.obj" />
+    <mesh name="model_collision_2" file="model_collision_2.obj" />
+    <mesh name="model_collision_3" file="model_collision_3.obj" />
+    <mesh name="model_collision_4" file="model_collision_4.obj" />
+    <mesh name="model_collision_5" file="model_collision_5.obj" />
+    <mesh name="model_collision_6" file="model_collision_6.obj" />
+    <mesh name="model_collision_7" file="model_collision_7.obj" />
+    <mesh name="model_collision_8" file="model_collision_8.obj" />
+    <mesh name="model_collision_9" file="model_collision_9.obj" />
+    <mesh name="model_collision_10" file="model_collision_10.obj" />
+    <mesh name="model_collision_11" file="model_collision_11.obj" />
+    <mesh name="model_collision_12" file="model_collision_12.obj" />
+    <mesh name="model_collision_13" file="model_collision_13.obj" />
+    <mesh name="model_collision_14" file="model_collision_14.obj" />
+    <mesh name="model_collision_15" file="model_collision_15.obj" />
+    <mesh name="model_collision_16" file="model_collision_16.obj" />
+    <mesh name="model_collision_17" file="model_collision_17.obj" />
+    <mesh name="model_collision_18" file="model_collision_18.obj" />
+    <mesh name="model_collision_19" file="model_collision_19.obj" />
+    <mesh name="model_collision_20" file="model_collision_20.obj" />
+    <mesh name="model_collision_21" file="model_collision_21.obj" />
+    <mesh name="model_collision_22" file="model_collision_22.obj" />
+    <mesh name="model_collision_23" file="model_collision_23.obj" />
+    <mesh name="model_collision_24" file="model_collision_24.obj" />
+    <mesh name="model_collision_25" file="model_collision_25.obj" />
+    <mesh name="model_collision_26" file="model_collision_26.obj" />
+    <mesh name="model_collision_27" file="model_collision_27.obj" />
+    <mesh name="model_collision_28" file="model_collision_28.obj" />
+    <mesh name="model_collision_29" file="model_collision_29.obj" />
+    <mesh name="model_collision_30" file="model_collision_30.obj" />
+    <mesh name="model_collision_31" file="model_collision_31.obj" />
+    <mesh name="model_collision_32" file="model_collision_32.obj" />
+    <mesh name="model_collision_33" file="model_collision_33.obj" />
+    <mesh name="model_collision_34" file="model_collision_34.obj" />
+    <mesh name="model_collision_35" file="model_collision_35.obj" />
+    <mesh name="model_collision_36" file="model_collision_36.obj" />
+    <mesh name="model_collision_37" file="model_collision_37.obj" />
+    <mesh name="model_collision_38" file="model_collision_38.obj" />
+    <mesh name="model_collision_39" file="model_collision_39.obj" />
+    <mesh name="model_collision_40" file="model_collision_40.obj" />
+    <mesh name="model_collision_41" file="model_collision_41.obj" />
+    <mesh name="model_collision_42" file="model_collision_42.obj" />
+    <mesh name="model_collision_43" file="model_collision_43.obj" />
+    <mesh name="model_collision_44" file="model_collision_44.obj" />
+    <mesh name="model_collision_45" file="model_collision_45.obj" />
+    <mesh name="model_collision_46" file="model_collision_46.obj" />
+    <mesh name="model_collision_47" file="model_collision_47.obj" />
+    <mesh name="model_collision_48" file="model_collision_48.obj" />
+    <mesh name="model_collision_49" file="model_collision_49.obj" />
+    <mesh name="model_collision_50" file="model_collision_50.obj" />
+    <mesh name="model_collision_51" file="model_collision_51.obj" />
+    <mesh name="model_collision_52" file="model_collision_52.obj" />
+    <mesh name="model_collision_53" file="model_collision_53.obj" />
+    <mesh name="model_collision_54" file="model_collision_54.obj" />
+    <mesh name="model_collision_55" file="model_collision_55.obj" />
+    <mesh name="model_collision_56" file="model_collision_56.obj" />
+    <mesh name="model_collision_57" file="model_collision_57.obj" />
+    <mesh name="model_collision_58" file="model_collision_58.obj" />
+    <mesh name="model_collision_59" file="model_collision_59.obj" />
+    <mesh name="model_collision_60" file="model_collision_60.obj" />
+    <mesh name="model_collision_61" file="model_collision_61.obj" />
+    <mesh name="model_collision_62" file="model_collision_62.obj" />
+    <mesh name="model_collision_63" file="model_collision_63.obj" />
+    <mesh name="model_collision_64" file="model_collision_64.obj" />
+    <mesh name="model_collision_65" file="model_collision_65.obj" />
+    <mesh name="model_collision_66" file="model_collision_66.obj" />
+    <mesh name="model_collision_67" file="model_collision_67.obj" />
+    <mesh name="model_collision_68" file="model_collision_68.obj" />
+    <mesh name="model_collision_69" file="model_collision_69.obj" />
+    <mesh name="model_collision_70" file="model_collision_70.obj" />
+    <mesh name="model_collision_71" file="model_collision_71.obj" />
+    <mesh name="model_collision_72" file="model_collision_72.obj" />
+    <mesh name="model_collision_73" file="model_collision_73.obj" />
+    <mesh name="model_collision_74" file="model_collision_74.obj" />
+    <mesh name="model_collision_75" file="model_collision_75.obj" />
+    <mesh name="model_collision_76" file="model_collision_76.obj" />
+    <mesh name="model_collision_77" file="model_collision_77.obj" />
+    <mesh name="model_collision_78" file="model_collision_78.obj" />
+    <mesh name="model_collision_79" file="model_collision_79.obj" />
+  </asset>
+  
+  <worldbody>
+    <body>
+      <body name="object" pos="0 0 0" quat="1 0 0 0">
+        <inertial pos="0 0 0" mass="0.8" diaginertia="1e-3 1e-3 1e-3" />
+        <geom mesh="model" class="visual" />
+        <geom mesh="model_collision_0" class="collision" />
+        <geom mesh="model_collision_1" class="collision" />
+        <geom mesh="model_collision_2" class="collision" />
+        <geom mesh="model_collision_3" class="collision" />
+        <geom mesh="model_collision_4" class="collision" />
+        <geom mesh="model_collision_5" class="collision" />
+        <geom mesh="model_collision_6" class="collision" />
+        <geom mesh="model_collision_7" class="collision" />
+        <geom mesh="model_collision_8" class="collision" />
+        <geom mesh="model_collision_9" class="collision" />
+        <geom mesh="model_collision_10" class="collision" />
+        <geom mesh="model_collision_11" class="collision" />
+        <geom mesh="model_collision_12" class="collision" />
+        <geom mesh="model_collision_13" class="collision" />
+        <geom mesh="model_collision_14" class="collision" />
+        <geom mesh="model_collision_15" class="collision" />
+        <geom mesh="model_collision_16" class="collision" />
+        <geom mesh="model_collision_17" class="collision" />
+        <geom mesh="model_collision_18" class="collision" />
+        <geom mesh="model_collision_19" class="collision" />
+        <geom mesh="model_collision_20" class="collision" />
+        <geom mesh="model_collision_21" class="collision" />
+        <geom mesh="model_collision_22" class="collision" />
+        <geom mesh="model_collision_23" class="collision" />
+        <geom mesh="model_collision_24" class="collision" />
+        <geom mesh="model_collision_25" class="collision" />
+        <geom mesh="model_collision_26" class="collision" />
+        <geom mesh="model_collision_27" class="collision" />
+        <geom mesh="model_collision_28" class="collision" />
+        <geom mesh="model_collision_29" class="collision" />
+        <geom mesh="model_collision_30" class="collision" />
+        <geom mesh="model_collision_31" class="collision" />
+        <geom mesh="model_collision_32" class="collision" />
+        <geom mesh="model_collision_33" class="collision" />
+        <geom mesh="model_collision_34" class="collision" />
+        <geom mesh="model_collision_35" class="collision" />
+        <geom mesh="model_collision_36" class="collision" />
+        <geom mesh="model_collision_37" class="collision" />
+        <geom mesh="model_collision_38" class="collision" />
+        <geom mesh="model_collision_39" class="collision" />
+        <geom mesh="model_collision_40" class="collision" />
+        <geom mesh="model_collision_41" class="collision" />
+        <geom mesh="model_collision_42" class="collision" />
+        <geom mesh="model_collision_43" class="collision" />
+        <geom mesh="model_collision_44" class="collision" />
+        <geom mesh="model_collision_45" class="collision" />
+        <geom mesh="model_collision_46" class="collision" />
+        <geom mesh="model_collision_47" class="collision" />
+        <geom mesh="model_collision_48" class="collision" />
+        <geom mesh="model_collision_49" class="collision" />
+        <geom mesh="model_collision_50" class="collision" />
+        <geom mesh="model_collision_51" class="collision" />
+        <geom mesh="model_collision_52" class="collision" />
+        <geom mesh="model_collision_53" class="collision" />
+        <geom mesh="model_collision_54" class="collision" />
+        <geom mesh="model_collision_55" class="collision" />
+        <geom mesh="model_collision_56" class="collision" />
+        <geom mesh="model_collision_57" class="collision" />
+        <geom mesh="model_collision_58" class="collision" />
+        <geom mesh="model_collision_59" class="collision" />
+        <geom mesh="model_collision_60" class="collision" />
+        <geom mesh="model_collision_61" class="collision" />
+        <geom mesh="model_collision_62" class="collision" />
+        <geom mesh="model_collision_63" class="collision" />
+        <geom mesh="model_collision_64" class="collision" />
+        <geom mesh="model_collision_65" class="collision" />
+        <geom mesh="model_collision_66" class="collision" />
+        <geom mesh="model_collision_67" class="collision" />
+        <geom mesh="model_collision_68" class="collision" />
+        <geom mesh="model_collision_69" class="collision" />
+        <geom mesh="model_collision_70" class="collision" />
+        <geom mesh="model_collision_71" class="collision" />
+        <geom mesh="model_collision_72" class="collision" />
+        <geom mesh="model_collision_73" class="collision" />
+        <geom mesh="model_collision_74" class="collision" />
+        <geom mesh="model_collision_75" class="collision" />
+        <geom mesh="model_collision_76" class="collision" />
+        <geom mesh="model_collision_77" class="collision" />
+        <geom mesh="model_collision_78" class="collision" />
+        <geom mesh="model_collision_79" class="collision" />
+      <site name="goal_region" type="box" size="0.01 0.01 0.002" quat="1 0 0 0" pos="0 0 0.005" rgba="0 1 0 0.3" group="0" />
+
+      </body>
+      
+      <site rgba="0 0 0 0" size="0.01" pos="0 0 -0.02957" quat="1 0 0 0" name="bottom_site" />        
+      <site rgba="0 0 0 0" size="0.01" pos="0 0 0.02957" quat="1 0 0 0" name="top_site" />   
+      <site rgba="0 0 0 0" size="0.01" pos="0.04999 0.04999 0" quat="1 0 0 0" name="horizontal_radius_site" />
+      
+      
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,112 @@
+<mujoco model="cream_bottle_flat_inlay">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <mesh file="cream_bottle_flat_inlay.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_0.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_1.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_2.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_3.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_4.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_5.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_6.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_7.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_8.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_9.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_10.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_11.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_12.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_13.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_14.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_15.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_16.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_17.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_18.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_19.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_20.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_21.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_22.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_23.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_24.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_25.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_26.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_27.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_28.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_29.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_30.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_31.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_32.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_33.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_34.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_35.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_36.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_37.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_38.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_39.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_40.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_41.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_42.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_43.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_44.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_45.obj"/>
+    <mesh file="cream_bottle_flat_inlay_collision_46.obj"/>
+  </asset>
+  <worldbody>
+    <body name="cream_bottle_flat_inlay">
+      <geom mesh="cream_bottle_flat_inlay" class="visual"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_0" rgba="0.12256283186999539 0.4273186318469896 0.22286476748695694 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_1" rgba="0.4038368384472846 0.7831082895904475 0.24751711323226 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_2" rgba="0.08436418659047096 0.3724838354400297 0.7797005516073041 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_3" rgba="0.6643832362563636 0.05129186925465001 0.6479546275868746 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_4" rgba="0.938164328497746 0.30547335471277104 0.07121733338151948 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_5" rgba="0.6788935468252043 0.43390231926048894 0.5619510329416335 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_6" rgba="0.08180014201255881 0.30356621459479427 0.31442625440841887 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_7" rgba="0.7872042070908548 0.9875222214755185 0.33722968031680667 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_8" rgba="0.9215307395665346 0.5105442224172183 0.472152482247548 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_9" rgba="0.2658384958503375 0.212576828885785 0.22694813136170333 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_10" rgba="0.20086307230598266 0.3617651361575206 0.5835007462458571 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_11" rgba="0.6540484135478947 0.922916130026118 0.3038760968548705 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_12" rgba="0.7003433955326518 0.5717276656537933 0.9375375076112439 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_13" rgba="0.10935479192442432 0.2290081567224932 0.8511564524519553 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_14" rgba="0.9627727186702729 0.4623049850890969 0.17431307499475146 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_15" rgba="0.014171199444664606 0.21986892106765943 0.7205933505730013 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_16" rgba="0.60756163423711 0.6642319187177274 0.12729903566560963 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_17" rgba="0.40208098807513826 0.5920851722338367 0.8931371818265332 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_18" rgba="0.42029454056322024 0.11418012360141283 0.38913764705939946 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_19" rgba="0.8194756826260414 0.7034564904325716 0.6542066608238952 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_20" rgba="0.024242108104759685 0.6362910866953829 0.025351539569233972 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_21" rgba="0.0863739709089526 0.12994354166709443 0.17916159434016343 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_22" rgba="0.6159955924009788 0.8881762507867553 0.5910860391136051 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_23" rgba="0.9295853428436691 0.4328962005356085 0.8982466067421203 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_24" rgba="0.8597236672145033 0.7512238310865635 0.6535992660945419 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_25" rgba="0.816317259947022 0.8007524404089171 0.4996974819815637 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_26" rgba="0.8919730725616505 0.6069760350502346 0.6965337866871651 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_27" rgba="0.5764945435296916 0.8839678874834489 0.8848638662646829 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_28" rgba="0.1255339703047036 0.06279097327247707 0.8649011050787687 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_29" rgba="0.7981058979700606 0.4385736878816173 0.3489533408978347 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_30" rgba="0.6400747583530844 0.14812647243478716 0.4437400898668783 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_31" rgba="0.711398255846336 0.9585926709515227 0.9679084553484787 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_32" rgba="0.016429716408171813 0.9249096229213577 0.39317942029910713 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_33" rgba="0.6056491078381712 0.436135292675764 0.8191983612220841 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_34" rgba="0.25651160557264796 0.8943354433096037 0.8000737681697098 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_35" rgba="0.4796835099185077 0.27481386897084903 0.23763382392286958 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_36" rgba="0.3308042587557274 0.3804026156767073 0.2113345784738211 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_37" rgba="0.8232548801028541 0.8646963216372088 0.5225481763713883 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_38" rgba="0.08442739764856955 0.30793391739394405 0.048336100686868444 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_39" rgba="0.2888600962729161 0.2875567367661471 0.5314658904666153 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_40" rgba="0.08347898142346222 0.828533101003774 0.8017204660157348 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_41" rgba="0.534113032467495 0.7677482925441591 0.8873748821641556 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_42" rgba="0.12729459143505728 0.28245459724395305 0.5847891892001899 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_43" rgba="0.37659530415106557 0.8169003916959996 0.6806749016855158 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_44" rgba="0.5006984085704 0.7626235907331836 0.2923621968899427 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_45" rgba="0.3394249981094417 0.5566474725581728 0.6992784561364342 1" class="collision"/>
+      <geom mesh="cream_bottle_flat_inlay_collision_46" rgba="0.5291069537184708 0.07291499869388518 0.86368436418778 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

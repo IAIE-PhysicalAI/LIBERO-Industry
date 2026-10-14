@@ -1,0 +1,71 @@
+(define (problem LIBERO_Industry_Workbench_Ablation)
+  (:domain robosuite)
+  (:language pick the akita black bowl and place it on the plate)
+    (:regions
+      (object_init
+          (:target industry_workbench)
+          (:ranges (
+              (-0.0337308476689 -0.185134186564 0.0502691523311 0.118865813436)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (target_init_0
+          (:target industry_workbench)
+          (:ranges (
+              (-0.252730847669 0.0158658134364 -0.250730847669 0.0178658134364)
+            )
+          )
+          (:yaw_rotation (
+              (0 0)
+            )
+          )
+      )
+      (goal_region
+          (:target toy_tray_1)
+      )
+      (place_region_1
+          (:target toy_tray_1)
+      )
+      (place_region_2
+          (:target toy_tray_1)
+      )
+      (place_region_3
+          (:target toy_tray_1)
+      )
+      (place_region_4
+          (:target toy_tray_1)
+      )
+      (place_region_5
+          (:target toy_tray_1)
+      )
+      (place_region_6
+          (:target toy_tray_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    toy_tray_1 - toy_tray
+  )
+
+  (:objects
+    ablation_akita_black_bowl_1 - ablation_akita_black_bowl
+  )
+
+  (:obj_of_interest
+    ablation_akita_black_bowl_1
+  )
+
+  (:init
+    (On toy_tray_1 industry_workbench_target_init_0)
+    (On ablation_akita_black_bowl_1 industry_workbench_object_init)
+  )
+
+  (:goal
+    (And (ReleasedOn ablation_akita_black_bowl_1 toy_tray_1_goal_region))
+  )
+)
