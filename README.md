@@ -114,7 +114,7 @@ You can download the dataset directly from HuggingFace:
 - [🗄️ HDF5 Dataset](https://huggingface.co/datasets/cindysung/LIBERO-industry-datasets)
 - [🤖 LeRobot v2.1 Dataset](https://huggingface.co/datasets/cindysung/LIBERO-industry-lerobotv21-auboi5h)
 
-Bimanual benchmark support is under development on the `feature/multiembodiment-fixed-base` branch.
+Experimental bimanual BDDL generation is documented in the [benchmark scripts guide](benchmark_scripts/README.md#experimental-bimanual-bddl-generation); a runnable dual-arm benchmark is still under development.
 
 ## ⚡ Quick Start
 
@@ -153,6 +153,8 @@ Additional embodiments require a matching robot/gripper runtime and an embodimen
 The evaluation flow is almost identical to LIBERO. The main difference is that each LIBERO-Industry task automatically loads its task-specific runtime settings from [`libero/libero/benchmark/industry_env_args.json`](libero/libero/benchmark/industry_env_args.json). These settings define the rollout boundary (`takt_steps`), object-placement sampling mode, camera configuration—including agent-view orbit and camera offsets—lighting, and workbench color and finish.
 
 The file maps each Industry task name to its environment settings and is applied when the environment is created from the task BDDL. For comparable results, do not override these task-specific settings. Use `libero_industry_train` for train-split diagnostics and `libero_industry_test` for official held-out evaluation, reporting SR, PCR-T, and PCR-S at the configured rollout boundary.
+
+See [`benchmark_scripts/evaluation/README.md`](benchmark_scripts/evaluation/README.md) for the five-policy evaluation and validation commands.
 
 ### Metrics
 

@@ -88,6 +88,169 @@ INIT_STATE_PROFILES: Mapping[str, InitStateProfile] = {
 }
 
 
+@dataclass(frozen=True)
+class EvaluationEmbodiment:
+    """Robot configuration and source state used for policy evaluation."""
+
+    name: str
+    robots: Tuple[str, ...]
+    gripper_types: str
+    source_init_profile: str
+    upstream_controller: bool = False
+    minimum_robosuite: Tuple[int, int] = (1, 4)
+    gripper_action: str = "identity"
+
+    def env_kwargs(self) -> Dict[str, Any]:
+        configured = {
+            "robots": list(self.robots),
+            "gripper_types": self.gripper_types,
+        }
+        if self.upstream_controller and installed_robosuite_version() >= (1, 5):
+            from robosuite.controllers import load_composite_controller_config
+
+            configured["controller"] = load_composite_controller_config(
+                robot=self.robots[0]
+            )
+        return configured
+
+
+EVALUATION_EMBODIMENTS: Mapping[str, EvaluationEmbodiment] = {
+    "panda": EvaluationEmbodiment(
+        name="panda",
+        robots=("Panda",),
+        gripper_types="default",
+        source_init_profile="panda",
+    ),
+    "aubo_i5_ctag2f90d": EvaluationEmbodiment(
+        name="aubo_i5_ctag2f90d",
+        robots=("AuboI5",),
+        gripper_types="CTAG2F90DGripper",
+        source_init_profile="aubo_i5_ctag2f90d",
+    ),
+    "iiwa": EvaluationEmbodiment(
+        name="iiwa",
+        robots=("IIWA",),
+        gripper_types="default",
+        source_init_profile="panda",
+        upstream_controller=True,
+    ),
+    "jaco": EvaluationEmbodiment(
+        name="jaco",
+        robots=("Jaco",),
+        gripper_types="default",
+        source_init_profile="panda",
+        upstream_controller=True,
+    ),
+    "kinova3": EvaluationEmbodiment(
+        name="kinova3",
+        robots=("Kinova3",),
+        gripper_types="default",
+        source_init_profile="panda",
+        upstream_controller=True,
+    ),
+    "sawyer": EvaluationEmbodiment(
+        name="sawyer",
+        robots=("Sawyer",),
+        gripper_types="default",
+        source_init_profile="panda",
+        upstream_controller=True,
+    ),
+    "ur5e": EvaluationEmbodiment(
+        name="ur5e",
+        robots=("UR5e",),
+        gripper_types="default",
+        source_init_profile="panda",
+        upstream_controller=True,
+    ),
+    "panda_dex_lh": EvaluationEmbodiment(
+        name="panda_dex_lh",
+        robots=("PandaDexLH",),
+        gripper_types="default",
+        source_init_profile="panda",
+        upstream_controller=True,
+        minimum_robosuite=(1, 5),
+        gripper_action="broadcast",
+    ),
+    "panda_dex_rh": EvaluationEmbodiment(
+        name="panda_dex_rh",
+        robots=("PandaDexRH",),
+        gripper_types="default",
+        source_init_profile="panda",
+        upstream_controller=True,
+        minimum_robosuite=(1, 5),
+        gripper_action="broadcast",
+    ),
+    "xarm7": EvaluationEmbodiment(
+        name="xarm7",
+        robots=("XArm7",),
+        gripper_types="default",
+        source_init_profile="panda",
+        upstream_controller=True,
+        minimum_robosuite=(1, 5),
+    ),
+}
+
+
+def installed_robosuite_version() -> Tuple[int, int]:
+    import robosuite
+
+    parts = robosuite.__version__.split(".")
+    return int(parts[0]), int(parts[1])
+
+
+def available_evaluation_embodiments() -> Tuple[str, ...]:
+    version = installed_robosuite_version()
+    return tuple(
+        sorted(
+            name
+            for name, embodiment in EVALUATION_EMBODIMENTS.items()
+            if version >= embodiment.minimum_robosuite
+        )
+    )
+
+
+def get_evaluation_embodiment(name: Optional[str] = None) -> EvaluationEmbodiment:
+    normalized = str(name or DEFAULT_INIT_STATE_PROFILE).strip().lower()
+    try:
+        embodiment = EVALUATION_EMBODIMENTS[normalized]
+    except KeyError as error:
+        raise ValueError(
+            "Unknown evaluation embodiment '{}'. Available embodiments: {}".format(
+                normalized, ", ".join(available_evaluation_embodiments())
+            )
+        ) from error
+    version = installed_robosuite_version()
+    if version < embodiment.minimum_robosuite:
+        raise ValueError(
+            "Evaluation embodiment '{}' requires RoboSuite {}.{}, installed {}.{}".format(
+                normalized,
+                *embodiment.minimum_robosuite,
+                *version,
+            )
+        )
+    return embodiment
+
+
+def apply_evaluation_embodiment(
+    env_args: Mapping[str, Any], embodiment: Optional[str] = None
+) -> Dict[str, Any]:
+    configured = dict(env_args)
+    configured.update(get_evaluation_embodiment(embodiment).env_kwargs())
+    return configured
+
+
+def get_evaluation_source_profile(
+    embodiment: Optional[str] = None,
+) -> InitStateProfile:
+    target = get_evaluation_embodiment(embodiment)
+    return get_init_state_profile(target.source_init_profile)
+
+
+def evaluation_requires_state_transcode(embodiment: Optional[str] = None) -> bool:
+    target = get_evaluation_embodiment(embodiment)
+    return target.name != target.source_init_profile
+
+
 def available_init_state_profiles() -> Tuple[str, ...]:
     return tuple(sorted(INIT_STATE_PROFILES))
 
@@ -266,6 +429,167 @@ def as_init_state_array(value: Any, source: str = "init states") -> np.ndarray:
 def load_init_state_array(path: Path) -> np.ndarray:
     path = Path(path)
     return as_init_state_array(torch_load_compat(path), source=str(path))
+
+
+def adapt_evaluation_actions(
+    actions: np.ndarray,
+    embodiment: Optional[str],
+    target_dimension: int,
+) -> np.ndarray:
+    """Map a Panda-style OSC action to the selected single-arm embodiment."""
+
+    profile = get_evaluation_embodiment(embodiment)
+    array = np.asarray(actions)
+    if array.ndim == 0:
+        raise ValueError("Evaluation actions must have at least one dimension")
+    if array.shape[-1] == target_dimension:
+        return array
+    if (
+        profile.gripper_action == "broadcast"
+        and array.shape[-1] == 7
+        and target_dimension > 6
+    ):
+        gripper = np.repeat(array[..., 6:7], target_dimension - 6, axis=-1)
+        return np.concatenate((array[..., :6], gripper), axis=-1)
+    raise ValueError(
+        "Policy action dimension {} is incompatible with '{}' action dimension {}".format(
+            array.shape[-1], profile.name, target_dimension
+        )
+    )
+
+
+def environment_action_dimension(env: Any) -> int:
+    """Return the flattened action dimension exposed by a LIBERO environment."""
+
+    action_spec = getattr(env.env, "action_spec", None)
+    if action_spec is None:
+        raise RuntimeError("Environment does not expose action_spec")
+    low, _ = action_spec
+    return int(np.asarray(low).size)
+
+
+def _robot_naming_prefixes(env: Any) -> Tuple[str, ...]:
+    prefixes = []
+    for robot in env.robots:
+        models = [
+            robot.robot_model,
+            getattr(robot.robot_model, "base", None),
+            getattr(robot.robot_model, "mount", None),
+        ]
+        grippers = getattr(robot, "gripper", None)
+        models.extend(grippers.values() if isinstance(grippers, dict) else [grippers])
+        for model in models:
+            prefix = getattr(model, "naming_prefix", None) if model is not None else None
+            if prefix:
+                prefixes.append(str(prefix))
+    if not prefixes:
+        raise RuntimeError("Environment does not expose robot naming prefixes")
+    return tuple(sorted(set(prefixes)))
+
+
+def _named_non_robot_joints(env: Any) -> Dict[str, int]:
+    prefixes = _robot_naming_prefixes(env)
+    joints = {}
+    for joint_id in range(int(env.sim.model.njnt)):
+        name = env.sim.model.joint_id2name(joint_id)
+        if name is not None and not str(name).startswith(prefixes):
+            joints[str(name)] = joint_id
+    return joints
+
+
+def capture_portable_task_state(env: Any) -> Dict[str, Any]:
+    """Capture named non-robot joints from a source embodiment state."""
+
+    joints = {}
+    for name in _named_non_robot_joints(env):
+        joints[name] = {
+            "qpos": np.asarray(env.sim.data.get_joint_qpos(name)).copy(),
+            "qvel": np.asarray(env.sim.data.get_joint_qvel(name)).copy(),
+        }
+    return {
+        "time": float(env.sim.data.time),
+        "joints": joints,
+    }
+
+
+def apply_portable_task_state(
+    env: Any,
+    portable_state: Mapping[str, Any],
+) -> None:
+    """Apply named task joints while retaining the target robot's reset pose."""
+
+    source_joints = portable_state.get("joints", {})
+    target_joints = _named_non_robot_joints(env)
+    source_names = set(source_joints)
+    target_names = set(target_joints)
+    if source_names != target_names:
+        missing = sorted(source_names - target_names)
+        extra = sorted(target_names - source_names)
+        raise ValueError(
+            "Portable task joint mismatch: missing={}, extra={}".format(missing, extra)
+        )
+
+    for name in sorted(source_names):
+        state = source_joints[name]
+        source_qpos = np.asarray(state["qpos"])
+        source_qvel = np.asarray(state["qvel"])
+        target_qpos = np.asarray(env.sim.data.get_joint_qpos(name))
+        target_qvel = np.asarray(env.sim.data.get_joint_qvel(name))
+        if source_qpos.shape != target_qpos.shape:
+            raise ValueError(
+                "qpos shape mismatch for '{}': source={}, target={}".format(
+                    name, source_qpos.shape, target_qpos.shape
+                )
+            )
+        if source_qvel.shape != target_qvel.shape:
+            raise ValueError(
+                "qvel shape mismatch for '{}': source={}, target={}".format(
+                    name, source_qvel.shape, target_qvel.shape
+                )
+            )
+        env.sim.data.set_joint_qpos(name, source_qpos)
+        env.sim.data.set_joint_qvel(name, source_qvel)
+
+    env.sim.data.time = float(portable_state.get("time", 0.0))
+    env.sim.forward()
+
+
+def transcode_init_state_array(
+    source_states: Any,
+    source_env: Any,
+    target_env: Any,
+) -> np.ndarray:
+    """Convert source states to target-native states without solving IK online.
+
+    ``target_env.reset()`` installs the mounted robot's precomputed ``init_qpos``.
+    Only named non-robot joints are then copied from the source state.
+    """
+
+    source_array = as_init_state_array(source_states)
+    converted = []
+    expected_width = None
+    for state_index, source_state in enumerate(source_array):
+        source_env.set_state(source_state)
+        source_env.sim.forward()
+        portable_state = capture_portable_task_state(source_env)
+
+        target_env.reset()
+        apply_portable_task_state(target_env, portable_state)
+        target_state = np.asarray(target_env.get_init_state()).reshape(-1)
+        if not np.isfinite(target_state).all():
+            raise ValueError(
+                "Converted target state {} contains NaN or infinity".format(state_index)
+            )
+        if expected_width is None:
+            expected_width = target_state.shape[0]
+        elif target_state.shape[0] != expected_width:
+            raise ValueError(
+                "Converted target state width changed from {} to {} at index {}".format(
+                    expected_width, target_state.shape[0], state_index
+                )
+            )
+        converted.append(target_state)
+    return as_init_state_array(np.stack(converted), source="transcoded init states")
 
 
 def load_existing_state_pair(

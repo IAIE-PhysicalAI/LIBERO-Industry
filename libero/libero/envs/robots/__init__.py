@@ -2,6 +2,14 @@ from .mounted_panda import MountedPanda
 from .on_the_ground_panda import OnTheGroundPanda
 from .mounted_aubo_i5 import MountedAuboI5
 from .on_the_ground_aubo_i5 import OnTheGroundAuboI5
+from .mounted_robosuite_fixed_base import (
+    MOUNTED_ROBOSUITE_FIXED_BASE_MODELS,
+    MountedIIWA,
+    MountedJaco,
+    MountedKinova3,
+    MountedSawyer,
+    MountedUR5e,
+)
 from . import grippers as _grippers  # Register LIBERO grippers with robosuite.
 
 # from robosuite.robots.single_arm import SingleArm
@@ -14,6 +22,11 @@ IS_V1_5_OR_GREATER = int(_version_parts[0]) >= 1 and int(_version_parts[1]) >= 5
 if IS_V1_5_OR_GREATER:
     # 1.5.2 Architecture
     from robosuite.robots.fixed_base_robot import FixedBaseRobot as BaseRobotClass
+    from .mounted_robosuite_fixed_base import (
+        MountedPandaDexLH,
+        MountedPandaDexRH,
+        MountedXArm7,
+    )
     
     ROBOT_CLASS_MAPPING.update(
         {
@@ -36,3 +49,7 @@ else:
             "OnTheGroundAuboI5": BaseRobotClass,
         }
     )
+
+ROBOT_CLASS_MAPPING.update(
+    {robot_model.__name__: BaseRobotClass for robot_model in MOUNTED_ROBOSUITE_FIXED_BASE_MODELS}
+)

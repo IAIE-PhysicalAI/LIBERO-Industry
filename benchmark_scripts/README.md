@@ -26,3 +26,45 @@ The unsuffixed suite names are reserved for the single-arm-compatible benchmark:
 - `libero_industry_s2d`
 - `libero_industry_d2s`
 - `libero_industry_d2d`
+
+### Experimental bimanual BDDL generation
+
+This branch can stage the harder bimanual BDDL definitions, but it does not yet
+provide registered bimanual benchmark selectors, a dual-arm action/observation
+interface, or dual-arm initial states. It is therefore a development path, not
+a runnable dual-arm benchmark release.
+
+Stage the BDDLs outside the live benchmark directories:
+
+```powershell
+python notebooks/industry/autogen/regenerate_industry_benchmark.py build `
+  --run-id bimanual-example `
+  --track bimanual
+```
+
+Preview one representative staged task before expanding validation:
+
+```powershell
+python notebooks/industry/autogen/regenerate_industry_benchmark.py preview `
+  --run-id bimanual-example `
+  --suite S2D `
+  --level 2 `
+  --per-level 1
+```
+
+To turn these definitions into a runnable dual-arm benchmark:
+
+1. Implement and register the exact dual-arm robot, grippers, controller, and
+   action/observation contract.
+2. Register the bimanual suite names and their BDDL task maps.
+3. Add an embodiment-specific initial-state profile and generate target-native
+   states; do not reuse flattened single-arm states.
+4. Validate BDDL parsing, one deterministic reset, and one video-enabled task
+   before generating or validating the full benchmark.
+5. Document the policy input/output interface and evaluation contract for that
+   embodiment.
+
+The intended generation-only suite names are
+`libero_industry_{s2d,d2s,d2d}_bimanual`. The bimanual track preserves the
+harder Level-2 pose and V-groove variants and the Level-3 inverted D2D object
+distribution while keeping the temporal schedule paired with the public track.

@@ -23,12 +23,18 @@ from libero.libero import get_libero_path
 from libero.libero.benchmark import get_benchmark
 from libero.libero.envs import OffScreenRenderEnv, SubprocVectorEnv
 from libero.libero.utils.init_state_utils import (
-    apply_init_state_profile,
-    available_init_state_profiles,
+    adapt_evaluation_actions,
+    apply_evaluation_embodiment,
+    available_evaluation_embodiments,
+    environment_action_dimension,
+    evaluation_requires_state_transcode,
     get_configured_embodiment,
+    get_evaluation_embodiment,
+    get_evaluation_source_profile,
     load_init_state_array,
     resolve_init_state_path,
     resolve_init_states_root,
+    transcode_init_state_array,
 )
 from libero.libero.utils.time_utils import Timer
 from libero.libero.utils.video_utils import VideoWriter
@@ -108,7 +114,7 @@ def parse_args():
     parser.add_argument("--save-videos", action="store_true")
     parser.add_argument(
         "--embodiment",
-        choices=available_init_state_profiles(),
+        choices=available_evaluation_embodiments(),
         help="Override the checkpoint's evaluation embodiment.",
     )
     parser.add_argument(
@@ -177,10 +183,12 @@ def main():
     cfg.folder = get_libero_path("datasets")
     cfg.bddl_folder = get_libero_path("bddl_files")
     embodiment = args.embodiment or get_configured_embodiment(cfg)
+    evaluation_embodiment = get_evaluation_embodiment(embodiment)
+    source_init_profile = get_evaluation_source_profile(embodiment)
     cfg.init_states_folder = str(
         resolve_init_states_root(
             get_libero_path("init_states"),
-            embodiment=embodiment,
+            embodiment=source_init_profile.name,
             explicit_init_root=args.init_states_folder,
         )
     )
@@ -240,31 +248,70 @@ def main():
     test_loss = 0.0
 
     # 2. evaluate success rate
+    embodiment_tag = "" if embodiment == "panda" else "_{}".format(embodiment)
     if args.algo == "multitask":
         save_folder = os.path.join(
             args.save_dir,
-            f"{args.benchmark}_{args.algo}_{args.policy}_{args.seed}_ep{args.ep}_on{args.task_id}.stats",
+            f"{args.benchmark}_{args.algo}_{args.policy}_{args.seed}_ep{args.ep}_on{args.task_id}{embodiment_tag}.stats",
         )
     else:
         save_folder = os.path.join(
             args.save_dir,
-            f"{args.benchmark}_{args.algo}_{args.policy}_{args.seed}_load{args.load_task}_on{args.task_id}.stats",
+            f"{args.benchmark}_{args.algo}_{args.policy}_{args.seed}_load{args.load_task}_on{args.task_id}{embodiment_tag}.stats",
         )
 
     video_folder = os.path.join(
         args.save_dir,
-        f"{args.benchmark}_{args.algo}_{args.policy}_{args.seed}_load{args.load_task}_on{args.task_id}_videos",
+        f"{args.benchmark}_{args.algo}_{args.policy}_{args.seed}_load{args.load_task}_on{args.task_id}{embodiment_tag}_videos",
     )
 
     with Timer() as t, VideoWriter(video_folder, args.save_videos) as video_writer:
-        env_args = {
+        base_env_args = {
             "bddl_file_name": os.path.join(
                 cfg.bddl_folder, task.problem_folder, task.bddl_file
             ),
             "camera_heights": cfg.data.img_h,
             "camera_widths": cfg.data.img_w,
         }
-        env_args = apply_init_state_profile(env_args, embodiment)
+        env_args = apply_evaluation_embodiment(base_env_args, embodiment)
+
+        init_states_path = resolve_init_state_path(
+            cfg.init_states_folder,
+            task.problem_folder,
+            task.name,
+            pruned=True,
+            embodiment=source_init_profile.name,
+        )
+        init_states = load_init_state_array(init_states_path)
+
+        probe_args = {
+            **base_env_args,
+            "has_renderer": False,
+            "has_offscreen_renderer": False,
+            "use_camera_obs": False,
+            "initialization_noise": None,
+        }
+        target_probe = OffScreenRenderEnv(
+            **apply_evaluation_embodiment(probe_args, embodiment)
+        )
+        source_probe = None
+        try:
+            target_action_dimension = environment_action_dimension(target_probe)
+            if evaluation_requires_state_transcode(embodiment):
+                source_probe = OffScreenRenderEnv(
+                    **apply_evaluation_embodiment(
+                        probe_args, evaluation_embodiment.source_init_profile
+                    )
+                )
+                init_states = transcode_init_state_array(
+                    init_states,
+                    source_probe,
+                    target_probe,
+                )
+        finally:
+            if source_probe is not None:
+                source_probe.close()
+            target_probe.close()
 
         env_num = 20
         env = SubprocVectorEnv(
@@ -274,14 +321,6 @@ def main():
         env.seed(cfg.seed)
         algo.reset()
 
-        init_states_path = resolve_init_state_path(
-            cfg.init_states_folder,
-            task.problem_folder,
-            task.name,
-            pruned=True,
-            embodiment=embodiment,
-        )
-        init_states = load_init_state_array(init_states_path)
         indices = np.arange(env_num) % init_states.shape[0]
         init_states_ = init_states[indices]
 
@@ -292,7 +331,7 @@ def main():
 
         num_success = 0
         for _ in range(5):  # simulate the physics without any actions
-            env.step(np.zeros((env_num, 7)))
+            env.step(np.zeros((env_num, target_action_dimension)))
 
         with torch.no_grad():
             while steps < cfg.eval.max_steps:
@@ -300,6 +339,11 @@ def main():
 
                 data = raw_obs_to_tensor_obs(obs, task_emb, cfg)
                 actions = algo.policy.get_action(data)
+                actions = adapt_evaluation_actions(
+                    actions,
+                    embodiment,
+                    target_action_dimension,
+                )
                 obs, reward, done, info = env.step(actions)
                 video_writer.append_vector_obs(
                     obs, dones, camera_name="agentview_image"
